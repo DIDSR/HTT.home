@@ -10,7 +10,7 @@ title: Home
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <h1>{{ "High Throughput truthing project" | capitalize }}</h1>
+    <h1>{{ "High Throughput Truthing Project" | upcase }}</h1>
  text-tbd 
   </body>
 </html>
