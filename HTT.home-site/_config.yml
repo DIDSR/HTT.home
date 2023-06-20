@@ -22,10 +22,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+
 
 title: High Throughput Truthing Project
 email: emma.gardecki@fda.hhs.gov
@@ -44,7 +41,7 @@ twitter_username: jekyllrb
 github_username:  DIDSR/HTTdev
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
   - jekyll-sitemap
