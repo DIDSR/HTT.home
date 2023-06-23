@@ -1,10 +1,14 @@
 - name: Home
   link: /
+
 - name: About
-  link: /about.html
+  link: /about/
+
 - name: Blog
-  link: /blog.html
+  link: /blog/
+
 - name: Staff
-  link: /staff.html
+  link: /staff/
+  
 - name: Feedback Test Reference Doc
-  link: /feedback_ref_doc.html
+  link: /feedback_ref_doc/
