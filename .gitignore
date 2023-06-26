@@ -1,1 +1,6 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
 /.sTIL_reference_feedback_caMicro-current.docx

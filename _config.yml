@@ -10,8 +10,7 @@
 title: High Throughput Truthing Project
 email: emma.gardecki@fda.hhs.gov
 description: >- # this means to ignore newlines until "baseurl:"
-  Blah blah blah... a project to create 
-  a validation dataset established by pathologist annotations for artificial 
+  Blah blah blah... a project to create a validation dataset established by pathologist annotations for artificial 
   intelligence algorithms analyzing digital scans of pathology slides: 
   data (images + annotations). We are pursuing the qualification of the 
   final validation dataset as an FDA-qualified medical device development 
