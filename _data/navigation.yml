@@ -2,13 +2,13 @@
   link: /
 
 - name: About
-  link: /about/
+  link: /HTT.home/about/
 
 - name: Blog
-  link: /blog/
+  link: /HTT.home/blog/
 
-- name: Staff
-  link: /staff/
+- name: Authors
+  link: /HTT.home/authors/
   
 - name: Feedback Test Reference Doc
-  link: /feedback_ref_doc/
+  link: /HTT.home/feedback_ref_doc/
