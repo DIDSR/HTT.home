@@ -70,7 +70,7 @@ footer:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "/HTT.home/"
       type: posts
     values:
       layout: single
