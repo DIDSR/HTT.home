@@ -4,3 +4,5 @@ _site
 .jekyll-metadata
 vendor
 /.sTIL_reference_feedback_caMicro-current.docx
+/feedback_doc_url_anchors.xlsx
+.gitignore
