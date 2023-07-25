@@ -14,8 +14,8 @@ author: DIDSR
 ###############################################
 
 navbar-links:
-  The HTT Project: "about"
-  HTT Pivotal Study: "aboutPivotal"
+  The Project: "about"
+  Pivotal Study: "aboutPivotal"
   Announcements: "announcements"
   The Team: "team"
   Resources:
@@ -48,7 +48,7 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: emma.gardecki@fda.hhs.gov
+  email: brandon.gallas@fda.hhs.gov
   github: DIDSR
 
 
