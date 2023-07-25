@@ -1,22 +1,40 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
+
+## From bjt gemspec file, not sure if need to 
+    # include each gem explicitly
+
+# spec.add_runtime_dependency "jekyll", "~> 3.9.3"
+# spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
+# spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
+# spec.add_runtime_dependency "kramdown-parser-gfm", "~> 1.1"
+# spec.add_runtime_dependency "kramdown", "~> 2.3.2"
+# spec.add_runtime_dependency "webrick", "~> 1.8"
+
+# spec.add_development_dependency "bundler", ">= 1.16"
+# spec.add_development_dependency "rake", "~> 12.0"
+
+
+####################
+# From site v1
 
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
-
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
-# gem "minima", "~> 2.5"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-paginate"
   gem 'jekyll-sitemap'
   gem "jekyll-gist"
-  gem "jekyll-feed", "~> 0.12"
-# gem "jekyll-include-cache"
-  gem "jekyll-algolia"
-  gem 'jekyll-seo-tag'
-  gem "minimal-mistakes-jekyll"
+#   gem "jekyll-feed", "~> 0.12"
+#   gem "jekyll-algolia"
+#   gem 'jekyll-seo-tag'
+  gem "beautiful-jekyll-theme", "6.0.1"
   gem "jemoji"
+  gem "kramdown", "~> 2.3.2"
+  gem "kramdown-parser-gfm", "~> 1.1"
+  gem "webrick", "~> 1.8"
 end
 
 
