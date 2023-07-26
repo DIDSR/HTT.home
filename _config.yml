@@ -131,7 +131,7 @@ date_format: "%B %-d, %Y"
 timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
-permalink: /HTT.home/:categories/:title/
+permalink: /HTT.home/:categories/:title
 paginate: 5
 
 kramdown:
@@ -145,7 +145,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
+      comments: false  # add comments to all blog posts
   -
     scope:
       path: "" # any file that's not a post will be a "page" layout by default
