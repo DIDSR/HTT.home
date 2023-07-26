@@ -1,134 +1,171 @@
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 
+############################
+# --- Required options --- #
+############################
+
+# Name of website
 title: High Throughput Truthing Project
-email: emma.gardecki@fda.hhs.gov
-description: >- # this means to ignore newlines until "baseurl:"
-  Blah blah blah... a project to create a validation dataset established by pathologist annotations for artificial 
-  intelligence algorithms analyzing digital scans of pathology slides: 
-  data (images + annotations). We are pursuing the qualification of the 
-  final validation dataset as an FDA-qualified medical device development 
-  tool MDDT to become a high-value public resource that can be used in AI/ML 
-  algorithm submissions and guide others to develop quality validation 
-  datasets.
-domain: didsr.github.io/
-url: https://didsr.github.io/HTT.home/ 
-baseurl: /HTT.home/ # the subpath of your site, e.g. /blog
-github_username:  DIDSR
-minimal_mistakes_skin: default
-search: true
 
-# Build settings
-# theme: kramdown
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-# Outputting 
+# Your name to show in the footer
+author: DIDSR
+
+###############################################
+# --- List of links in the navigation bar --- #
+###############################################
+
+navbar-links:
+  The HTT Project: "about"
+  HTT Pivotal Study: "aboutPivotal"
+  Announcements: "announcements"
+  The Team: "team"
+  Resources:
+    - sTILs Reference Doc: "feedbackRefDoc"
+    - CME Course: "cmeCourse"
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
+
+################
+# --- Logo --- #
+################
+
+# Image to show in the navigation bar - works best with a square image
+# Remove this parameter if you don't want an image in the navbar
+avatar: assets\images\favicon-32x32.png
+
+# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
+round-avatar: true
+
+# If you want to have an image logo in the top-left corner instead of having the title of the website,
+# then specify the following parameter
+# title-img: assets\images\faviconBig.png
+
+
+#####################################
+# --- Footer social media links --- #
+#####################################
+
+# Select the social network links that you want to show in the footer.
+# You can change the order that they show up on the page by changing the order here.
+# Uncomment the links you want to show and add your information to each one.
+social-network-links:
+  email: ["brandon.gallas@fda.hhs.gov", " emma.gardecki@fda.hhs.gov"]
+  github: DIDSR/HTT
+
+
+###########################
+# --- General options --- #
+###########################
+
+# How to display the link to your website in the footer
+# Remove this if you don't want a link in the footer
+url-pretty: "https://didsr.github.io/HTT.home/" 
+
+# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
+excerpt_length: 50
+
+# Whether or not to show an excerpt for every blog post in the feed page
+feed_show_excerpt: true
+
+# Whether or not to show a list of tags below each post preview in the feed page
+feed_show_tags: true
+
+# Add a search button to the navbar
+post_search: true
+
+# Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
+edit_page_button: true
+
+# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
+# If this setting is off, then long sub-menu words might get cut off
+# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
+navbar-var-length: false
+
+# The keywords to associate with your website, for SEO purposes
+#keywords: "my,list,of,keywords"
+
+######################################
+# --- Colours / background image --- #
+######################################
+
+# Personalize the colours in your website. Colour values can be any valid CSS colour
+
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
+
+# Alternatively, the navbar, footer, and page background can be set to an image
+# instead of colour
+
+#navbar-img: "/assets/img/bgimage.png"
+#footer-img: "/assets/img/bgimage.png"
+#page-img: "/assets/img/bgimage.png"
+
+# Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
+#mobile-theme-col: "#0085A1"
+
+# For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
+#site-css:
+#  - "/assets/css/custom-styles.css"
+
+# If you have common JavaScript files that should be included in every page, list them here
+#site-js:
+#  - "/assets/js/custom-script.js"
+
+
+################
+# --- Misc --- #
+################
+
+# Ruby Date Format to show dates of posts
+date_format: "%B %-d, %Y"
+
+# Output options (more information on Jekyll's site)
+timezone: "America/Toronto"
+markdown: kramdown
+highlighter: rouge
 permalink: /HTT.home/:categories/:title/
-paginae: 5 #amount of posts to show
-paginate_path: /page:num/
-timezone: America/New_York
+paginate: 5
 
-include:
-  - _pages
+kramdown:
+  input: GFM
+
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+  -
+    scope:
+      path: "" # any file that's not a post will be a "page" layout by default
+    values:
+      layout: "page"
+
+# Exclude these files from production site
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - screenshot.png
+  - docs/
 
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-  - jekyll-seo-tag
+  - beautiful-jekyll-theme
 
-author:
-  name : "DIDSR"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio : "Division of Imaging, Diagnostics, and Software Reliability"
-  location : "Silver Spring, Maryland"
-  links : 
-    - label: "Website"
-    # icon:
-      url: "https://www.fda.gov/about-fda/cdrh-offices/division-imaging-diagnostics-and-software-reliability"
-    - label: "GitHub"
-    # icon: "fab fa-fw fa-github"
-      url: "https://github.com/DIDSR"
-
-footer:
-  links:
-    - label: "Website"
-    # icon: "fas fa-fw fa-link"
-      url: "https://www.fda.gov/about-fda/cdrh-offices/division-imaging-diagnostics-and-software-reliability"
-    - label: "GitHub"
-    # icon: "fab fa-fw fa-github"
-      url: "https://github.com/DIDSR"
-
-defaults:
-  # _posts
-  - scope:
-      path: "/HTT.home/"
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      # read_time: true
-      # comments: true
-      share: true
-      related: true
-      show_date: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-
-collections: 
-  authors: 
-    output: true
-
-# defaults:
-# - scope:
-#     path: ""
-#     type: "authors"
-#    values:
-#     layout: "author"
-# - scope:
-#     path: ""
-#     type: "posts"
-#    values:
-#     layout: "post"
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-
-
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+theme: beautiful-jekyll-theme

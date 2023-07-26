@@ -1,10 +1,13 @@
 ---
-layout: default
-title: Authors
+layout: page
+title: HTT Team
 ---
-<h1>Staff</h1>
 
-<ul>
+Learn about the FDA team. 
+
+
+
+<!-- <ul>
     {% for author in site.authors %}
         <li>
             <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
@@ -12,4 +15,4 @@ title: Authors
             <p>{{ author.content | markdownify }}</p>
         </li>
     {% endfor %}
-</ul>
+</ul> -->

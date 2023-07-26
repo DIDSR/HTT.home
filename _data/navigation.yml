@@ -2,7 +2,7 @@
   link: /HTT.home/
 
 - name: About
-  link: /HTT.home/about/
+  link: /about.md
 
 - name: Blog
   link: /HTT.home/blog/
@@ -10,5 +10,15 @@
 - name: Authors
   link: /HTT.home/authors/
   
-- name: Feedback Test Reference Doc
-  link: /HTT.home/feedback_ref_doc/
+# - name: Feedback Test Reference Doc
+#   link: /HTT.home/feedback_ref_doc/
+
+# The HTT Project: "about"
+# HTT Pivotal Study: "aboutPivotal"
+# Announcements: "announcements"
+# The Team: "team"
+# Resources:
+#   - sTILs Reference Doc: "feedbackRefDoc"
+#   - CME Course: "cmeCourse"
+#   - Beautiful Jekyll: "https://beautifuljekyll.com"
+#   - Learn markdown: "https://www.markdowntutorial.com/"
