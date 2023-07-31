@@ -30,7 +30,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/images/favicon-32x32.png"
+avatar: "https://didsr.github.io/HTT.home/assets/images/favicon-32x32.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -90,10 +90,8 @@ navbar-var-length: true
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
 navbar-col: "#EAEAEA"
-# navbar-text-col: "#404040"
-navbar-text-col: "#000000"
-# navbar-border-col: "#DDDDDD"
-navbar-border-col: "#b3b3b3"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
 text-col: "#404040"
 link-col: "#008AFF"
@@ -114,11 +112,11 @@ footer-hover-col: "#0085A1"
 #mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-#  - "/assets/css/custom-styles.css"
+# site-css:
+#   - "/assets/css/custom-styles.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
-#site-js:
+# site-js:
 #  - "/assets/js/custom-script.js"
 
 
