@@ -30,7 +30,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: assets\images\favicon-32x32.png
+avatar: "https://didsr.github.io/HTT.home/assets/images/favicon-32x32.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -48,7 +48,7 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: ["brandon.gallas@fda.hhs.gov", " emma.gardecki@fda.hhs.gov"]
+  email: ["brandon.gallas@fda.hhs.gov;", " emma.gardecki@fda.hhs.gov"]
   github: DIDSR/HTT
 
 
@@ -78,7 +78,7 @@ edit_page_button: true
 # Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
 # If this setting is off, then long sub-menu words might get cut off
 # See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
-navbar-var-length: false
+navbar-var-length: true
 
 # The keywords to associate with your website, for SEO purposes
 #keywords: "my,list,of,keywords"
@@ -112,11 +112,11 @@ footer-hover-col: "#0085A1"
 #mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-#  - "/assets/css/custom-styles.css"
+# site-css:
+#   - "/assets/css/custom-styles.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
-#site-js:
+# site-js:
 #  - "/assets/js/custom-script.js"
 
 
@@ -131,12 +131,13 @@ date_format: "%B %-d, %Y"
 timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
-permalink: /HTT.home/:categories/:title/
+permalink: /HTT.home/:categories/:title
 paginate: 5
 
 kramdown:
   input: GFM
 
+# Default YAML values (more information on Jekyll's site)
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -
@@ -145,7 +146,8 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
+      comments: false  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
       path: "" # any file that's not a post will be a "page" layout by default
@@ -167,7 +169,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-remote-theme
-  # - beautiful-jekyll-theme
 
 # theme: beautiful-jekyll-theme
 

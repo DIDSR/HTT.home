@@ -31,8 +31,8 @@ group :jekyll_plugins do
 #   gem "jekyll-feed", "~> 0.12"
 #   gem "jekyll-algolia"
 #   gem 'jekyll-seo-tag'
-  gem "beautiful-jekyll-theme", "6.0.1"
-  gem "jemoji"
+#   gem "beautiful-jekyll-theme", "6.0.1"
+#   gem "jemoji"
   gem "kramdown", "~> 2.3.2"
   gem "kramdown-parser-gfm", "~> 1.1"
   gem "webrick", "~> 1.8"
