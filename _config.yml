@@ -22,12 +22,13 @@ author: DIDSR
 
 navbar-links:
   What is HTT?: "about"
+  Training Materials: "assets/pages/training-2023"
   HTT Pivotal Study: "aboutPivotal"
   Announcements: "announcements"
   The Team: "team"
   Resources:
-    - Feedback Study: "feedbackRefDoc"
-    - CME Course: "cmeCourse"
+    - Feedback Study: "assets/pages/training-2023/feedbackRefDoc"
+    - CME Course: "/assets/pages/training-2023/cmeCourse"
     - NCIhub: "https://ncihub.cancer.gov/groups/eedapstudies"
 
 ################
