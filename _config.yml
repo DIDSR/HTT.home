@@ -21,11 +21,11 @@ author: DIDSR
 ###############################################
 
 navbar-links:
-  What is HTT?: "about"
+  What is HTT?: "assets/pages/whatIsHTT"
   Training Materials: "assets/pages/training-2023"
-  HTT Pivotal Study: "aboutPivotal"
-  # Announcements: "announcements"
-  # The Team: "team"
+  HTT Pivotal Study: "assets/pages/pivotal-study"
+  # Announcements: "assets/pages/announcements"
+  # The Team: "assets/pages/team"
   # Resources:
   #   - Feedback Study: "assets/pages/training-2023/feedbackRefDoc"
   #   - CME Course: "/assets/pages/training-2023/cmeCourse"
