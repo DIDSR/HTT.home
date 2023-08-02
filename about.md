@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About HTT
+title: What is HTT?
 subtitle: Background and Publications
 ---
 
