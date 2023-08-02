@@ -23,7 +23,7 @@
     {%- endif -%}
   {% endcapture %}
 
-  <title>{{ High Throughput Truthing Project }}</title>
+  <title>{{ title }}</title>
 
   {% if site.author %}
   <meta name="author" content="{{ site.author }}">
@@ -43,10 +43,10 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
   {% endif %}
 
-  <!-- {% include gtag.html %}
+  {% include gtag.html %}
   {% include gtm_head.html %}
   {% include google_analytics.html %}
-  {% include cloudflare_analytics.html %} -->
+  {% include cloudflare_analytics.html %}
 
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}
@@ -76,6 +76,10 @@
     {% for css in page.css %}
       <link rel="stylesheet" href="{{ css | relative_url }}">
     {% endfor %}
+  {% endif %}
+
+  {% if site.fb_app_id %}
+  <meta property="fb:app_id" content="{{ site.fb_app_id }}">
   {% endif %}
 
   {% if site.title %}
@@ -135,6 +139,9 @@
 
   {% include matomo.html %}
 
+  {% if page.comments and site.staticman.repository and site.staticman.branch %}
+  <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
+  {% endif %}
 
   {% if page.head-extra %}
     {% for file in page.head-extra %}
