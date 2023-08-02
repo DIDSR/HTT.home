@@ -21,14 +21,15 @@ author: DIDSR
 ###############################################
 
 navbar-links:
-  What is HTT?: "about"
-  HTT Pivotal Study: "aboutPivotal"
-  Announcements: "announcements"
-  The Team: "team"
-  Resources:
-    - Feedback Study: "feedbackRefDoc"
-    - CME Course: "cmeCourse"
-    - NCIhub: "https://ncihub.cancer.gov/groups/eedapstudies"
+  What is HTT?: "assets/pages/whatIsHTT"
+  Training Materials: "assets/pages/training-2023"
+  HTT Pivotal Study: "assets/pages/pivotal-study"
+  # Announcements: "assets/pages/announcements"
+  # The Team: "assets/pages/team"
+  # Resources:
+  #   - Feedback Study: "assets/pages/training-2023/feedbackRefDoc"
+  #   - CME Course: "/assets/pages/training-2023/cmeCourse"
+  #   - NCIhub: "https://ncihub.cancer.gov/groups/eedapstudies"
 
 ################
 # --- Logo --- #
@@ -36,7 +37,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/favicon-32x32.png"
+avatar: "/assets/pages/training-2023/feedbackStudyImages/Image_032.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
