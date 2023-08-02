@@ -22,7 +22,7 @@ Here is the [CME course page.](/training-2023/cmeCourse.md)
 Need to build the interactive training pages. 
 * ### [Getting Started](/training-2023/interactiveTraining-gettingStarted.md)  
 * ### [Feedback Study](/training-2023/feedbackRefDoc.md)
-* ### [Reference Doc PDF](/pdfs/caMicro-ProcessGuide-20230608.pdf) 
+* ### [CaMicroscope Process Guide](/pdfs/caMicro-ProcessGuide-20230608.pdf) 
 
 <!-- * [Getting Started](/training-2023/interactiveTraining-gettingStarted.md)  -->
 <!-- * [Example Test Report (Feedback)](/training-2023/exTestReport-Feedback.md) -->
