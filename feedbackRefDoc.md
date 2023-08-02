@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Expert Scores and Commentary for Each Region of Interest (ROI) in the HTT Feedback Study
-subtitle: 
+title: Feedback Study
+subtitle: Expert Scores and Commentary for Each Region of Interest (ROI) in the HTT Feedback Study
 ---
 
 <!-- Anchor reminder -->

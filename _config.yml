@@ -21,12 +21,12 @@ author: DIDSR
 ###############################################
 
 navbar-links:
-  The HTT Project: "about"
+  What is HTT?: "about"
   HTT Pivotal Study: "aboutPivotal"
   Announcements: "announcements"
   The Team: "team"
   Resources:
-    - sTILs Reference Doc: "feedbackRefDoc"
+    - Feedback Study: "feedbackRefDoc"
     - CME Course: "cmeCourse"
     - NCIhub: "https://ncihub.cancer.gov/groups/eedapstudies"
 
