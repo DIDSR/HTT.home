@@ -12,8 +12,7 @@ Where is my [heading](#MyHeading)? -->
 
 <!-- caseID: HTT-TILS-001-03B.ndpi_x4934.2190_y68036.2190 -->
 ### <a id= "a1"></a>Feedback-01 ###
-![image-001](assets\img\Image_001.jpg)
-
+![image-001](/feedbackStudyImages/Image_001.jpg)
 #### Expert Panel Annotations
 
 |  ROI Type | Percent Tumor-Associated Stroma | sTILs Density |
@@ -37,7 +36,7 @@ Mean sTILs Density: 2
 
 <!-- caseID: HTT-TILS-001-04B.ndpi_x24343.2190_y11775.2190 -->
 ### <a id= "a2"></a>Feedback-02 ###
-![image-002](assets\img\Image_002.jpg)
+![image-002](/feedbackStudyImages/Image_002.jpg)
 
 #### Expert Panel Annotations
 
@@ -62,7 +61,7 @@ Mean sTILs Density: 88.7
 
 <!-- caseID: HTT-TILS-001-27B.ndpi_x29456.2190_y23838.2190 -->
 ### <a id= "a3"></a>Feedback-03 ###
-![image-003](assets\img\Image_003.jpg)
+![image-003](/feedbackStudyImages/Image_003.jpg)
 
 #### Expert Panel Annotations
 
@@ -87,7 +86,7 @@ Mean sTILs Density: 4.7
 
 <!-- caseID: HTT-TILS-001-27B.ndpi_x5114.2190_y25709.2190 -->
 ### <a id= "a4"></a>Feedback-04 ###
-![image-004](assets\img\Image_004.jpg)
+![image-004](/feedbackStudyImages/Image_004.jpg)
 
 #### Expert Panel Annotations
 
@@ -112,7 +111,7 @@ Mean sTILs Density: 11.8
 
  <!-- caseID: HTT-TILS-001-29B.ndpi_x12694.2190_y13922.2190 -->
 ### <a id= "a5"></a>Feedback-05 ###
-![image-005](assets\img\Image_005.jpg)
+![image-005](/feedbackStudyImages/Image_005.jpg)
 
 #### Expert Panel Annotations
 
@@ -137,7 +136,7 @@ Mean sTILs Density: NA
  
 <!-- caseID: HTT-TILS-001-32B.ndpi_x34191.2190_y65798.2190 -->
 ### <a id= "a6"></a>Feedback-06 ###
-![image-006](assets\img\Image_006.jpg)
+![image-006](/feedbackStudyImages/Image_006.jpg)
 
 #### Expert Panel Annotations
 
@@ -162,7 +161,7 @@ Mean sTILs Density: 5
  
 <!-- caseID: HTT-TILS-001-33B.ndpi_x25888.2190_y33488.2190 -->
 ### <a id= "a7"></a>Feedback-07 ###
-![image-007](assets\img\Image_007.jpg)
+![image-007](/feedbackStudyImages/Image_007.jpg)
 
 #### Expert Panel Annotations
 
@@ -187,7 +186,7 @@ Mean sTILs Density: 64.2
 
 <!-- caseID: HTT-TILS-001-33B.ndpi_x29652.2190_y6224.2190 -->
 ### <a id= "a8"></a>Feedback-08 ###
-![image-008](assets\img\Image_008.jpg)
+![image-008](/feedbackStudyImages/Image_008.jpg)
 
 #### Expert Panel Annotations
 
@@ -212,7 +211,7 @@ Mean sTILs Density: 75.8
  
 <!-- caseID: HTT-TILS-001-33B.ndpi_x29809.2190_y47938.2190 -->
 ### <a id= "a9"></a>Feedback-09 ###
-![image-009](assets\img\Image_009.jpg)
+![image-009](/feedbackStudyImages/Image_009.jpg)
 
 #### Expert Panel Annotations
 
@@ -237,7 +236,7 @@ Mean sTILs Density: 43.7
  
 <!-- caseID: HTT-TILS-001-33B.ndpi_x32624.2190_y18730.2190 -->
 ### <a id= "a10"></a>Feedback-10 ###
-![image-010](assets\img\Image_010.jpg)
+![image-010](/feedbackStudyImages/Image_010.jpg)
 
 #### Expert Panel Annotations
 
@@ -262,7 +261,7 @@ Mean sTILs Density: 46.8
 
 <!-- caseID: HTT-TILS-001-34B.ndpi_x13400.2190_y32583.2190 -->
 ### <a id= "a11"></a>Feedback-11 ###
-![image-011](assets\img\Image_011.jpg)
+![image-011](/feedbackStudyImages/Image_011.jpg)
 
 #### Expert Panel Annotations
 
@@ -287,7 +286,7 @@ Mean sTILs Density: 3.8
 
 <!-- caseID: HTT-TILS-001-41B.ndpi_x2572.2190_y8345.2190 -->
 ### <a id= "a12"></a>Feedback-12 ###
-![image-012](assets\img\Image_012.jpg)
+![image-012](/feedbackStudyImages/Image_012.jpg)
 
 #### Expert Panel Annotations
 
@@ -312,7 +311,7 @@ Mean sTILs Density: 1.2
  
 <!-- caseID: HTT-TILS-001-42B.ndpi_x9321.2190_y18852.2190 -->
 ### <a id= "a13"></a>Feedback-13 ###
-![image-013](assets\img\Image_013.jpg)
+![image-013](/feedbackStudyImages/Image_013.jpg)
 
 #### Expert Panel Annotations
 
@@ -337,7 +336,7 @@ Mean sTILs Density: 5
 
 <!-- caseID: HTT-TILS-001-50B.ndpi_x39884.2190_y27444.2190 -->
 ### <a id= "a14"></a>Feedback-14 ###
-![image-014](assets\img\Image_014.jpg)
+![image-014](/feedbackStudyImages/Image_014.jpg)
 
 #### Expert Panel Annotations
 
@@ -362,7 +361,7 @@ Mean sTILs Density: 3.2
 
 <!-- caseID: HTT-TILS-001-52B.ndpi_x22110.2190_y13641.2190 -->
 ### <a id= "a15"></a>Feedback-15 ####
-![image-015](assets\img\Image_015.jpg)
+![image-015](/feedbackStudyImages/Image_015.jpg)
 
 #### Expert Panel Annotations
 
@@ -387,7 +386,7 @@ Mean sTILs Density: 3.2
 
 <!-- caseID: HTT-TILS-001-52B.ndpi_x71829.2190_y49452.2190 -->
 ### <a id= "a16"></a>Feedback-16 ###
-![image-016](assets\img\Image_016.jpg)
+![image-016](/feedbackStudyImages/Image_016.jpg)
 
 #### Expert Panel Annotations
 
@@ -412,7 +411,7 @@ Mean sTILs Density: 1
 
 <!-- caseID: HTT-TILS-001-53B.ndpi_x28888.2190_y28271.2190 -->
 ### <a id= "a17"></a>Feedback-17 ###
-![image-017](assets\img\Image_017.jpg)
+![image-017](/feedbackStudyImages/Image_017.jpg)
 
 #### Expert Panel Annotations
 
@@ -437,7 +436,7 @@ Mean sTILs Density: NA
  
 <!-- caseID: HTT-TILS-001-57B.ndpi_x12938.2190_y7977.2190 -->
 ### <a id= "a18"></a>Feedback-18 ###
-![image-018](assets\img\Image_018.jpg)
+![image-018](/feedbackStudyImages/Image_018.jpg)
 
 #### Expert Panel Annotations
 
@@ -462,7 +461,7 @@ Mean sTILs Density: 1
 
 <!-- caseID: HTT-TILS-001-57B.ndpi_x16512.2190_y8168.2190 -->
 ### <a id= "a19"></a>Feedback-19 ###
-![image-019](assets\img\Image_019.jpg)
+![image-019](/feedbackStudyImages/Image_019.jpg)
 
 #### Expert Panel Annotations
 
@@ -487,7 +486,7 @@ Mean sTILs Density: 0.2
  
 <!-- caseID: HTT-TILS-001-73B.ndpi_x9143.2190_y47362.2190 -->
 ### <a id= "a20"></a>Feedback-20 ###
-![image-020](assets\img\Image_020.jpg)
+![image-020](/feedbackStudyImages/Image_020.jpg)
 
 #### Expert Panel Annotations
 
@@ -512,7 +511,7 @@ Mean sTILs Density: 54.8
  
 <!-- caseID: HTT-TILS-001-76B.ndpi_x15338.2190_y44740.2190 -->
 ### <a id= "a21"></a>Feedback-21 ###
-![image-021](assets\img\Image_021.jpg)
+![image-021](/feedbackStudyImages/Image_021.jpg)
 
 #### Expert Panel Annotations
 
@@ -537,7 +536,7 @@ Mean sTILs Density: 93.7
 
 <!-- caseID: HTT-TILS-001-76B.ndpi_x16170.2190_y42769.2190 -->
 ### <a id= "a22"></a>Feedback-22 ###
-![image-022](assets\img\Image_022.jpg)
+![image-022](/feedbackStudyImages/Image_022.jpg)
 
 #### Expert Panel Annotations
 
@@ -562,7 +561,7 @@ Mean sTILs Density: 91.8
 
 <!-- caseID: HTT-TILS-001-76B.ndpi_x24500.2190_y76408.2190 -->
 ### <a id= "a23"></a>Feedback-23 ###
-![image-023](assets\img\Image_023.jpg)
+![image-023](/feedbackStudyImages/Image_023.jpg)
 
 #### Expert Panel Annotations
 
@@ -587,7 +586,7 @@ Mean sTILs Density: 92.5
  
 <!-- caseID: HTT-TILS-001-76B.ndpi_x29068.2190_y50307.2190 -->
 ### <a id= "a24"></a>Feedback-24 ###
-![image-024](assets\img\Image_024.jpg)
+![image-024](/feedbackStudyImages/Image_024.jpg)
 
 #### Expert Panel Annotations
 
@@ -612,7 +611,7 @@ Mean sTILs Density: 79.2
 
 <!-- caseID: HTT-TILS-001-80B.ndpi_x28631.2190_y33655.2190 -->
 ### <a id= "a25"></a>Feedback-25 ###
-![image-025](assets\img\Image_025.jpg)
+![image-025](/feedbackStudyImages/Image_025.jpg)
 
 #### Expert Panel Annotations
 
@@ -637,7 +636,7 @@ Mean sTILs Density: 60
  
  <!-- caseID: HTT-TILS-001-80B.ndpi_x52173.2190_y57416.2190 -->
 ### <a id= "a26"></a>Feedback-26 ###
-![image-026](assets\img\Image_026.jpg)
+![image-026](/feedbackStudyImages/Image_026.jpg)
 
 #### Expert Panel Annotations
 
@@ -662,7 +661,7 @@ Mean sTILs Density: NA
 
 <!-- caseID: HTT-TILS-001-80B.ndpi_x56330.2190_y11332.2190 -->
 ### <a id= "a27"></a>Feedback-27 ###
-![image-027](assets\img\Image_027.jpg)
+![image-027](/feedbackStudyImages/Image_027.jpg)
 
 #### Expert Panel Annotations
 
@@ -687,7 +686,7 @@ Mean sTILs Density: 4.8
 
 <!-- caseID: HTT-TILS-001-80B.ndpi_x57261.2190_y59992.2190 -->
 ### <a id= "a28"></a>Feedback-28 ###
-![image-028](assets\img\Image_028.jpg)
+![image-028](/feedbackStudyImages/Image_028.jpg)
 
 #### Expert Panel Annotations
 
@@ -712,7 +711,7 @@ Mean sTILs Density: NA
 
 <!-- caseID: HTT-TILS-001-83B.ndpi_x17750.2190_y20193.2190 -->
 ### <a id= "a29"></a>Feedback-29 ###
-![image-029](assets\img\Image_029.jpg)
+![image-029](/feedbackStudyImages/Image_029.jpg)
 
 #### Expert Panel Annotations
 
@@ -737,7 +736,7 @@ Mean sTILs Density: 5
 
 <!-- caseID: HTT-TILS-001-83B.ndpi_x24381.2190_y16599.2190 -->
 ### <a id= "a30"></a>Feedback-30 ###
-![image-030](assets\img\Image_030.jpg)
+![image-030](/feedbackStudyImages/Image_030.jpg)
 
 #### Expert Panel Annotations
 
@@ -762,7 +761,7 @@ Mean sTILs Density: 0
  
 <!-- caseID: HTT-TILS-001-84B.ndpi_x9416.2190_y29452.2190 -->
 ### <a id= "a31"></a>Feedback-31 ###
-![image-031](assets\img\Image_031.jpg)
+![image-031](/feedbackStudyImages/Image_031.jpg)
 
 #### Expert Panel Annotations
 
@@ -787,7 +786,7 @@ Mean sTILs Density: NA
  
 <!-- caseID: HTT-TILS-001-86B.ndpi_x20669.2190_y12026.2190 -->
 ### <a id= "a32"></a>Feedback-32 ###
-![image-032](assets\img\Image_032.jpg)
+![image-032](/feedbackStudyImages/Image_032.jpg)
 
 #### Expert Panel Annotations
 
@@ -813,7 +812,7 @@ present, and uncertainty of the structure in the upper left-hand corner of the R
 
 <!-- caseID: HTT-TILS-001-88B.ndpi_x38756.2190_y32439.2190 -->
 ### <a id= "a33"></a>Feedback-33 ###
-![image-033](assets\img\Image_033.jpg)
+![image-033](/feedbackStudyImages/Image_033.jpg)
 
 #### Expert Panel Annotations
 
@@ -838,7 +837,7 @@ Mean sTILs Density: 0.3
  
 <!-- caseID: HTT-TILS-001-89B.ndpi_x16220.2190_y7255.2190 -->
 ### <a id= "a34"></a>Feedback-34 ###
-![image-034](assets\img\Image_034.jpg)
+![image-034](/feedbackStudyImages/Image_034.jpg)
 
 #### Expert Panel Annotations
 
@@ -864,7 +863,7 @@ Mean sTILs Density: 4.8
 
 <!-- caseID: HTT-TILS-001-43B.ndpi_x12601.2190_y19050.2190 -->
 ### <a id= "a35"></a>Feedback-35 ###
-![image-035](assets\img\Image_035.jpg)
+![image-035](/feedbackStudyImages/Image_035.jpg)
 
 #### Expert Panel Annotations
 
@@ -890,7 +889,7 @@ Mean sTILs Density: 10.8
  
 <!-- caseID: HTT-TILS-001-50B.ndpi_x20589.2190_y28549.2190 -->
 ### <a id= "a36"></a>Feedback-36 ###
-![image-036](assets\img\Image_036.jpg)
+![image-036](/feedbackStudyImages/Image_036.jpg)
 
 #### Expert Panel Annotations
 
