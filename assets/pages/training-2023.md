@@ -4,25 +4,21 @@ title: Training Materials
 subtitle: 
 ---
 
-* CME Course Info and Mirror  
-* Interactive Training  
-    * Getting Started  
-    <!-- * Example Test Report (Feedback)  
-    * Example Test Report (Proficiency)   -->
-    * Feedback Study  
-    * Reference Document on Task  
-{:toc}
-
 ## CME Course Info and Mirror
 
-Here is the [CME course page.](/training-2023/cmeCourse.md)  
+* The course is worth 3.00 CME credits.
+* Here is the [CME course info and mirror.](/training-2023/cmeCourse.md)
+* Here is the official CME course portal: [FDA CE portal](https://ceportal.fda.gov/)
+  a. Create an account.
+  a. Click on the "Online Learning" tab.
+  a. Scroll down to the course: "Assessment of Stromal Tumor-Infiltrating Lymphocytes"
+* To participate in the HTT Pivotal Study, email your CME completion certificate to Brandon Gallas [brandon.gallas@fda.hhs.gov](mailto:brandon.gallas@fda.hhs.gov).
 
 ## Interactive Training
 
-Need to build the interactive training pages. 
-* ### [Getting Started](/training-2023/interactiveTraining-gettingStarted.md)  
-* ### [Feedback Study](/training-2023/feedbackRefDoc.md)
-* ### [CaMicroscope Process Guide](/pdfs/caMicro-ProcessGuide-20230608.pdf) 
+* To participate in the HTT Pivotal Study, you must complete the Proficiency Test on the sTILs assessment.
+* Here is the link with instructions to get started on the interactive training: [LINK](/training-2023/interactiveTraining-gettingStarted.md).
+* After completing the Proficiency Test, email Brandon Gallas [brandon.gallas@fda.hhs.gov](mailto:brandon.gallas@fda.hhs.gov), to receive your proficiency test performance report.
 
 <!-- * [Getting Started](/training-2023/interactiveTraining-gettingStarted.md)  -->
 <!-- * [Example Test Report (Feedback)](/training-2023/exTestReport-Feedback.md) -->
