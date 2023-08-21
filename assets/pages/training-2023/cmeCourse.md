@@ -5,7 +5,7 @@ title: sTILs CME Course
 
 
 # "Mirror" of CME Course: Assessment of Stromal Tumor-Infiltrating Lymphocytes
-**Information about the official CME course and obtaining CME credits can be found [here](https://ncihub.cancer.gov/groups/eedapstudies/wiki/HTTdataCollectionTraining).**
+**Information about the official CME course and obtaining CME credits can also be found [here](https://ncihub.cancer.gov/groups/eedapstudies/wiki/HTTdataCollectionTraining).**
 
 ## Description 
 Tumor-infiltrating lymphocytes have been established as a prognostic biomarker in early-stage triple negative breast cancer. The assessment of the density of stromal tumor-infiltrating lymphocytes at the time of diagnosis may improve the accuracy of prognosis determination and inform therapeutic decision-making.
@@ -39,18 +39,19 @@ Physicians
 5. Post-Course Assessment 
  * Complete the post-course assessment.
 
- require 'pathname'; puts Pathname.new('assets/img/salgado2014-fig4.jpg').relative_path_from(Pathname.new('assets/pages/training-2023/cmeCourse.md')).to_s # => ../../..
-
-
+ 
 ## Additional Information 
- * [Salgado et al. (2015)](https://doi.org/10.1093/annonc/mdu450) created a visual reference sheet to help users calibrate their sTILs assessments.  
-    ![alt text](assets/img/salgado2014-fig4.jpg)
+ * [Salgado et al. (2015)](https://doi.org/10.1093/annonc/mdu450) created a visual reference sheet to help users calibrate their sTILs assessments:  
+
+   ![sTILs cheatsheet](/salgado2014-fig4.jpg)
+
+   <!-- /../salgado2014-fig4.jpg/pages/cmeCourse.md -->
 
  * [sTILs reference document for the interactive Feedback test. ](/feedbackRefDoc.md)
 
- * [Downloadable presentation slides for the videos](assets/img/cmeCourseSlides-combined-final-20230217.pdf)
-
- * Additional *interactive training* on sTILs assessment is available [here](https://wolf.cci.emory.edu/camic/htt/login.html). 
+ * [Downloadable presentation slides for the videos]({{ site.url }}/download/cmeCourseSlides-combined-final-20230217.pdf)
+ 
+ * Additional **interactive training** on sTILs assessment is available [here](https://wolf.cci.emory.edu/camic/htt/login.html). 
 
  * For more information on the research project in which this course was developed (the High-Throughput Truthing project), please visit [https://ncihub.cancer.gov/groups/eedapstudies](https://ncihub.cancer.gov/groups/eedapstudies)
 
