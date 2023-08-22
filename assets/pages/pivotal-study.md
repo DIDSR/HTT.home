@@ -20,5 +20,5 @@ To participate in the HTT Pivotal Study, email your CME completion certificate t
 
 ## II. Interactive Training
  * To participate in the HTT Pivotal Study, you must complete the Proficiency Test on the sTILs assessment.
- * Visit [this link](https://ncihub.cancer.gov/groups/eedapstudies/wiki/HTTDataCollectionTrainingInteractive) to get started on the interactive training.
+ * Visit [this link](\training-2023\interactiveTraining-gettingStarted.md) to get started on the interactive training.
  * After completion of the Proficiency Test, email Brandon Gallas (brandon.gallas@fda.hhs.gov), so your annotations can be assessed.
