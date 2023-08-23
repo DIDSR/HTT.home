@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Mirror" of CME Course: Assessment of Stromal Tumor-Infiltrating Lymphocytes
+title: "Mirror of CME Course: Assessment of Stromal Tumor-Infiltrating Lymphocytes"
 ---
 
 
@@ -40,11 +40,9 @@ Physicians
 ## Additional Information 
  * [Salgado et al. (2015)](https://doi.org/10.1093/annonc/mdu450) created a visual reference sheet to help users calibrate their sTILs assessments:  
 
-   ![sTILs cheatsheet](/salgado2014-fig4.jpg)
+   ![sTILs cheatsheet](./images/salgado2014-fig4.jpg)
 
-   <!-- /../salgado2014-fig4.jpg/pages/cmeCourse.md -->
-
- * [sTILs reference document for the interactive Feedback test. ](/feedbackRefDoc.md)
+ * [sTILs reference document for the interactive Feedback test. ](./feedbackRefDoc.md)
 
  * [Downloadable presentation slides for the videos](./pdfs/cmeCourseSlides-combined-final-20230217.pdf)
  
