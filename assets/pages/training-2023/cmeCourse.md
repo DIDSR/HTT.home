@@ -49,7 +49,7 @@ Physicians
 
  * [sTILs reference document for the interactive Feedback test. ](/feedbackRefDoc.md)
 
- * [Downloadable presentation slides for the videos]({{ site.url }}/download/cmeCourseSlides-combined-final-20230217.pdf)
+ * [Downloadable presentation slides for the videos](./pdfs/cmeCourseSlides-combined-final-20230217.pdf)
  
  * Additional **interactive training** on sTILs assessment is available [here](https://wolf.cci.emory.edu/camic/htt/login.html). 
 

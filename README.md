@@ -7,3 +7,6 @@
     - install jekyll and bundler gems using command `gem install bundler jekyll` which will also install many dependent gems  
 - local deployment command: `bundle exec jekyll serve`  
 
+## Notes
+* Information at the bottom of each page is found in this file
+  * _includes/footer.html
