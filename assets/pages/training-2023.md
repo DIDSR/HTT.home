@@ -19,12 +19,9 @@ subtitle:
 * To participate in the HTT Pivotal Study, you must complete the Proficiency Test on the sTILs assessment.
 * Here is the link with instructions to get started on the interactive training: [LINK](/training-2023/interactiveTraining-gettingStarted.md).
 * After completing the Proficiency Test, email Brandon Gallas [brandon.gallas@fda.hhs.gov](mailto:brandon.gallas@fda.hhs.gov), to receive your proficiency test performance report.
+* An example Test Report for Feedback is available for viewing and download: [HERE.](./training-2023/pdfs/testReport-example-feedback1.pdf)  
+* An example Proficiency Test Report is also available: [HERE.](./training-2023/pdfs/testReport-example-proficiency1.pdf)  
 
-<!-- * [Getting Started](/training-2023/interactiveTraining-gettingStarted.md)  -->
-<!-- * [Example Test Report (Feedback)](/training-2023/exTestReport-Feedback.md) -->
-<!-- * [Example Test Report (Proficiency)](/training-2023/exTestReport-Proficiency.md) -->
-<!-- * [Feedback Study](/training-2023/feedbackRefDoc.md) -->
-<!-- * [Reference Doc PDF](/pdfs/caMicro-ProcessGuide-20230608.pdf)  -->
 
  
 
