@@ -5,20 +5,27 @@ subtitle: Steps to Join
 toc: true
 ---
 
-# Pivotal Study Requirements
+Greetings! Thank you for creating an account on the version of caMicroscope that is hosting the High-Throughput Truthing project collections. We value your time. You can get help and ask questions by replying to this email. Please be patient with us responding.
 
-## I. CME Course
- * The course is worth 3.00 CME credits.
- * Create an account on the [FDA CE portal](https://ceportal.fda.gov/).
- * Click on the “Online Learning” tab. 
- * Scroll down to our course: “Assessment of Stromal Tumor-Infiltrating Lymphocytes”. 
-  * You can also use the search function on the “Online Learning” page to search for “Assessment”.
- * [This mirror](/training-2023/cmeCourse.md) includes course materials available outside of the official CME course delivery platform. 
+If you’re interested in learning more about the HTT study, [here is an overview of the project](./whatIsHTT.md)
 
+Here is a link to download a process guide for the interactive training and data collection to refer back to as needed: [CaMicroscope Process Guide](./training-2023/pdfs/caMicro-ProcessGuide-20230821.pdf)
 
-To participate in the HTT Pivotal Study, email your CME completion certificate to Brandon Gallas (brandon.gallas@fda.hhs.gov).
+Below is an overview of the requirements to participate in the study. 
+1.	Required: Complete a continuing medical education (CME) course on the stromal tumor-infiltrating lymphocyte (sTILs) assessment (3.00 CME credits).  
+  **a.**	Directions to access information for the CME course and interactive training: [Training materials](./training-2023.md)  
+  **b.**	Please email your completion certificate to us, and we will enable the interactive training modules so you can complete the following two components.  
 
-## II. Interactive Training
- * To participate in the HTT Pivotal Study, you must complete the Proficiency Test on the sTILs assessment.
- * Visit [this link](\training-2023\interactiveTraining-gettingStarted.md) to get started on the interactive training.
- * After completion of the Proficiency Test, email Brandon Gallas (brandon.gallas@fda.hhs.gov), so your annotations can be assessed.
+2.	Optional: Complete a Training Test with Feedback on CaMicroscope [https://wolf.cci.emory.edu/camic/htt/login.html](https://wolf.cci.emory.edu/camic/htt/login.html) to receive interactive feedback on the sTILs assessment (30-60 minutes).  
+  **a.**	Directions to complete the interactive training modules can be found on page 7 of the Process Guide.  
+  **b.**	Please email us when complete, and we will send you your performance test report. You do not need to wait to proceed to the proficiency test.  
+  
+3.	Required: Complete and pass a Proficiency Test on CaMicroscope on the sTILs assessment (30-60 minutes).  
+  **a.**	Please email us when complete, and we will send you your performance test report.
+
+Once the requirements are satisfied, participants will be assigned pivotal study collections (30-60 min per collection).
+
+We welcome feedback on all aspects and materials.
+* Brandon.gallas@fda.hhs.gov, PI
+* Emma.Gardecki@fda.hhs.gov, Data-collection manager
+
