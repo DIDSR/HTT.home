@@ -8,7 +8,7 @@ Choose one of the platforms below to complete the HTT Interactive Training.
 
 * There are two interactive training modules: test with **feedback** and a **proficiency** test.
 * You will receive test reports for your performance on both the test with feedback and the proficiency test.
-* Here are example test reports: [testReport-example-feedback.pdf](/pdfs/testReport-example-feedback.pdf) and [testReport-example-proficiency.pdf](/pdfs/testReport-example-proficiency.pdf)
+* Here are example test reports: [testReport-example-feedback.pdf](./pdfs/testReport-example-feedback1.pdf) and [testReport-example-proficiency.pdf](./pdfs/testReport-example-proficiency.pdf)
 * Your performance in the test reports will be based on the data from a panel of six experts and will indicate whether you pass or not.
 * The test report for the test with **feedback** will include your data and the data from the panel of six experts to support your training.
 * A [reference document](/feedbackRefDoc.md) provides the scores, comments, and pitfalls from a panel of six experts for every ROI for the test with **feedback** to support your training.
