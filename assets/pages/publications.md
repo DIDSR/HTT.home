@@ -1,7 +1,6 @@
 ---
 layout: page
 title: HTT Publications
-subtitle: 
 ---
 
 ## Selected Works
