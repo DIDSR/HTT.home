@@ -9,7 +9,7 @@ Choose one of the platforms below to complete the HTT Interactive Training.
 
 * You will receive performance test reports for your performance on both the Feedback and Proficiency Tests.
 
-* [Email project organizers](../team.html) to request your performance test reports.
+* [Email project organizers](../team.md) to request your performance test reports.
 
 * Here are example test reports: [testReport-example-feedback.pdf](./pdfs/testReport-example-feedback1.pdf) and [testReport-example-proficiency.pdf](./pdfs/testReport-example-proficiency1.pdf)
 
@@ -17,7 +17,7 @@ Choose one of the platforms below to complete the HTT Interactive Training.
 
 * The performance test report for the **Feedback Test** will include your data and the data from the panel of six experts to support your training.
 
-* A [reference document](feedbackRefDoc.html) provides the scores, comments, and pitfalls from a panel of six experts for every ROI for the test with **Feedback Test** to support your training.
+* A [reference document](feedbackRefDoc.md) provides the scores, comments, and pitfalls from a panel of six experts for every ROI for the test with **Feedback Test** to support your training.
 
 
 ---
@@ -46,5 +46,5 @@ In order to participate in the HTT Pivotal Study, participants must pass the **P
 * Login: [https://htt.pathpresenter.net/](https://htt.pathpresenter.net/)
 
 ## The HTT Pivotal Study
-If you would like to proceed with collecting annotations for the HTT Pivotal Study, please [email project organizers](../team.html) to notify them that you have completed the interactive training. They will process your data and send you your performance test reports.
+If you would like to proceed with collecting annotations for the HTT Pivotal Study, please [email project organizers](../team.md) to notify them that you have completed the interactive training. They will process your data and send you your performance test reports.
 

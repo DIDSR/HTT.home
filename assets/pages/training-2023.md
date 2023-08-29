@@ -6,11 +6,11 @@ title: Training Materials
 
 ## CME Course Info and Mirror
 
-* To participate in the HTT Pivotal Study, you must email your CME completion certificate to [project organizers](./team.html).
+* To participate in the HTT Pivotal Study, you must email your CME completion certificate to [project organizers](./team.md).
 
 * The course is worth 3.00 CME credits.
 
-* Here is the [CME course info and mirror.](training-2023/cmeCourse.html)
+* Here is the [CME course info and mirror.](training-2023/cmeCourse.md)
 
 * Here is the official CME course portal: [FDA CE portal](https://ceportal.fda.gov/)
     a. Create an account.
@@ -21,11 +21,11 @@ title: Training Materials
 
 * To participate in the HTT Pivotal Study, you must take and pass the *Proficiency Test* on the sTILs assessment.
 
-* Here is the link with instructions to get started on the interactive training: [LINK](training-2023/interactiveTraining-gettingStarted.html).
+* Here is the link with instructions to get started on the interactive training: [LINK](training-2023/interactiveTraining-gettingStarted.md).
 
 * There are two interactive training tests: a *Feedback Test* (optional: 30-60 minutes) and a *Proficiency Test* (required: 30-60 minutes).
 
-* After completing either interactive training test, [email project organizers](team.html) to receive your performance test report.
+* After completing either interactive training test, [email project organizers](team.md) to receive your performance test report.
 
 * An example *Feedback Test* test report is available for viewing and download: [HERE.](training-2023/pdfs/testReport-example-feedback1.pdf)  
 
