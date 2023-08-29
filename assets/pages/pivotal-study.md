@@ -1,5 +1,5 @@
 ---
-title: "Join the Pivotal Study"
+title: "About the Pivotal Study"
 layout: page
 subtitle: Steps to Join
 ---
