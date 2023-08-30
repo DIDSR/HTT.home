@@ -11,7 +11,7 @@ comments: true
 ## August 2023
 
 {: .box-success}
-Highlight!
+New HTT project website was launched: [https://didsr.github.io/HTT.home](https://didsr.github.io/HTT.home)
 
 * New HTT project website was launched: [https://didsr.github.io/HTT.home](https://didsr.github.io/HTT.home)
 
@@ -48,7 +48,7 @@ Highlight!
 ## June 2023
 
 {: .box-success}
-Highlight!
+We launched our pivotal study!
 
 * We launched our pivotal study!
 
@@ -61,7 +61,7 @@ Highlight!
     * [One Page Recruiting Flyer for printing and posting on your bulletin board](../assets/pages/pivotal-study/pdfs-images/recruitReadersFlyer-2023.pdf).
     
 {: .box-success}
-Highlight!
+We launched our interactive training modules.
 
 * We launched our interactive training modules.
 
@@ -82,9 +82,9 @@ Highlight!
     * We have 32 more slides that have not been scanned yet. Total 156!
 
 {: .box-success}
-Highlight!
+Launch FDA-hosted online continuing medical education (CME) course!
 
-* Launch FDA-hosted online continuing medical education (CME) course
+* Launch FDA-hosted online continuing medical education (CME) course!
 
     * [https://ceportal.fda.gov/](https://ceportal.fda.gov/)
     
