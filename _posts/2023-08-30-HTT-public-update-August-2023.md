@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Update October 2022
+title: Update August 2023
 subtitle: Presentations and Progress
 gh-repo: DIDSR/HTT
 gh-badge: [star, fork, follow]
@@ -47,7 +47,9 @@ comments: true
 * We have launched our pivotal study!
 
     * 5 batches of 8 slides curated - 10 ROIs per image - 400 ROIs.
-
+    
+    * Please share and post [this recruiting flyer](https://didsr.github.io/HTT.home/assets/pages/pivotal-study/pdfs-images/recruit/ReadersFlyer-2023.pdf).
+    
 * We have launched our interactive training modules.
 
     * Here is the link with information and instructions to get started on the interactive training [LINK](https://didsr.github.io/HTT.home/assets/pages/training-2023/interactiveTraining-gettingStarted)
@@ -62,13 +64,15 @@ comments: true
 
 ## March 2023
 
-* Sourced and scanned 33 more H&E slides of TNBC core biopsies. Total 119!
+* Sourced and scanned 38 more H&E slides of TNBC core biopsies. Total 124!
+
+    * We have 32 more slides that have not been scanned yet. Total 156!
 
 * Launch FDA-hosted online continuing medical education (CME) course
 
     * https://ceportal.fda.gov/
     
-<img src="../assets/pages/training-2023/images/cmeTilsAd.png" alt="drawing" width="500"/>
+<img src="https://didsr.github.io/HTT.home/assets/pages/training-2023/images/cmeTilsAd.png" alt="drawing" width="500"/>
 
 
 

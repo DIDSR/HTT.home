@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Update October 2022
+title: Update November 2022
 subtitle: Presentations and Progress
 gh-repo: DIDSR/HTT
 gh-badge: [star, fork, follow]
