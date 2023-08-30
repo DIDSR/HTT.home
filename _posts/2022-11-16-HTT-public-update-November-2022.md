@@ -69,7 +69,7 @@ Link to Session Info
 
     * *We hope to schedule a redux of the session to be hosted by PIcc.*
     
-* Published: Hongfei Du, Si Wen, Yufei Guo, Fang Jin, and Brandon D. Gallas, “Single reader between-cases AUC estimator with nested data,” Stat Methods Med Res, p. 9622802221111540, Jul. 2022, doi: https://journals.sagepub.com/doi/10.1177/09622802221111539.
+* Published: Hongfei Du, Si Wen, Yufei Guo, Fang Jin, and Brandon D. Gallas, “Single reader between-cases AUC estimator with nested data,” Stat Methods Med Res, p. 9622802221111540, Jul. 2022, doi: [https://journals.sagepub.com/doi/10.1177/09622802221111539](https://journals.sagepub.com/doi/10.1177/09622802221111539).
 
 ## June 2022
 
