@@ -23,3 +23,6 @@ index [Home]  _ whatIsHTT.md
 	&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|_ [images]  
 	&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;|_ salgado2014-fig4.jpg  
 	
+
+# Links between assets and pages
+![siteDiagram_20230829](https://github.com/DIDSR/HTT.home/assets/113394189/5c1fc948-139c-4fa6-81e6-34cb9ad00aa2)
