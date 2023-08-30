@@ -10,7 +10,7 @@ comments: true
 
 ## August 2023
 
-* New HTT project website was launched: https://didsr.github.io/HTT.home
+* New HTT project website was launched: [https://didsr.github.io/HTT.home](https://didsr.github.io/HTT.home)
 
     * The NCI is decomissioning the hub where we have been sharing our work and collaborating since 2017. So sad.
     
@@ -24,9 +24,9 @@ comments: true
     
 * Contract awarded to Yale University to collect pathologist annotations on the eeDAP microscope system.
 
-    * eeDAP: evaluation environment for digital and analog pathology (https://www.doi.org/10.1117/1.JMI.1.3.037501)
+    * eeDAP: evaluation environment for digital and analog pathology [https://www.doi.org/10.1117/1.JMI.1.3.037501](https://www.doi.org/10.1117/1.JMI.1.3.037501)
     
-    * If you are near to Yale (New Haven, CT), email kim.blenman@yale.edu to find out more. Your time will be compensated. 
+    * If you are near to Yale (New Haven, CT), email [kim.blenman@yale.edu](mailto:kim.blenman@yale.edu) to find out more. Your time will be compensated. 
     
     
     
@@ -48,17 +48,17 @@ comments: true
 
     * 5 batches of 8 slides curated - 10 ROIs per image - 400 ROIs.
     
-    * Please share and post [this recruiting flyer](https://didsr.github.io/HTT.home/assets/pages/pivotal-study/pdfs-images/recruit/ReadersFlyer-2023.pdf).
+    * Please share and post [this recruiting flyer](../assets/pages/pivotal-study/pdfs-images/recruitReadersFlyer-2023.pdf).
     
 * We have launched our interactive training modules.
 
-    * Here is the link with information and instructions to get started on the interactive training [LINK](https://didsr.github.io/HTT.home/assets/pages/training-2023/interactiveTraining-gettingStarted)
+    * Here is the link with information and instructions to get started on the interactive training [LINK](../assets/pages/training-2023/interactiveTraining-gettingStarted.html)
     
     * There are two interactive training tests: a Feedback Test (optional: 30-60 minutes) and a Proficiency Test (required: 30-60 minutes). 
     
     * After completing either interactive training test, performance test report will be compiled and shared with the user.
     
-    * Here are example test reports: [testReport-example-feedback.pdf](https://didsr.github.io/HTT.home/assets/pages/training-2023/pdfs/testReport-example-feedback1.pdf) and [testReport-example-proficiency.pdf](https://didsr.github.io/HTT.home/assets/pages/training-2023/pdfs/testReport-example-proficiency1.pdf)
+    * Here are example test reports: [testReport-example-feedback.pdf](../assets/pages/training-2023/pdfs/testReport-example-feedback1.pdf) and [testReport-example-proficiency.pdf](../assets/pages/training-2023/pdfs/testReport-example-proficiency1.pdf)
 
 
 
@@ -70,9 +70,9 @@ comments: true
 
 * Launch FDA-hosted online continuing medical education (CME) course
 
-    * https://ceportal.fda.gov/
+    * [https://ceportal.fda.gov/](https://ceportal.fda.gov/)
     
-<img src="https://didsr.github.io/HTT.home/assets/pages/training-2023/images/cmeTilsAd.png" alt="drawing" width="500"/>
+<img src="../assets/pages/training-2023/images/cmeTilsAd.png" alt="drawing" width="500"/>
 
 
 
