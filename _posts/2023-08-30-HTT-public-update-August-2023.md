@@ -52,7 +52,7 @@ comments: true
     
 * We have launched our interactive training modules.
 
-    * Here is the link with information and instructions to get started on the interactive training [LINK](../assets/pages/training-2023/interactiveTraining-gettingStarted.html)
+    * Here is the link with information and instructions to get started on the interactive training [LINK](../assets/pages/training-2023/interactiveTraining-gettingStarted)
     
     * There are two interactive training tests: a Feedback Test (optional: 30-60 minutes) and a Proficiency Test (required: 30-60 minutes). 
     
