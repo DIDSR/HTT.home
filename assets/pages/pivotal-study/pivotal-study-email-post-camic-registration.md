@@ -7,7 +7,7 @@ toc: true
 
 Greetings! Thank you for creating an account on the version of caMicroscope that is hosting the High-Throughput Truthing project collections. We value your time. You can get help and ask questions by replying to this email. Please be patient with us responding.
 
-If you’re interested in learning more about the HTT study, [here is an overview of the project](/../whatIsHTT)
+If you’re interested in learning more about the HTT study, [here is an overview of the project](\..\whatIsHTT.md)
 
 Here is a link to download a process guide for the interactive training and data collection to refer back to as needed: [CaMicroscope Process Guide](/../training-2023/pdfs/caMicro-ProcessGuide-20230821.pdf)
 
