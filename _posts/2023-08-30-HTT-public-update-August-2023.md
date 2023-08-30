@@ -10,17 +10,20 @@ comments: true
 
 ## August 2023
 
+{: .box-success}
+New HTT project website was launched: [https://didsr.github.io/HTT.home](https://didsr.github.io/HTT.home)
+
 * New HTT project website was launched: [https://didsr.github.io/HTT.home](https://didsr.github.io/HTT.home)
 
     * The NCI is decomissioning the hub where we have been sharing our work and collaborating since 2017. So sad.
     
     * The transition from our [legacy hub group](https://ncihub.cancer.gov/groups/eedapstudies) is a work in progress.
 
-* Manuscript in production: *Initial Interactions with the FDA on Developing a Validation Dataset as a Medical Device Development Tool* - **Journal of Pathology**
+* Manuscript accepted and in production: *Initial Interactions with the FDA on Developing a Validation Dataset as a Medical Device Development Tool* - **Journal of Pathology**
 
     * Steven Hart (Department of Laboratory Medicine and Pathology, Mayo Clinic), et al.
 
-    * Link will be added here!
+    * Link will be added to our [Zotero library](../assets/pages/publications.html)!
     
 * Contract awarded to Yale University to collect pathologist annotations on the eeDAP microscope system.
 
@@ -44,13 +47,23 @@ comments: true
 
 ## June 2023
 
-* We have launched our pivotal study!
+{: .box-success}
+We launched our pivotal study!
+
+* We launched our pivotal study!
 
     * 5 batches of 8 slides curated - 10 ROIs per image - 400 ROIs.
     
-    * Please share and post [this recruiting flyer](../assets/pages/pivotal-study/pdfs-images/recruitReadersFlyer-2023.pdf).
+    * Please share and post our information about joining the pivotal study.
     
-* We have launched our interactive training modules.
+    * [Wiki Page](../assets/pages/pivotal-study.html).
+    
+    * [One Page Recruiting Flyer for printing and posting on your bulletin board](../assets/pages/pivotal-study/pdfs-images/recruitReadersFlyer-2023.pdf).
+    
+{: .box-success}
+We launched our interactive training modules.
+
+* We launched our interactive training modules.
 
     * Here is the link with information and instructions to get started on the interactive training [LINK](../assets/pages/training-2023/interactiveTraining-gettingStarted)
     
@@ -68,7 +81,10 @@ comments: true
 
     * We have 32 more slides that have not been scanned yet. Total 156!
 
-* Launch FDA-hosted online continuing medical education (CME) course
+{: .box-success}
+Launch FDA-hosted online continuing medical education (CME) course!
+
+* Launch FDA-hosted online continuing medical education (CME) course!
 
     * [https://ceportal.fda.gov/](https://ceportal.fda.gov/)
     
