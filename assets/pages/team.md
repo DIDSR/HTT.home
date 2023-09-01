@@ -3,7 +3,12 @@ layout: page
 title: HTT Team
 ---
 
-Learn about the FDA team. 
+We welcome feedback on all aspects and materials.
+
+* Brandon.Gallas@fda.hhs.gov, PI
+* Emma.Gardecki@fda.hhs.gov, Data-collection manager
+
+[Click here to open an email to get help, ask questions, or provide feedback on any aspect of the project.](mailto:brandon.gallas@fda.hhs.gov; emma.gardecki@fda.hhs.gov)
 
 
 
