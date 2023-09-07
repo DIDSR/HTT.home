@@ -12,10 +12,10 @@ title: Training Materials
 
 * Here is the [CME course info and mirror.](training-2023/cmeCourse.md)
 
-* Here is the official CME course portal: [FDA CE portal](https://ceportal.fda.gov/)
-    a. Create an account.
-    a. Click on the "Online Learning" tab.
-    a. Scroll down to the course: "Assessment of Stromal Tumor-Infiltrating Lymphocytes"
+* Here is the official CME course portal: [FDA CE portal](https://ceportal.fda.gov/)  
+    a. Create an account.  
+    b. Click on the "Online Learning" tab.  
+    c. Scroll down to the course: "Assessment of Stromal Tumor-Infiltrating Lymphocytes"  
 
 ## Interactive Training
 

@@ -4,6 +4,15 @@ title: "Mirror of CME Course: Assessment of Stromal Tumor-Infiltrating Lymphocyt
 ---
 
 
+* To participate in the HTT Pivotal Study, you must email your CME completion certificate to [project organizers](../team.md).
+
+* To find information on the next steps of participation, visit the [Interactive Training page.](/interactiveTraining-gettingStarted.md)
+
+* Here is the official CME course portal: [FDA CE portal](https://ceportal.fda.gov/)  
+    a. Create an account.  
+    b. Click on the "Online Learning" tab.  
+    c. Scroll down to the course: "Assessment of Stromal Tumor-Infiltrating Lymphocytes"  
+
 ## Description 
 Tumor-infiltrating lymphocytes have been established as a prognostic biomarker in early-stage triple negative breast cancer. The assessment of the density of stromal tumor-infiltrating lymphocytes at the time of diagnosis may improve the accuracy of prognosis determination and inform therapeutic decision-making.
 
