@@ -6,6 +6,8 @@ subtitle: Steps to Join
 
 Thank you for your interest in the HTT pivotal study. We are **recruiting volunteers** to provide annotations of stromal tumor infiltrating lymphocytes (sTILs) that will be used for validating artificial intelligence and machine learning models. You can refer to this [process guide](training-2023/pdfs/caMicro-ProcessGuide-20230821.pdf) or [3-minute video](https://vimeo.com/843982034) to learn about the annotation process. For more information about the project, please refer to our [publications page](/publications.md).
 
+- [Recruiting flyer - wiki page for copying into an email](./process-guides/recruitReadersFlyer.md)
+- [Recruiting flyer - pdf for printing and posting](./pivotal-study/pdfs-images/recruitReadersFlyer-2023.pdf)
 
 There are two types of training required to participate in the HTT pivotal study: knowledge-based training in the form of a CME course and interactive training, where annotations are collected for real images. [Click here](/training-2023.md) for an outline and instructions for the required training.
 

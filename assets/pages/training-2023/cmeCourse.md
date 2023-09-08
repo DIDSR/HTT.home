@@ -1,8 +1,17 @@
 ---
 layout: page
-title: "Mirror of CME Course: Assessment of Stromal Tumor-Infiltrating Lymphocytes"
+title: "CME Course Information"
+subtitle: "Assessment of Stromal Tumor-Infiltrating Lymphocytes"
 ---
 
+# Official CME course 
+* [FDA CE portal](https://ceportal.fda.gov/)  
+* Create an account.  
+* Click on the "Online Learning" tab.  
+* Scroll down to the course: "Assessment of Stromal Tumor-Infiltrating Lymphocytes"  
+
+---
+# Mirror of CME Course
 
 ## Description 
 Tumor-infiltrating lymphocytes have been established as a prognostic biomarker in early-stage triple negative breast cancer. The assessment of the density of stromal tumor-infiltrating lymphocytes at the time of diagnosis may improve the accuracy of prognosis determination and inform therapeutic decision-making.
