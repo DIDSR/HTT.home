@@ -1,10 +1,7 @@
 ---
 layout: page
 title: What is HTT?
-subtitle: Background and Publications
 ---
-
-This page tells you a little bit about the project.
 
 # Our Goal
 The goal of the High-Throughput Truthing (HTT) project is to produce a **validation dataset** established by pathologist annotations for artificial intelligence algorithms analyzing digital scans of pathology slides: data (images + annotations). We are pursuing the qualification of the final validation dataset as an FDA-qualified medical device development tool [MDDT](https://www.fda.gov/medical-devices/medical-device-development-tools-mddt) to become a high-value public resource that can be used in AI/ML algorithm submissions and guide others to develop quality validation datasets. 
