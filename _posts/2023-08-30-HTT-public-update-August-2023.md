@@ -58,7 +58,7 @@ We launched our pivotal study!
     
     * [Wiki Page](../assets/pages/pivotal-study.html).
     
-    * [One Page Recruiting Flyer for printing and posting on your bulletin board](../assets/pages/pivotal-study/pdfs-images/recruitReadersFlyer-2023.pdf).
+    * [One Page Recruiting Flyer for printing and posting on your bulletin board](../assets/pages/process-guides/pdfs-images/recruitReadersFlyer-2023.pdf).
     
 {: .box-success}
 We launched our interactive training modules.
@@ -72,6 +72,8 @@ We launched our interactive training modules.
     * After completing either interactive training test, performance test report will be compiled and shared with the user.
     
     * Here are example test reports: [testReport-example-feedback.pdf](../assets/pages/training-2023/pdfs/testReport-example-feedback1.pdf) and [testReport-example-proficiency.pdf](../assets/pages/training-2023/pdfs/testReport-example-proficiency1.pdf)
+    
+    * Here is the R markdown that creates the test report: [testReport.Rmd](../assets/pages/training-2023/pdfs/testReport.Rmd)
 
 
 
