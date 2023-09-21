@@ -1,0 +1,1687 @@
+---
+title: "HTT Test Report"
+date: "`r format(Sys.time(), '%d %B, %Y - %X')`"
+
+bibliography: testReport.bib
+csl: ieee.csl
+
+output:
+  bookdown::pdf_document2:
+    toc: false
+    number_sections: true
+
+  bookdown::word_document2:
+    toc: false
+    number_sections: true
+
+  word_document: default
+  pdf_document: default
+  github_document:
+  html_document:
+    df_print: paged
+
+urlcolor: blue
+always_allow_html: true
+
+params:
+  dataLabel: "pivotal"
+  testLabel: "feedback1"
+  modalityID: "camic"
+  reader.cur: "6462aa909e5cb8001c28d34b"
+
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+
+# pivotal study readers
+# 6462aa909e5cb8001c28d34b 
+# 6463645a911fb10013002ccf 
+# 64881d6f4ce1a6001bacbde4
+
+knitr::opts_chunk$set(echo = TRUE)
+
+# Need to set knitr format to "latex" for bookdown render
+# https://stackoverflow.com/questions/76118194/error-when-loading-kableextra-in-markdown-file-after-updating-to-r-4-3-0
+options(knitr.table.format = "latex")
+
+library(knitr)
+
+# Read input parameters
+testLabel <- params$testLabel
+dataLabel <- params$dataLabel
+reader.cur <- params$reader.cur
+modalityID <- params$modalityID
+
+
+
+# This code exit knit early
+# knitr::knit_exit()
+
+```
+
+
+```{r knitr params, echo=FALSE}
+
+# Check the current input and output type
+# https://rdrr.io/cran/knitr/man/output_type.html
+
+# cat(knitr::opts_knit$get('rmarkdown.pandoc.from'))
+#   with the word output, this is
+#   markdown+autolink_bare_uris+tex_math_single_backslash
+#
+#   with the pdf output, this is
+#   markdown+autolink_bare_uris+tex_math_single_backslash
+
+# cat(knitr::opts_knit$get('rmarkdown.pandoc.to'))
+#   with the word output, this is
+#   docx
+#
+#   with the pdf output, this is
+#   latex
+
+# # this tests if the output is word (TRUE/FALSE)
+# knitr::pandoc_to("docx")
+# # this tests if the output is pdf (TRUE/FALSE)
+# knitr::pandoc_to("latex")
+
+# Formatting tables with kableExtra causes real problems for word.
+# Formatting tables with kableExtra causes warnings in pdf (==latex)
+#   Suppress the warnings in setup chunk. Or ...
+if (knitr::pandoc_to("latex"))
+  suppressWarnings(library(kableExtra))
+
+
+```
+
+
+```{r init thresholds, echo=FALSE}
+
+# Init thresholds for analysis
+thresholds <- c(10, 40)
+nThresholds <- length(thresholds)
+
+```
+
+
+```{r init test and experts, echo=FALSE}
+
+# Get the expert data
+mrmcExpert <- HTT::mrmcExpert
+mrmcExpert.feedback <- mrmcExpert[mrmcExpert$batch == "feedback", ]
+mrmcExpert.proficiency <- mrmcExpert[mrmcExpert$batch == "proficiency", ]
+
+if (testLabel == "feedback1" | testLabel == "feedback2") {
+  
+  # Select the feedback expert data
+  mrmcExpert <- mrmcExpert.feedback
+  
+  # Set the flag to provide feedback
+  feedbackTF <- TRUE
+
+} else if (testLabel == "proficiency1" | testLabel == "proficiency2") {
+  
+  # Select the feedback expert data
+  mrmcExpert <- mrmcExpert.proficiency
+  
+  # Set the flag to NOT provide feedback
+  feedbackTF <- FALSE
+
+} else {
+  
+  print(paste("testLabel:", testLabel))
+  print("testLabel is not recognized.")
+  knitr::knit_exit()
+  
+}
+
+# Refactor expert data
+mrmcExpert$batch <- factor(mrmcExpert$batch)
+mrmcExpert$WSI <- factor(mrmcExpert$WSI)
+mrmcExpert$caseID <- factor(mrmcExpert$caseID)
+
+# Set the experts
+experts <- levels(mrmcExpert$readerID)
+nExperts <- nlevels(mrmcExpert$readerID)
+
+# Set the testROIs
+testROIs <- levels(mrmcExpert$caseID)
+
+```
+
+
+```{r init reader data, echo=FALSE}
+
+if (dataLabel == "pivotal") {
+  
+  # Analyze the data
+  pivotalHTT.cur <- HTT::pivotalHTT
+  pivotalHTT.cur <- pivotalHTT.cur[pivotalHTT.cur$batch == testLabel, ]
+  readers <- unique(pivotalHTT.cur$readerID)
+
+} else if (dataLabel == "pilot") {
+  
+  # Analyze the pilot study data
+  pivotalHTT.cur <- HTT::statsByCase$Select.CrowdFC$mrmcDF
+  readers <- unique(pivotalHTT.cur$readerID)
+  
+} else {
+  
+  print(paste("dataLabel:", dataLabel))
+  print("dataLabel is not recognized.")
+  knitr::knit_exit()
+  
+}
+
+
+if (reader.cur %in% readers) {
+  
+  pivotalHTT.cur <- pivotalHTT.cur[pivotalHTT.cur$readerID == reader.cur, ]
+
+} else {
+  
+  print(paste("reader.cur:", reader.cur))
+  print("reader.cur is not recognized.")
+  knitr::knit_exit()
+  
+}
+
+
+# Limit data to the modality ID
+pivotalHTT.cur <- pivotalHTT.cur[pivotalHTT.cur$modalityID == modalityID, ]
+
+
+# Check that the reader read all the data
+cases.unexpected <- NULL
+cases.missing <- NULL
+if (!identical(
+    sort(as.character(testROIs)),
+    sort(as.character(pivotalHTT.cur$caseID))
+  )
+) {
+
+  # Find and remove unexpected cases
+  cases.unexpected <- as.character(
+    pivotalHTT.cur[!(pivotalHTT.cur[, "caseID"] %in% testROIs), "caseID"]
+  )
+  
+  if (length(cases.unexpected) > 0) {
+    # Remove unexpected ROIs
+    pivotalHTT.cur <- pivotalHTT.cur[!(pivotalHTT.cur$caseID %in% cases.unexpected), ]
+  }
+
+  # Identify cases that are missing
+  cases.missing <- testROIs[!(testROIs %in% pivotalHTT.cur[, "caseID"])]
+
+}
+
+```
+
+
+
+```{r init mrmcDF, echo=FALSE}
+
+# Create an MRMC data frame for the experts
+mrmcDF.experts <- data.frame(
+  readerID = mrmcExpert$readerID,
+  caseID = mrmcExpert$caseID,
+  modalityID = modalityID,
+  score = mrmcExpert$score
+)
+mrmcDF.experts$readerID <- factor(mrmcDF.experts$readerID)
+mrmcDF.experts$caseID <- factor(mrmcDF.experts$caseID)
+mrmcDF.experts$modalityID <- factor(mrmcDF.experts$modalityID)
+
+
+
+# Create an MRMC data frame for the crowd reader
+mrmcDF.reader <- data.frame(
+  readerID = pivotalHTT.cur$readerID,
+  caseID = pivotalHTT.cur$caseID,
+  modalityID = modalityID,
+  score = pivotalHTT.cur$score
+)
+mrmcDF.reader$readerID <- factor(mrmcDF.reader$readerID)
+mrmcDF.reader$caseID <- factor(mrmcDF.reader$caseID)
+mrmcDF.reader$modalityID <- factor(mrmcDF.reader$modalityID)
+
+
+
+# Combine the two data frames,
+# one row for each reader-by-case observation
+mrmcDF <- rbind(mrmcDF.experts, mrmcDF.reader)
+mrmcDF$readerID <- factor(mrmcDF$readerID)
+mrmcDF$caseID <- factor(mrmcDF$caseID)
+mrmcDF$modalityID <- factor(mrmcDF$modalityID)
+
+
+
+# Create an MRMC data frame for the average expert score
+mrmcExpert.SplitByCase <- split(mrmcDF.experts, mrmcDF.experts$caseID)
+
+mrmcDF.AvgExperts <- data.frame()
+mrmcExpert.cur <- mrmcExpert.SplitByCase[[1]]
+for (mrmcExpert.cur in mrmcExpert.SplitByCase) {
+  
+  mrmcDF.AvgExperts <- rbind(mrmcDF.AvgExperts, data.frame(
+    readerID = "avgExperts",
+    caseID = mrmcExpert.cur$caseID[1],
+    modalityID = "avgExperts",
+    score = mean(mrmcExpert.cur$score, na.rm = TRUE)
+  ))
+}
+mrmcDF.AvgExperts$readerID <- factor(mrmcDF.AvgExperts$readerID)
+mrmcDF.AvgExperts$caseID <- factor(mrmcDF.AvgExperts$caseID)
+mrmcDF.AvgExperts$modalityID <- factor(mrmcDF.AvgExperts$modalityID)
+
+```
+
+
+
+```{r init mrmcDF.merge, echo=FALSE}
+
+# Combine the two data frames with reader and expert scores as columns,
+# one row for each case
+mrmcDF.merge <- mrmcDF.reader[, c("caseID", "score")]
+names(mrmcDF.merge) <- c("caseID", "reader")
+for (i in 1:nExperts) {
+
+  mrmcDF.cur <- mrmcDF.experts[ mrmcDF.experts$readerID == experts[i], ]
+  mrmcDF.cur <- mrmcDF.cur[, c("caseID", "score")]
+  names(mrmcDF.cur) <- c("caseID", paste("Expert", i, sep = "."))
+  
+  mrmcDF.merge <- merge(
+    mrmcDF.merge,
+    mrmcDF.cur,
+    by = "caseID")
+
+}
+
+# Change caseID names to rm coordinates
+
+# Remove x and y coordinates from caseIDs
+mrmcDF.merge$caseID <- purrr::map(strsplit(
+  as.character(mrmcDF.merge$caseID), split = "_x"), 1)
+
+# Reformat to be a data frame of numbers only
+mrmcDF.merge_matrix <- data.matrix(subset(mrmcDF.merge, select = -caseID))
+rownames(mrmcDF.merge_matrix) <- mrmcDF.merge$caseID
+mrmcDF.merge <- mrmcDF.merge_matrix
+
+
+```
+
+
+
+```{r init agreement reader vs. experts, echo=FALSE, results='asis'}
+
+# Compare reader to all experts for all thresholds
+joint3x3 <- NULL
+evaluable2x2 <- NULL
+threshold2x2 <- NULL
+for (threshold in thresholds) {
+  
+  desc.threshold <- paste("threshold", threshold, sep = "")
+  
+  # Loop over all experts
+  expert <- experts[1]
+  for (expert in experts) {
+    
+    # Filter the data for the current expert
+    mrmcExpert.cur <- mrmcExpert[mrmcExpert$readerID == expert, ]
+    
+    # Remove cases that were missing from the reader data
+    mrmcExpert.cur <- mrmcExpert.cur[!(mrmcExpert.cur$caseID %in% cases.missing), ]
+    
+    # Sort the data to be the same for both the reader and expert data frames
+    pivotalHTT.cur <- pivotalHTT.cur[order(pivotalHTT.cur$caseID), ]
+    mrmcExpert.cur <- mrmcExpert.cur[order(mrmcExpert.cur$caseID), ]
+
+    # Compare reader to expert
+    result <- HTT::binDo(mrmcExpert.cur, pivotalHTT.cur, threshold = threshold) 
+    
+    df.base <- data.frame(data = testLabel)
+    
+    joint3x3 <- rbind(
+      joint3x3,
+      cbind(df.base, result$joint3x3)
+    )
+    evaluable2x2 <- rbind(
+      evaluable2x2,
+      cbind(df.base, result$evaluable2x2)
+    )
+    threshold2x2 <- rbind(
+      threshold2x2,
+      cbind(df.base, result$threshold2x2)
+    )
+    
+  }
+
+}
+
+```
+
+
+
+```{r init agreement experts vs. experts, echo=FALSE}
+# Compare reader to all experts for all thresholds
+joint3x3.experts <- NULL
+evaluable2x2.experts <- NULL
+threshold2x2.experts <- NULL
+for (threshold in thresholds) {
+  
+  desc.threshold <- paste("threshold", threshold, sep = "")
+  
+  # Loop over all pairs of experts
+  expert1 <- experts[1]
+  expert2 <- experts[2]
+  for (expert1 in experts) {
+    for (expert2 in experts) {
+      
+      if (expert1 == expert2) next
+    
+      # Filter the data for the current pair of experts
+      mrmcExpert1.cur <- mrmcExpert[mrmcExpert$readerID == expert1, ]
+      mrmcExpert2.cur <- mrmcExpert[mrmcExpert$readerID == expert2, ]
+      
+      # Compare reader to expert
+      result <- HTT::binDo(mrmcExpert1.cur, mrmcExpert2.cur, threshold = threshold)
+      
+      df.base <- data.frame(data = testLabel)
+      
+      joint3x3.experts <- rbind(
+        joint3x3.experts,
+        cbind(df.base, result$joint3x3)
+      )
+      evaluable2x2.experts <- rbind(
+        evaluable2x2.experts,
+        cbind(df.base, result$evaluable2x2)
+      )
+      threshold2x2.experts <- rbind(
+        threshold2x2.experts,
+        cbind(df.base, result$threshold2x2)
+      )
+      
+    }
+  }
+}
+
+```
+
+
+
+```{r init show.agreement, echo=FALSE}
+
+# This function plots the percent agreement below a threshold
+# for crowd.cur vs. the experts and for experts vs. experts
+show.agreement <- function(joint3x3, joint3x3.experts, threshold,
+                         expert.class = "expert.LE") {
+  
+  # Select the crowd.cur vs. experts agreement results 
+  # expert.class = expert.LE or expert.GT
+  cur2x2 <- joint3x3[joint3x3$threshold == threshold, ]
+  cur2x2 <- cur2x2[cur2x2$expert.class == expert.class, ]
+  
+  # Select all expert vs. expert LE agreement results
+  cur2x2.experts <- joint3x3.experts[
+    joint3x3.experts$threshold == threshold, ]
+  cur2x2.experts <- cur2x2.experts[cur2x2.experts$expert.class == expert.class, ]
+
+  # Identify experts
+  experts <- unique(cur2x2.experts$expert)
+  nExperts <- length(experts)
+  
+  # Prepare plot data
+  agree.reader <- NULL
+  agree.expert <- NULL
+  for (i in 1:nExperts) {
+
+    # Get agreement of the reader with each expert i (ref).
+    x.reader <- i
+    y.reader <- round(
+      cur2x2[cur2x2$expert == experts[i], "fractionAgree", ], digits = 3)
+    agree.cur <- data.frame(x = x.reader, y = y.reader)
+    agree.reader <- rbind(agree.reader, agree.cur)
+
+    # Get agreement of other experts (reader) with each expert i (ref).
+    x.reader <- rep(7 + i, 5)
+    y.reader <- round(
+      cur2x2.experts[cur2x2.experts$expert == experts[i], "fractionAgree"],
+      digits = 3)
+    agree.cur <- data.frame(x = x.reader, y = y.reader)
+    agree.expert <- rbind(agree.expert, agree.cur)
+  }
+  minAgree <- min(agree.expert$y)
+  agree.plot <- rbind(agree.reader, agree.expert)
+
+  # Prepare plot theme
+  library(ggplot2)
+  ggplot2::theme_set( 
+    ggplot2::theme_minimal() +
+      ggplot2::theme(
+        axis.text.x = ggplot2::element_text(size = 12, face = "bold"),
+        axis.text.y = ggplot2::element_text(size = 12, face = "bold"),
+        axis.line = ggplot2::element_line( linewidth = 1, linetype = "solid")
+      ) +   
+      ggplot2::theme(legend.position = "right")
+  )
+  
+  # Prepare plot titles
+  if (expert.class == "expert.LE") {
+    main <- paste("Agreement with Experts: sTILs density <=", threshold)
+  } else if (expert.class == "expert.GT") {
+    main <- paste("Agreement with Experts: sTILs density >", threshold)
+  } else {
+    stop("expert.class not recognized as expert.LE or expert.GT")
+  }
+  xlab <- "Expert acting as the reference standard"
+  ylab <- "Agreement"
+
+  # Main plot elements
+  figure <- ggplot2::ggplot(agree.plot, ggplot2::aes(x = x, y = y)) +
+    ylab(ylab) + xlab(xlab) + ggplot2::ggtitle(label = main)
+  
+  # Set the tick marks on the x-axis
+  figure <- figure + ggplot2::scale_x_continuous(
+    breaks = 1:13,
+    minor_breaks = NULL,
+    labels = c(
+      "1", "2", "3", "4", "5", "6",
+      "",
+      "1", "2", "3", "4", "5", "6"))
+
+  # Set the y limits in the plot
+  figure <- figure + ggplot2::coord_cartesian(ylim = c(0, 1))
+
+  # Plot points
+  figure <- figure + 
+    ggplot2::geom_point(size = 1, color = "blue")
+  
+  # Plot circles sized for overlapping points.
+  figure <- figure +
+    ggplot2::geom_count(color = "cornflowerblue", alpha = .4) +
+    ggplot2::scale_size_area(max_size = 9, breaks = 0:5)
+
+  # Show a legend for the size of points
+  figure <- figure + ggplot2::labs(size = "No. Obs.")
+
+  # Add line of criterion
+  figure <- figure +
+    ggplot2::geom_hline(yintercept = minAgree, linewidth = .5)
+
+  # Add line to separate agreement from reader vs. experts and experts vs. experts
+  figure <- figure +
+    ggplot2::geom_vline(xintercept = 7, linewidth = .5)
+
+  # Annotate the figure
+  figure <- figure +
+    ggplot2::annotate(geom = "text", x = 3.5, y = 0,
+                      label = "reader vs. experts") +
+    ggplot2::annotate(geom = "text", x = 10.5, y = 0,
+                      label = "experts vs. experts") +
+    ggplot2::annotate(geom = "text", x = 10.5, y = minAgree - 0.05,
+                      label = "Pass Criterion")
+  
+  print(figure)
+
+  if (expert.class == "expert.LE") {
+    caption = paste("Agreement for sTILs less than or equal (LE)",
+                    "to the threshold", threshold)
+  } else if (expert.class == "expert.GT") {
+    caption = paste("Agreement for sTILs greater than (GT)",
+                    "the threshold", threshold)
+  } else {
+    stop("expert.class not recognized as expert.LE or expert.GT")
+  }
+
+  # Print a table of the reader agreement
+  print(knitr::kable(
+    t(c(
+      sprintf("%.3f", agree.reader$y),
+      "",
+      sprintf("%.3f", minAgree))),
+    row.names = FALSE,
+    col.names = c(paste("expert", 1:6), "", "Pass Criterion"),
+    caption = caption, label = NA,
+  booktabs = TRUE, longtable = TRUE
+  ))
+
+  # Return TRUE if reader passes criterion
+  return(all(agree.reader$y >= minAgree))
+
+}
+
+```
+
+
+
+```{r init show.agreement.2, echo=FALSE}
+
+# This function plots the percent agreement below a threshold
+# for crowd.cur vs. the experts and for experts vs. experts
+show.agreement <- function(joint3x3, joint3x3.experts, threshold,
+                           expert.class = "expert.LE") {
+  
+  # Select the crowd.cur vs. experts agreement results 
+  # expert.class = expert.LE or expert.GT
+  cur2x2 <- joint3x3[joint3x3$threshold == threshold, ]
+  cur2x2 <- cur2x2[cur2x2$expert.class == expert.class, ]
+  
+  # Select all expert vs. expert LE agreement results
+  cur2x2.experts <- joint3x3.experts[
+    joint3x3.experts$threshold == threshold, ]
+  cur2x2.experts <- cur2x2.experts[cur2x2.experts$expert.class == expert.class, ]
+
+  # Identify experts
+  experts <- unique(cur2x2.experts$expert)
+  nExperts <- length(experts)
+  
+  # Prepare plot data
+  agree.reader <- NULL
+  agree.expert <- NULL
+  for (i in 1:nExperts) {
+
+    # Get agreement of the reader with each expert i (ref).
+    x.reader <- i
+    y.reader <- round(
+      cur2x2[cur2x2$expert == experts[i], "fractionAgree", ], digits = 3)
+    agree.cur <- data.frame(x = x.reader, y = y.reader, who = "reader")
+    agree.reader <- rbind(agree.reader, agree.cur)
+
+    # Get agreement of other experts (reader) with each expert i (ref).
+    x.reader <- rep(i + 0.2, 5)
+    y.reader <- round(
+      cur2x2.experts[cur2x2.experts$expert == experts[i], "fractionAgree"],
+      digits = 3)
+    agree.cur <- data.frame(x = x.reader, y = y.reader,
+                            who = rep("expert", nExperts - 1))
+    agree.expert <- rbind(agree.expert, agree.cur)
+  }
+  minAgree <- min(agree.expert$y)
+  agree.plot <- rbind(agree.reader, agree.expert)
+  agree.plot$who <- factor(agree.plot$who)
+
+  # Prepare plot theme
+  library(ggplot2)
+  ggplot2::theme_set( 
+    ggplot2::theme_minimal() +
+      ggplot2::theme(
+        axis.text.x = ggplot2::element_text(size = 12, face = "bold"),
+        axis.text.y = ggplot2::element_text(size = 12, face = "bold"),
+        axis.line = ggplot2::element_line( linewidth = 1, linetype = "solid")
+      ) +   
+      ggplot2::theme(legend.position = "right")
+  )
+  
+  # Prepare plot titles
+  if (expert.class == "expert.LE") {
+    main <- paste("Agreement with Experts: sTILs density <=", threshold)
+  } else if (expert.class == "expert.GT") {
+    main <- paste("Agreement with Experts: sTILs density >", threshold)
+  } else {
+    stop("expert.class not recognized as expert.LE or expert.GT")
+  }
+  xlab <- "Expert acting as the reference standard"
+  ylab <- "Agreement"
+
+  # Main plot elements
+  figure <- ggplot2::ggplot(
+    agree.reader, ggplot2::aes(x = x, y = y)) +
+    ylab(ylab) + xlab(xlab) + ggplot2::ggtitle(label = main)
+  
+  # Set the tick marks on the x-axis
+  figure <- figure + ggplot2::scale_x_continuous(
+    breaks = 1:6,
+    minor_breaks = NULL,
+    labels = c("1", "2", "3", "4", "5", "6"))
+
+  # Set the y limits in the plot
+  figure <- figure + ggplot2::coord_cartesian(ylim = c(0, 1))
+
+  # Plot reader points as black triangles shape = 17
+  # http://www.sthda.com/english/wiki/ggplot2-point-shapes
+  figure <- figure + 
+    ggplot2::geom_point(color = "black", shape = 17, size = 3)
+
+  # Plot expert points as blue circles
+  figure <- figure +
+    ggplot2::geom_point(data = agree.expert, color = "blue")
+
+  # Plot expert points as circles sized for overlapping points.
+  figure <- figure +
+    ggplot2::geom_count(
+      data = agree.expert, color = "cornflowerblue", alpha = .4)
+  figure <- figure +
+    ggplot2::scale_size_area(max_size = 9, breaks = 0:5)
+
+  # Show a legend for the size of points
+  figure <- figure + ggplot2::labs(size = "No. Obs.")
+
+  # Add line of criterion
+  figure <- figure +
+    ggplot2::geom_hline(yintercept = minAgree, linewidth = .5)
+
+  # Annotate the figure
+  figure <- figure +
+    ggplot2::annotate(geom = "text", x = 3, y = minAgree - 0.05,
+                      label = "Pass Criterion")
+
+  if (expert.class == "expert.LE") {
+    caption = paste("Agreement for sTILs less than or equal (LE)",
+                    "to the threshold", threshold)
+  } else if (expert.class == "expert.GT") {
+    caption = paste("Agreement for sTILs greater than (GT)",
+                    "the threshold", threshold)
+  } else {
+    stop("expert.class not recognized as expert.LE or expert.GT")
+  }
+
+  print(figure)
+  
+  # Print a table of the reader agreement
+  print(knitr::kable(
+    t(c(
+      sprintf("%.3f", agree.reader$y),
+      "",
+      sprintf("%.3f", minAgree))),
+    row.names = FALSE,
+    col.names = c(paste("expert", 1:6), "", "Pass Criterion"),
+    caption = caption, label = NA,
+  booktabs = TRUE, longtable = TRUE
+  ))
+
+  # Return TRUE if reader passes criterion
+  return(all(agree.reader$y >= minAgree))
+
+}
+
+```
+
+
+
+```{r init showLineData, results='asis', echo=FALSE}
+
+showLineData <- function(mrmcDF.merge.cur, caption) {
+  
+  # For each case,
+  # determine the number of experts for which the threshold comparison was true
+  nTrue <- rowSums(mrmcDF.merge.cur[, 2:7], na.rm = TRUE)
+  mrmcDF.merge.cur$nTrue <- nTrue
+  
+  # Limit the data frame to cases that had at least one expert
+  # say the threshold comparison was true
+  mrmcDF.merge.cur <- mrmcDF.merge.cur[nTrue > 0, ]
+  nTrue <- nTrue[nTrue > 0]
+  
+  # Sort the data by the reader decision and the number of experts
+  # that said the threshold comparison was true
+  index <- order(mrmcDF.merge.cur$reader, nTrue, na.last = FALSE, decreasing = c(FALSE, TRUE))
+  mrmcDF.merge.cur <- mrmcDF.merge.cur[index, ]
+  
+  # Reformat row names to a column
+  mrmcDF.merge.cur <- cbind(row.names(mrmcDF.merge.cur), mrmcDF.merge.cur)
+  row.names(mrmcDF.merge.cur) <- NULL
+  colnames(mrmcDF.merge.cur)[1] <- "caseID (ROI)"
+  
+  desc <- knitr::kable(mrmcDF.merge.cur, caption = caption, label = NA,
+    booktabs = TRUE)
+
+  # scale_down option resizes the table to fit the page horizontally
+  #  This option also starts a new page after the table
+  # HOLD_position option stops the table from floating to the bottom of the page
+  
+  if (knitr::pandoc_to("latex"))
+    desc <- kableExtra::kable_styling(
+      desc, latex_options = c("scale_down", "hold_position"))
+
+  print(desc)
+
+}
+
+```
+
+
+
+```{r init passText, echo=FALSE}
+
+passText <- function(passTF) {
+  if (passTF) {
+    knitr::asis_output("**You have passed this criterion!**")
+  } else {
+    knitr::asis_output("**You have not passed this criterion.**")
+  }
+
+}
+
+```
+
+
+
+# Summary of performance on the "`r testLabel`" test using the "`r modalityID`" platform.
+
+```{r summary.agreement, echo=FALSE, results='asis'}
+
+summary.agreement <- NULL
+for (threshold in thresholds) {
+  for (expert.class in c("expert.LE", "expert.GT")) {
+      
+    # Build a summary data frame  
+    # Select the crowd.cur vs. experts LE agreement results
+    cur2x2 <- joint3x3[joint3x3$threshold == threshold, ]
+    cur2x2 <- cur2x2[cur2x2$expert.class == expert.class, ]
+    
+    # Select all expert vs. expert LE agreement results
+    cur2x2.experts <- joint3x3.experts[
+      joint3x3.experts$threshold == threshold, ]
+    cur2x2.experts <- cur2x2.experts[cur2x2.experts$expert.class == expert.class, ]
+    
+    # Find the minimum agreement
+    minAgree <- min(cur2x2.experts$fractionAgree)
+
+    # Determine whether reader passed
+    if (all(cur2x2$fractionAgree >= minAgree))
+      passDesc <- "PASS" else
+        passDesc <- "No"
+    
+    # Build the row of data
+    summary.cur <- data.frame(t(c(
+      expert.class, threshold,
+      sprintf("%.3f", cur2x2$fractionAgree),
+      sprintf("%.3f", minAgree),
+      passDesc)))
+    
+    # Add the row to the bottom
+    summary.agreement <- rbind(summary.agreement, summary.cur)
+    
+  }
+}
+
+# Simplify the first column
+summary.agreement[, 1] <- gsub("expert.", "", summary.agreement[, 1])
+
+caption <- paste(
+  "Your agreement with each expert.")
+row.names(summary.agreement) <- NULL
+colnames(summary.agreement) <- c(
+  "", "Threshold",
+  paste("Expert", 1:6),
+  "Criterion",
+  "Pass?")
+
+# Print a table of the reader agreement
+desc <- knitr::kable(
+  summary.agreement, align = "c", label = NA,
+  booktabs = TRUE, longtable = TRUE, caption = caption)
+
+print(desc)
+
+```
+
+
+* "Performance" in this document is understood to be "agreement with experts".
+* LE: Agreement with each expert on cases less than or equal to the threshold.
+* GT: Agreement with each expert on cases greater than the threshold.
+* The pass criterion is the minimum Expert vs. Expert agreement observed.
+* In each row, your agreement with each expert must be above the criterion to pass.
+
+\large
+```{r, echo=FALSE}
+
+if (all(summary.agreement$`Pass?` == "PASS")) {
+  desc <- paste("**You have passed all criteria of the",
+                testLabel, "test!**")
+  knitr::asis_output(desc)
+} else {
+  desc <- paste("**You have not passed all criteria of the",
+                testLabel, "test.**")
+  knitr::asis_output(desc)
+}
+
+```
+\normalsize
+
+In order to participate as an expert in the HTT pivotal study,
+you must pass all four criteria for the **proficiency** test.
+
+We invite you to review the rest of this document to understand
+the full context of the analysis and how these results are generated.
+In addition to the agreement analysis results,
+the **feedback** test report also provides the raw sTILs density data
+for you and the experts.
+This data will allow you to reproduce and understand all agreement results.
+This can help you understand where you might need improvement.
+
+\pagebreak
+
+# Introduction {#Introduction}
+
+Thank you for taking the High-Throughput Truthing (HTT) project interactive
+training for the assessment of stromal tumor-infiltrating lymphocytes (sTILs)
+in triple-negative breast cancer biopsies [@Dudgeon2021_J-Pathol-Inform_v12p45].
+
+In this report, we refer to you as the **"reader"**.
+
+* This is a report of your performance on the **`r testLabel`** test
+using the **`r modalityID`** platform.
+* The **feedback** test is considered training.
+You are not required to pass the feedback test criteria to participate
+in the HTT pivotal annotation study.
+* The **proficiency** test is used to determine whether you will be
+considered an expert for the HTT pivotal annotation study and can participate.
+You must pass all the proficiency test criteria
+for agreement above and below all thresholds.
+
+In this report, we compare your annotations to the annotations
+from a panel of six experts.
+The primary comparisons do not aggregate or average
+the expert annotations.
+Instead, we compare your annotations to each of six individual experts,
+one at a time.
+This means you will have six results for each agreement (performance) metric,
+one for each expert acting as the reference standard.
+We also compare each expert with the remaining experts for head-to-head 
+comparisons of your reader-expert agreement to expert-expert agreement.
+
+The primary agreement metrics that determine whether you "Pass" the test
+are based on your sTILs density scores.
+We apply a threshold to your score and to the score of the expert to
+create a three-by-three frequency table of the paired scores
+for the regions of interest (ROIs).
+The three categories are 1) "Not Evaluable", 2) Evaluable and less than or equal
+to the threshold (LE), and 3) Evaluable and greater than the threshold (GT).
+Then, we calculate your rate of agreement with each expert on cases
+above and below the threshold. 
+This is detailed in the next section.
+The same analysis is performed to calculate the rates of agreement
+between experts.
+The lowest of these expert-expert rates of agreement is the criterion
+for a passing score. 
+
+To get a more holistic perspective of your scoring, we also show **scatter plots**.
+We first show your sTILs density against the sTILs density of each expert,
+followed by plots of your sTILs density against the average expert sTILs density.
+
+In addition to the agreement analysis results,
+the **feedback** test report also provides the raw sTILs density data
+for you and the experts.
+This data will allow you to reproduce and understand all agreement results.
+This can help you understand where you might need improvement.
+
+Finally, you can review the image of the ROI, expert results, and your data
+for the feedback ROIs by visiting the platform where you took the test,
+the [reference document](https://didsr.github.io/HTT.home/assets/pages/training-2023/feedbackRefDoc),
+and the table of raw data at the end of the feedback test report.
+It is worth noting that
+the distributions of ROIs in the feedback and proficiency tests are different.
+We selected the ROIs according to inter-pathologist variability
+as determined from the annotations of crowd-sourced pathologists that participated
+in the pilot study.
+We then selected ROIs with the highest and lowest variability
+in a 2:1 ratio. 
+As a result, the ROIs in the feedback test had higher inter-pathologist variability
+than the ROIs in the proficiency test, making the feedback test a little harder. 
+A more complete description of how these cases were
+selected can be found here [@Garcia2022_Cancers_v14p2467].
+
+
+
+```{r Print reader check data, echo=FALSE, include=FALSE}
+
+# \newpage
+# # Check reader data
+# 
+# There are 36 ROIs in the test. Here we confirm that you have
+# completed the study and test for any unexpected data. 
+# *This will be removed from the report later. All cases should be read ultimately.*
+
+# Print unexpected cases
+if (length(cases.unexpected) > 0) {
+  cat("\n")
+  cat("Observations from these ROIs are unexpected (and removed):\n")
+  cat(paste("    * ", as.character(cases.unexpected), "\n"))
+} else {
+  cat("\n")
+  cat("All data is expected.\n")
+}
+
+# Print missing cases
+if (length(cases.missing) > 0) {
+  cat("\n")
+  cat("Observations from these ROIs are missing:\n")
+  cat(paste("    * ", as.character(cases.missing), "\n"))
+} else {
+  cat("\n")
+  cat("No data is missing.\n")
+}
+
+```
+
+
+\newpage
+
+# Example for Agreement Analysis {#Example}
+
+Here we provide an **example** that describes the calculation of the primary
+agreement metrics with which your performance will be scored:
+the observed rate of agreement above or below a threshold.
+Below is a scatter plot and a table.
+The scatter plot shows the paired
+scores for one of the experts, who will be treated here as "The Reader",
+and another expert, who will
+be treated as "The Expert" (the reference standard).
+We have also added the diagonal line of equality.
+The axes of the scatter plot are re-scaled (by the square root operator)
+to better show the points at the low end.
+The size of each circle corresponds to the number of overlapping points
+at an x,y location, as shown in the legend.
+For example, the circle at the top right corner of the plot corresponds to four cases where Expert 4 gave a score of 90 and Expert 2 gave a score of 95.
+From 36 total paired observations, 25 were labeled "Evaluable" and appear in
+the plot, while 11 were labeled "Not Evaluable" by the reader, the expert,
+or both and don't appear in the plot.
+There are 4 paired observations clearly above the diagonal line of equality,
+13 clearly below the line, and 8 very close to or on the line.
+The title indicates that the "Reader sTILs density scores are 4 points higher
+on average."
+
+```{r example, echo=FALSE, results='asis'}
+
+# Create an MRMC data frame for the experts, does not require Truth
+mrmcDF.cur <- data.frame(
+  readerID = mrmcExpert.feedback$readerID,
+  caseID = mrmcExpert.feedback$caseID,
+  modalityID = modalityID,
+  score = mrmcExpert.feedback$score
+)
+
+# Create an MRMC data frame with expert 4 and 2 only
+expert.cur <- experts[4]
+expertReader.cur <- experts[2]
+mrmcDF.cur <- mrmcDF.cur[mrmcDF.cur$readerID %in% c(expert.cur, expertReader.cur), ]
+
+# Get between-reader comparisons
+# This function creates a data frame of paired scores
+# for all cases and all ordered pairs of readers
+# Ordered (== symmetric) means it includes (reader1, reader2) and (reader2, reader1)
+mrmcBRWM <- iMRMC::getBRBM(
+  mrmcDF.cur,
+  modality.X = modalityID,
+  modality.Y = modalityID)
+
+# Unsymmetrize the paired data
+mrmcBRWM <- mrmcBRWM[mrmcBRWM$readerID.X == expertReader.cur, ]
+
+# Remove NA
+mrmcBRWM <- mrmcBRWM[!is.na(mrmcBRWM$score.X), ]
+mrmcBRWM <- mrmcBRWM[!is.na(mrmcBRWM$score.Y), ]
+
+# Rescale for plotting
+mrmcBRWM$sqrt.X <- sqrt(mrmcBRWM$score.X)
+mrmcBRWM$sqrt.Y <- sqrt(mrmcBRWM$score.Y)
+
+# Calculate the average difference in scores
+avgDiff <- round(mean(mrmcBRWM$score.X - mrmcBRWM$score.Y), digits = 2)
+
+# Prepare plot theme
+library(ggplot2)
+ggplot2::theme_set( 
+  ggplot2::theme_minimal() +
+    ggplot2::theme(
+      axis.text.x = ggplot2::element_text(size = 12, face = "bold"),
+      axis.text.y = ggplot2::element_text(size = 12, face = "bold"),
+      axis.line = ggplot2::element_line( linewidth = 1, linetype = "solid")
+    ) +   
+    ggplot2::theme(legend.position = "right")
+)
+
+# Prepare plot titles
+if (avgDiff < 0)
+  main <- paste("Reader sTILs density scores are \n",
+                abs(avgDiff), "points lower on average") else
+    main <- paste("Reader sTILs density scores are \n",
+                  abs(avgDiff), "points higher on average")
+
+ylab <- "sTILs Density (%): Expert 4"
+xlab <- paste(
+  "sTILs Density (%): Reader (Expert 2) \n",
+  nrow(mrmcBRWM), "paired observations")
+
+# Main plot elements
+sqrt.X <- NULL
+sqrt.Y <- NULL
+figure <- ggplot2::ggplot(mrmcBRWM, ggplot2::aes(x = sqrt.X, y = sqrt.Y)) +
+  ylab(ylab) + xlab(xlab) + ggplot2::ggtitle(label = main)
+
+# Make the plot square
+figure <- figure + ggplot2::coord_fixed(xlim = c(0, 10), ylim = c(0, 10))
+
+# Set the tick marks on the x-axis
+figure <- figure + ggplot2::scale_x_continuous(
+  breaks = sqrt(c(0, 10, 25, 50, 75, 100)),
+  minor_breaks = NULL,
+  labels = c(0, 10, 25, 50, 75, 100))
+
+# Set the tick marks on the y-axis
+figure <- figure + ggplot2::scale_y_continuous(
+  breaks = sqrt(c(0, 10, 25, 50, 75, 100)),
+  minor_breaks = NULL,
+  labels = c(0, 10, 25, 50, 75, 100))
+
+# Set the y limits in the plot
+# figure <- figure + ggplot2::coord_cartesian(xlim = c(0, 10), ylim = c(0, 10))
+
+# Plot points
+figure <- figure +
+  ggplot2::geom_point(size = 1, color = "blue")
+
+# Plot circles sized for overlapping points.
+figure <- figure +
+  ggplot2::geom_count(color = "cornflowerblue", alpha = .4) +
+  ggplot2::scale_size_area(max_size = 9, breaks = 0:5)
+
+# Show a legend for the size of points
+figure <- figure + ggplot2::labs(size = "No. Obs.")
+
+# Add line of equality
+figure <- figure +
+  ggplot2::geom_abline(slope = 1, intercept = 0, linewidth = .5)
+
+# Add lines for the threshold
+figure <- figure +
+  ggplot2::geom_hline(yintercept = sqrt(10), linewidth = .5) +
+  ggplot2::geom_vline(xintercept = sqrt(10), linewidth = .5)
+
+print(figure)
+
+# Filter the data for the current pair of experts
+mrmcExpert1.cur <- mrmcExpert.feedback[mrmcExpert.feedback$readerID == expert.cur, ]
+mrmcExpert2.cur <- mrmcExpert.feedback[mrmcExpert.feedback$readerID == expertReader.cur, ]
+
+# Compare reader to expert
+result <- HTT::binDo(mrmcExpert1.cur, mrmcExpert2.cur, threshold = thresholds[1])
+cur3x3 <- result$joint3x3
+
+desc <- c(
+  "expert.class",
+  "reader.NotEvaluable",
+  "reader.LE",
+  "reader.GT",
+  "fractionAgree")
+
+cur3x3 <- cur3x3[, desc]
+cur3x3$fractionAgree <- round(cur3x3$fractionAgree, digits = 3)
+
+names(cur3x3) <- c(
+  "expert.class",
+  "reader.NotEvaluable",
+  "reader.LE",
+  "reader.GT",
+  "rateAgree")
+
+print(knitr::kable(
+  cur3x3,
+  caption = paste("Reader (Expert 2) and Expert 4: agreement <=",
+                  thresholds[1]),
+  row.names = FALSE, label = NA,
+  booktabs = TRUE, longtable = TRUE))
+
+```
+
+
+
+The vertical and horizontal lines in the plot show a threshold of 10. 
+It is possible to count the number of paired scores in each quadrant.
+The counts correspond to the frequencies in corresponding cells of the table.
+The class-specific rates of agreement are given in the "rateAgree" column.
+The denominator of that rate is determined by the expert, not the reader.
+For example, in the first row we see that the expert scored 13 (1+0+12) cases
+as evaluable and greater than (GT) the threshold.
+The reader agreed with the expert on 12 of these, so the rate of
+agreement is 0.923 = 12/13.
+The second row corresponds to the cases the 
+expert scored less than or equal (LE) to the threshold (agreement = 0.688 = 11/16),
+and the last row corresponds to the cases the expert labeled as "Not Evaluable"
+(agreement = 1.000 = 7/7).
+
+\newpage
+
+# Agreement report for sTILs density scores <= 10
+
+Below and in the following sections, 
+we show your rate of agreement below and above each threshold with respect to
+each expert as a plot and in a table.
+In the plot, the labels on the x-axis indicate the expert that is acting
+as the reference standard.
+Your rates of agreement with each expert appear in the table
+and as black triangles in the plot (reader vs. experts).
+The blue circles indicate the rates of expert-expert agreement
+for each pair of experts. There are five of these for each expert.
+The horizontal line marks the lowest expert-expert rate of agreement;
+this is the criterion for passing this agreement metric.
+The criterion is given in the last column of the table, "Pass Criterion".
+
+If your agreement falls below the criterion, you are not agreeing with the
+experts well on cases they score below the threshold.
+Please refer to the scatter plots to see this relationship.
+
+```{r LE.agreement.10, echo=FALSE, results='asis'}
+
+threshold <- 10
+LE.10.pass <- show.agreement(joint3x3, joint3x3.experts, threshold,
+                         expert.class = "expert.LE")
+
+passText(LE.10.pass)
+
+```
+
+
+
+```{r goto line data LE.10, echo=FALSE, results='asis', eval=feedbackTF}
+
+cat(paste(
+  "\n",
+  "The raw data for this analysis can be found at the end of this document.",
+  "\n"
+))
+
+```
+
+
+
+\newpage
+# Agreement report for sTILs density scores > 10
+
+If your agreement falls below the criterion, you are not agreeing with the
+experts well on cases they score above the threshold.
+
+```{r GT.agreement.10, echo=FALSE, results='asis'}
+
+threshold <- 10
+GT.10.pass <- show.agreement(joint3x3, joint3x3.experts, threshold,
+                         expert.class = "expert.GT")
+
+passText(GT.10.pass)
+  
+```
+
+
+
+```{r goto line data GT.10, echo=FALSE, results='asis', eval=feedbackTF}
+
+cat(paste(
+  "\n",
+  "The raw data for this analysis can be found at the end of this document.",
+  "\n"
+))
+
+```
+
+\newpage
+# Agreement report for sTILs density scores <= 40
+
+If your agreement falls below the criterion, you are not agreeing with the
+experts well on cases they score below the threshold.
+
+```{r LE.agreement.40, echo=FALSE, results='asis'}
+
+threshold <- 40
+LE.40.pass <- show.agreement(joint3x3, joint3x3.experts, threshold,
+                         expert.class = "expert.LE")
+
+passText(LE.40.pass)
+
+```
+
+
+
+```{r goto line data LE.40, echo=FALSE, results='asis', eval=feedbackTF}
+
+cat(paste(
+  "\n",
+  "The raw data for this analysis can be found at the end of this document.",
+  "\n"
+))
+
+```
+
+
+
+\newpage
+# Agreement report for sTILs density scores > 40
+
+If your agreement falls below the criterion, you are not agreeing with the
+experts well on cases they score above the threshold.
+
+```{r GT.agreement.40, echo=FALSE, results='asis'}
+
+threshold <- 40
+GT.40.pass <- show.agreement(joint3x3, joint3x3.experts, threshold,
+                         expert.class = "expert.GT")
+
+passText(GT.40.pass)
+
+```
+
+
+
+```{r goto line data GT.40, echo=FALSE, results='asis', eval=feedbackTF}
+
+cat(paste(
+  "\n",
+  "The raw data for this analysis can be found at the end of this document.",
+  "\n"
+))
+
+```
+
+
+
+\newpage
+# Scatter plot of sTILs density: reader by all experts
+
+This plot compares your sTILs density estimates against each expert separately
+for each ROI.
+Therefore, there are six paired observations for each ROI,
+so that 216 (= 6 * 36) points are possible.
+However, ROIs labeled "Not Evaluable" by the reader or the expert do not appear
+in the scatter plot and reduce the number of paired observations in the plot.
+
+
+```{r scatter plot all, echo=FALSE, eval=TRUE}
+
+# Get between-reader comparisons
+# This function creates a data frame of paired scores
+# for all cases and all ordered pairs of readers
+# Ordered (== symmetric) means it includes (reader1, reader2) and (reader2, reader1)
+mrmcBRWM <- iMRMC::getBRBM(
+  mrmcDF,
+  modality.X = modalityID,
+  modality.Y = modalityID)
+
+# Unsymmetrize the paired data
+mrmcBRWM <- mrmcBRWM[mrmcBRWM$readerID.X == reader.cur, ]
+
+# Remove NA
+mrmcBRWM <- mrmcBRWM[!is.na(mrmcBRWM$score.X), ]
+mrmcBRWM <- mrmcBRWM[!is.na(mrmcBRWM$score.Y), ]
+
+# Rescale for plotting
+mrmcBRWM$sqrt.X <- sqrt(mrmcBRWM$score.X)
+mrmcBRWM$sqrt.Y <- sqrt(mrmcBRWM$score.Y)
+
+# Calculate the average difference in scores
+avgDiff <- round(mean(mrmcBRWM$score.X - mrmcBRWM$score.Y), digits = 2)
+
+# Prepare plot theme
+library(ggplot2)
+ggplot2::theme_set( 
+  ggplot2::theme_minimal() +
+    ggplot2::theme(
+      axis.text.x = ggplot2::element_text(size = 12, face = "bold"),
+      axis.text.y = ggplot2::element_text(size = 12, face = "bold"),
+      axis.line = ggplot2::element_line( linewidth = 1, linetype = "solid")
+    ) +   
+    ggplot2::theme(legend.position = "right")
+)
+
+# Prepare plot titles
+# Label the axes of the scatter plot: y vs. x (experts vs. reader)
+ylab <- "sTILs Density (%): All Experts"
+xlab <- paste(
+  "sTILs Density (%): Reader \n",
+  nrow(mrmcBRWM), "paired observations")
+if (avgDiff < 0)
+  main <- paste("Reader sTILs density scores are \n",
+                abs(avgDiff), "points lower on average") else
+    main <- paste("Reader sTILs density scores are \n",
+                  abs(avgDiff), "points higher on average")
+
+# Main plot elements
+figure <- ggplot2::ggplot(mrmcBRWM, ggplot2::aes(x = sqrt.X, y = sqrt.Y)) +
+  ylab(ylab) + xlab(xlab) + ggplot2::ggtitle(label = main)
+
+# Make the plot square
+figure <- figure + ggplot2::coord_fixed(xlim = c(0, 10), ylim = c(0, 10))
+
+# Set the tick marks on the x-axis
+figure <- figure + ggplot2::scale_x_continuous(
+  breaks = sqrt(c(0, 10, 25, 50, 75, 100)),
+  minor_breaks = NULL,
+  labels = c(0, 10, 25, 50, 75, 100))
+
+# Set the tick marks on the y-axis
+figure <- figure + ggplot2::scale_y_continuous(
+  breaks = sqrt(c(0, 10, 25, 50, 75, 100)),
+  minor_breaks = NULL,
+  labels = c(0, 10, 25, 50, 75, 100))
+
+# Plot points
+figure <- figure +
+  ggplot2::geom_point(size = 1, color = "blue")
+
+# Plot circles sized for overlapping points.
+figure <- figure +
+  ggplot2::geom_count(color = "cornflowerblue", alpha = .4) +
+  ggplot2::scale_size_area(max_size = 9, breaks = c(2, 5, 10, 15, 20))
+
+# Show a legend for the size of points
+figure <- figure + ggplot2::labs(size = "No. Obs.")
+
+# Add line of equality
+figure <- figure +
+  ggplot2::geom_abline(slope = 1, intercept = 0, linewidth = .5)
+
+print(figure)
+
+```
+
+
+
+\newpage
+# Scatter plot of sTILs density: reader by average expert
+
+This plot compares your sTILs density estimates against the average 
+of the expert scores for each ROI.
+There are 36 points are possible.
+However, ROIs labeled "Not Evaluable" by the reader or by all the experts
+do not appear in the scatter plot and reduce the number of paired observations
+in the plot.
+
+```{r scatter plot avg, echo=FALSE, eval=TRUE}
+
+# Combine the data frames from average experts and the reader
+mrmcDF.cur <- rbind(mrmcDF.AvgExperts, mrmcDF.reader)
+mrmcDF.cur$readerID <- factor(mrmcDF.cur$readerID)
+mrmcDF.cur$modalityID <- factor(mrmcDF.cur$modalityID)
+mrmcDF.cur$caseID <- factor(mrmcDF.cur$caseID)
+
+# Get between-reader comparisons
+# This function creates a data frame of paired scores
+# for all cases and all ordered pairs of readers
+# Ordered (== symmetric) means it includes (reader1, reader2) and (reader2, reader1)
+mrmcBRWM <- iMRMC::getBRBM(
+  mrmcDF.cur,
+  modality.X = modalityID,
+  modality.Y = "avgExperts")
+
+# Unsymmetrize the paired data
+mrmcBRWM <- mrmcBRWM[mrmcBRWM$readerID.X == reader.cur, ]
+
+# Remove NA
+mrmcBRWM <- mrmcBRWM[!is.na(mrmcBRWM$score.X), ] 
+mrmcBRWM <- mrmcBRWM[!is.na(mrmcBRWM$score.Y), ]
+
+# Rescale for plotting
+mrmcBRWM$sqrt.X <- sqrt(mrmcBRWM$score.X)
+mrmcBRWM$sqrt.Y <- sqrt(mrmcBRWM$score.Y)
+
+# Calculate the average difference in scores
+avgDiff <- round(mean(mrmcBRWM$score.X - mrmcBRWM$score.Y), digits = 2)
+
+# Prepare plot theme
+library(ggplot2)
+ggplot2::theme_set( 
+  ggplot2::theme_minimal() +
+    ggplot2::theme(
+      axis.text.x = ggplot2::element_text(size = 12, face = "bold"),
+      axis.text.y = ggplot2::element_text(size = 12, face = "bold"),
+      axis.line = ggplot2::element_line( linewidth = 1, linetype = "solid")
+    ) +   
+    ggplot2::theme(legend.position = "right")
+)
+
+# Prepare plot titles
+# Label the axes of the scatter plot: y vs. x (experts vs. reader)
+ylab <- "sTILs Density (%): All Experts"
+xlab <- paste(
+  "sTILs Density (%): Reader \n",
+  nrow(mrmcBRWM), "paired observations")
+if (avgDiff < 0)
+  main <- paste("Reader sTILs density scores are \n",
+                abs(avgDiff), "points lower on average") else
+    main <- paste("Reader sTILs density scores are \n",
+                  abs(avgDiff), "points higher on average")
+
+# Main plot elements
+figure <- ggplot2::ggplot(mrmcBRWM, ggplot2::aes(x = sqrt.X, y = sqrt.Y)) +
+  ylab(ylab) + xlab(xlab) + ggplot2::ggtitle(label = main)
+
+# Make the plot square
+figure <- figure + ggplot2::coord_fixed(xlim = c(0, 10), ylim = c(0, 10))
+
+# Set the tick marks on the x-axis
+figure <- figure + ggplot2::scale_x_continuous(
+  breaks = sqrt(c(0, 10, 25, 50, 75, 100)),
+  minor_breaks = NULL,
+  labels = c(0, 10, 25, 50, 75, 100))
+
+# Set the tick marks on the y-axis
+figure <- figure + ggplot2::scale_y_continuous(
+  breaks = sqrt(c(0, 10, 25, 50, 75, 100)),
+  minor_breaks = NULL,
+  labels = c(0, 10, 25, 50, 75, 100))
+
+# Plot points
+figure <- figure +
+  ggplot2::geom_point(size = 1, color = "blue")
+
+# Plot circles sized for overlapping points.
+figure <- figure +
+  ggplot2::geom_count(color = "cornflowerblue", alpha = .4) +
+  ggplot2::scale_size_area(max_size = 4)
+
+# Show a legend for the size of points
+figure <- figure + ggplot2::labs(size = "No. Obs.")
+
+# Add line of equality
+figure <- figure +
+  ggplot2::geom_abline(slope = 1, intercept = 0, linewidth = .5)
+
+print(figure)
+
+```
+
+
+
+\newpage
+# Agreement report for evaluable determination
+
+```{r Agreement maxima on evaluable, echo=FALSE}
+
+# Determine the minimum expert vs. expert agreement on "Evaluable"
+temp.experts <- split(evaluable2x2.experts, evaluable2x2.experts$expert.class)
+
+# Determine the minimum reader vs. expert agreement on "Evaluable"
+temp.reader <- split(evaluable2x2, evaluable2x2$expert.class)
+
+```
+
+The minimum expert vs. expert agreement on "Evaluable" is
+`r min(temp.experts[["expert.Evaluable"]]$fractionAgree)`
+
+The maximum expert vs. expert agreement on "Evaluable" is
+`r max(temp.experts[["expert.Evaluable"]]$fractionAgree)`
+
+The minimum reader vs. expert agreement on "Evaluable" is
+`r min(temp.reader[["expert.Evaluable"]]$fractionAgree)`
+
+The maximum reader vs. expert agreement on "Evaluable" is
+`r max(temp.reader[["expert.Evaluable"]]$fractionAgree)`
+
+We don't summarize agreement on "Not Evaluable" because there are only a few. 
+
+\newpage
+
+Here we show the 2x2 tables for the "Evaluable" vs. "Not Evaluable" calls for
+the reader (you) and each expert.
+
+```{r Agreement on evaluable, echo=FALSE, results='asis'}
+# current reader = `r evaluable2x2[1, "reader"]`
+
+for (i in 1:nExperts) {
+  
+  expert.cur <- evaluable2x2[2*i, "expert"]
+  knitr::kable(evaluable2x2[(2*i - 1):(2*i), c(
+    "expert.class", "reader.NotEvaluable", "reader.Evaluable", "fractionAgree")],
+    col.names = c(" ", "reader.NotEvaluable", "reader.Evaluable", "fraction.Agree"),
+    caption = paste("Reader vs. Expert.", i, sep = ""), row.names = FALSE,
+    label = NA, booktabs = TRUE, longtable = TRUE) |>
+    kableExtra::kable_styling(latex_options = "hold_position") |>
+    print()
+}
+
+```
+
+\newpage
+
+# References
+
+<div id="refs"></div>
+
+
+
+```{r line data 1, echo=FALSE, results='asis', eval=feedbackTF}
+
+knitr::asis_output("\\newpage")
+knitr::asis_output("# sTILs Density Scores")
+
+desc.Line.Data <- paste(
+  "\n",
+  "In the following page we provide a table of the raw sTILs densities",
+  "for the reader (you) and the experts.",
+  "*NA* indicates an ROI was labeled as Not Evaluable. ",
+  "After this table we provide tables of the threshold results.",
+  "To see details of any of the Feedback cases, please visit: ", 
+  "https://didsr.github.io/HTT.home/assets/pages/training-2023/feedbackRefDoc.", 
+  "\n"
+)
+
+cat(desc.Line.Data)
+
+mrmcDF.merge.cur <- as.data.frame(mrmcDF.merge)
+
+# Reformat row names to a column
+mrmcDF.merge.cur <- cbind(row.names(mrmcDF.merge.cur), mrmcDF.merge.cur)
+row.names(mrmcDF.merge.cur) <- NULL
+colnames(mrmcDF.merge.cur)[1] <- "caseID (ROI)"
+
+# Build kable table
+desc <- knitr::kable(mrmcDF.merge.cur, caption = caption, label = NA,
+  booktabs = TRUE)
+
+# scale_down option resizes the table to fit the page horizontally
+#  This option also starts a new page after the table
+# HOLD_position option stops the table from floating to the bottom of the page
+
+if (knitr::pandoc_to("latex"))
+  desc <- kableExtra::kable_styling(
+    desc, latex_options = c("scale_down", "hold_position"))
+
+print(desc)
+
+```
+
+
+```{r line data 2, echo=FALSE, results='asis', eval=feedbackTF}
+
+knitr::asis_output("\\newpage")
+knitr::asis_output("# Threshold Results")
+
+desc.Line.Data <- paste(
+  "\n",
+  "In the next four tables, we provide the threshold results.",
+  "The rows are sorted by Column 1,",
+  "the result of comparing the reader score to the threhold.",
+  "There are three outcomes possible:",
+  "\\newline",
+  "* NA: Not Evaluable",
+  "\\newline",
+  "* TRUE: the case satisfies the threshold inequality",
+  "\\newline",
+  "* FALSE: the case does not satsify the threshold inequality",
+  "\\newline",
+  "\\newline",
+  "Within these three groups, the rows are sorted by the last column,",
+  "the number of threshold-positive decisions by the experts (nTrue).",
+  "If you did not pass the corresponding criterion,",
+  "focus on the rows with NA and FALSE in the first column (reader).",
+  "Within these, focus on the rows for which nTrue is high;",
+  "these are the cases where you disagree with more experts.",
+  "You can review the image of the ROI, expert results, and your data",
+  "by visiting platform where you took the test,",
+  "the reference document, or the table of raw data.",
+  "The key to this review is the case ID.",
+  "\n")
+
+cat(desc.Line.Data)
+
+```
+
+
+```{r line data LE 10, results='asis', echo=FALSE, eval=feedbackTF}
+
+# Create a temporary data frame with the threshold results
+mrmcDF.merge.cur <- mrmcDF.merge
+mrmcDF.merge.cur <- FALSE
+mrmcDF.merge.cur <- mrmcDF.merge <= 10
+mrmcDF.merge.cur <- as.data.frame(mrmcDF.merge.cur)
+
+caption <- "Line data: sTILs density scores <= 10"
+
+showLineData(mrmcDF.merge.cur, caption)
+
+```
+
+
+
+```{r line data GT 10, results='asis', echo=FALSE, eval=feedbackTF}
+
+knitr::asis_output("\\newpage ")
+
+# Create a temporary data frame with the threshold results
+mrmcDF.merge.cur <- mrmcDF.merge
+mrmcDF.merge.cur <- FALSE
+mrmcDF.merge.cur <- mrmcDF.merge > 10
+mrmcDF.merge.cur <- as.data.frame(mrmcDF.merge.cur)
+
+caption <- "Line data: sTILs density scores > 10"
+
+showLineData(mrmcDF.merge.cur, caption)
+
+```
+
+
+
+```{r line data LE 40, results='asis', echo=FALSE, eval=feedbackTF}
+
+knitr::asis_output("\\newpage ")
+
+# Create a temporary data frame with the threshold results
+mrmcDF.merge.cur <- mrmcDF.merge
+mrmcDF.merge.cur <- FALSE
+mrmcDF.merge.cur <- mrmcDF.merge <= 40
+mrmcDF.merge.cur <- as.data.frame(mrmcDF.merge.cur)
+
+caption <- "Line data: sTILs density scores <= 40"
+
+showLineData(mrmcDF.merge.cur, caption)
+
+```
+
+
+
+```{r line data GT 40, results='asis', echo=FALSE, eval=feedbackTF}
+
+knitr::asis_output("\\newpage ")
+
+# Create a temporary data frame with the threshold results
+mrmcDF.merge.cur <- mrmcDF.merge
+mrmcDF.merge.cur <- FALSE
+mrmcDF.merge.cur <- mrmcDF.merge > 40
+mrmcDF.merge.cur <- as.data.frame(mrmcDF.merge.cur)
+
+caption <- "Line data: sTILs density scores > 40"
+
+showLineData(mrmcDF.merge.cur, caption)
+
+```
+
+
