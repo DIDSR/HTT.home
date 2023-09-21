@@ -31,6 +31,8 @@ title: Training Materials
 
 * An example *Proficiency Test* test report is also available: [HERE.](training-2023/pdfs/testReport-example-proficiency1.pdf)  
 
+* You can download the R markdown file that builds these test reports: [HERE.](./training-2023/pdfs/testReport.Rmd)
+
 
  
 
