@@ -26,7 +26,7 @@ Once the training requirements are satisfied, participants will be assigned pivo
 Here is our pathologist recruiting flyer in several easy-to-use formats.
 
 - [Recruiting flyer - wiki page](./process-guides/recruitReadersFlyer.md)
-- [Recruiting flyer - pdf for sharing, printing, and physical posting](../process-guides/pdfs-images/recruitReadersFlyer-2023.pdf)
-- [Recruiting flyer - email for emailing!](../process-guides/pdfs-images/recruitReadersFlyer-2023.msg)
+- [Recruiting flyer - pdf for sharing, printing, and physical posting](./process-guides/pdfs-images/recruitReadersFlyer-2023.pdf)
+- [Recruiting flyer - email for emailing!](./process-guides/pdfs-images/recruitReadersFlyer-2023.msg)
 
 

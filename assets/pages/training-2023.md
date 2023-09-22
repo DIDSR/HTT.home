@@ -33,8 +33,5 @@ Currently, due to regulatory expectations, we are requiring participants to be *
 
 * An example *Proficiency Test* test report is also available: [HERE.](training-2023/pdfs/testReport-example-proficiency1.pdf)  
 
-* You can download the R markdown file that builds these test reports: <a href="./pdfs/testReport.Rmd.txt" download>HERE.</a>
-
-
- 
+* You can download the R markdown file that builds these test reports: <a href="./training-2023/pdfs/testReport.Rmd.txt" download>HERE.</a>
 
