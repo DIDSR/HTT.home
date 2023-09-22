@@ -9,7 +9,10 @@ We have launched the HTT pivotal study June 2023. It was a soft launch with frie
 
 ## Steps to Participate
 
-Thank you for your interest in the HTT pivotal study. We are **recruiting volunteers** to provide annotations of stromal tumor infiltrating lymphocytes (sTILs) that will be used for validating artificial intelligence and machine learning models. You can refer to this [process guide](training-2023/pdfs/caMicro-ProcessGuide-20230821.pdf) or [3-minute video](https://vimeo.com/843982034) to learn about the annotation process. For more information about the project, please refer to our wiki pages [What is HTT?](./whatIsHTT) and [Publications](./publications.md).
+Thank you for your interest in the HTT pivotal study. We are **recruiting volunteers** to provide annotations of stromal tumor infiltrating lymphocytes (sTILs) that will be used for validating artificial intelligence and machine learning models. Currently, due to regulatory expectations, we are requiring participants to be board-certified U.S. pathologists or international equivalent. This requirement may be relaxed in the future depending on regulatory feedback.
+
+
+You can refer to this [process guide](training-2023/pdfs/caMicro-ProcessGuide-20230821.pdf) or [3-minute video](https://vimeo.com/843982034) to learn about the annotation process. For more information about the project, please refer to our wiki pages [What is HTT?](./whatIsHTT) and [Publications](./publications.md).
 
 There are two types of training required to participate in the HTT pivotal study: knowledge-based training in the form of a CME course and interactive training, where annotations are collected for real images. [Click here](/training-2023.md) for an outline and instructions for the required training.
 
@@ -23,6 +26,7 @@ Once the training requirements are satisfied, participants will be assigned pivo
 Here is our pathologist recruiting flyer in several easy-to-use formats.
 
 - [Recruiting flyer - wiki page](./process-guides/recruitReadersFlyer.md)
-- [Recruiting flyer - pdf for sharing, printing, and physical posting](./pivotal-study/pdfs-images/recruitReadersFlyer-2023.pdf)
-- [Recruiting flyer - email for emailing!](./pivotal-study/pdfs-images/recruitReadersFlyer-2023.msg)
+- [Recruiting flyer - pdf for sharing, printing, and physical posting](../process-guides/pdfs-images/recruitReadersFlyer-2023.pdf)
+- [Recruiting flyer - email for emailing!](../process-guides/pdfs-images/recruitReadersFlyer-2023.msg)
+
 

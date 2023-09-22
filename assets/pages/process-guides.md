@@ -13,4 +13,10 @@ caMicrosope Process Guide ROI Selection
 
 HTT Project Recruiting Flyer
 - [Wiki Page](./process-guides/recruitReadersFlyer.md)
-- [PDF Document](./pivotal-study/pdfs-images/recruitReadersFlyer-2023.pdf)
+- [Email](./process-guides/pdfs-images/recruitReadersFlyer-2023.msg)
+- [PDF Document](./process-guides/pdfs-images/recruitReadersFlyer-2023.pdf)
+- [PDF Document (no banner)](./process-guides/pdfs-images/recruitReaders/recruitReadersFlyer-2023-noBanner.pdf)
+- [Word Document](./process-guides/pdfs-images/recruitReaders/recruitReadersFlyer-2023.docx)
+- [Word Document (no banner)](./process-guides/pdfs-images/recruitReaders/recruitReadersFlyer-2023-noBanner.docx)
+- [Powerpoint with Figures](./process-guides/pdfs-images/recruitReaders/recruitReadersFlyer-Figs.pptx)
+
