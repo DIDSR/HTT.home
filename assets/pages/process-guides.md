@@ -18,3 +18,5 @@ HTT Project Recruiting Flyer
 - [PDF Document (no banner)](./process-guides/pdfs-images/recruitReaders/recruitReadersFlyer-2023-noBanner.pdf)
 - [Word Document](./process-guides/pdfs-images/recruitReaders/recruitReadersFlyer-2023.docx)
 - [Word Document (no banner)](./process-guides/pdfs-images/recruitReaders/recruitReadersFlyer-2023-noBanner.docx)
+- [Powerpoint with Figures](./process-guides/pdfs-images/recruitReaders/recruitReadersFlyer-Figs.pptx)
+
