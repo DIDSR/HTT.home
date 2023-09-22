@@ -1,4 +1,4 @@
----
+
 title: "HTT Test Report"
 date: "`r format(Sys.time(), '%d %B, %Y - %X')`"
 
@@ -32,12 +32,6 @@ params:
 ---
 
 ```{r setup, include=FALSE, echo=FALSE}
-
-# pivotal study readers
-# 6462aa909e5cb8001c28d34b 
-# 6463645a911fb10013002ccf 
-# 64881d6f4ce1a6001bacbde4
-
 knitr::opts_chunk$set(echo = TRUE)
 
 # Need to set knitr format to "latex" for bookdown render
