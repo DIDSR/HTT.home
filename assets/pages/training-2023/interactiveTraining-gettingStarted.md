@@ -13,6 +13,8 @@ Choose one of the platforms below to complete the HTT Interactive Training.
 
 * Here are example test reports: [testReport-example-feedback.pdf](./pdfs/testReport-example-feedback1.pdf) and [testReport-example-proficiency.pdf](./pdfs/testReport-example-proficiency1.pdf)
 
+* Here you can download the code behind the reports: <a href="./pdfs/testReport.Rmd.txt" download>testReport.Rmd</a>
+
 * Your performance test reports will be based on the data from a panel of six experts and will indicate whether you pass or not.
 
 * The performance test report for the **Feedback Test** will include your data and the data from the panel of six experts to support your training.

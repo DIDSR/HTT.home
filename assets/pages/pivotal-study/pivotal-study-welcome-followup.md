@@ -19,4 +19,4 @@ We are looking forward to hearing from and working with you,
 
 [The project managers](/../team.md)
 
-<object data="./pdfs-images/recruitReadersFlyer-2023.pdf" width="1000" height="1000" type='application/pdf'></object>
+<object data="./process-guides/pdfs-images/recruitReadersFlyer-2023.pdf" width="1000" height="1000" type='application/pdf'></object>
