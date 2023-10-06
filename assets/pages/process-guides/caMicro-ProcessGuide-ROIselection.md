@@ -3,28 +3,78 @@ layout: page
 title: Process Guide- caMicroscope ROI Selection
 ---
 
-1.	Double-click a location to create or reposition an ROI.  
-2.	Select 10 ROIs per WSI. Target diverse morphology and sTILs density (especially high sTILs density) while distributing ROIs across entire tissue. Each ROI can satisfy multiple targets. Not all targets can be satisfied in each WSI. The numbers to select mentioned below are guides. In each WSI:  
+## Goal of the task
+The overarching goal of this process is to create first pass of identifying and annotating ROIs for future many readers to evaluate.  The 10 “best” ROIs of each WSI are summarized per WSI, and used to select which WSIs are assigned to batches for pivotal study annotation. This selection process follows a hierarchical score-sort approach which prioritizes the least common demographic and pathologic features of each WSI (and its ROIs) though scoring those features higher.  More information on the batch selection method is available by request or in (Garcia_2023_JPI_metadata). 
 
-    **a.**	Select 3 ROIs inside tumor with stroma  
-        &emsp; (1 ROI should be at least 25% void of tissue)  
-    **b.**	Select 2 ROIs at invasive margin if discernable with stroma  
-        &emsp; (Not sure this is possible with biopsies, 1 ROI should be at least 25% void of tissue)  
-    **c.**	Select 2 ROIs inside tumor or at margin without stroma  
-        &emsp; (Not sure there are many or any of these)  
-    **d.**	Select 2 ROIs where there is no proximal tumor  
-        &emsp; (Normal tissue: outside 500 um tumor margin)  
-    **e.**	Select 2 ROIs for each for the 16 pitfalls listed. The pitfalls were identified during sessions to understand pathologist variability and improve pathologist training and instructions for the assessment of sTILs ([Garcia2022_Cancers_v14p2467](https://www.mdpi.com/2072-6694/14/10/2467)). The pitfalls are discussed and exemplified in the CME course, the test with feedback, and the reference document.   
 
-3.	Provide Annotations on selected ROIs.  
-    **a.**	HTT sTILs Study Annotations:  
-        &emsp; i.	Evaluable versus Not Evaluable  
-        &emsp; ii.	% Tumor-Associated Stroma  
-        &emsp; iii.	sTILs Density  
-    **b.**	Tissue Type:  
-        &emsp; i.	“Tumor with Stroma” and “Invasive Margin” are options when the ROI Type is “Evaluable”.  
-        &emsp; ii.	“Inside tumor or margin with low or no stroma” and “No Proximal Tumor” are options when the ROI type is “Not Evaluable for sTILs”.  
-    **c.**	Pitfalls present: click the corresponding checkbox.  
+## Selection Task
+1. From the Collection List, select an (orange) collection module labeled “ROI Selection”.  
+
+2. Once in the collection, **click “Select ROIs” to begin selecting ROIs for sTILs evaluation.** The number of ROIs already existing on a slide may vary and your “ROIs” column will update as you complete the task. If you want to review the ROIs already selected for an image, click “Review”.  
+
+3. To move around the WSI: Use your machine’s **pan and zoom** actions or adjust the magnification and location using the image navigator controls in the bottom right. 
+
+4. To select an ROI:  **Double-click** a location **to create or reposition** an ROI.  
+    **a.**  The location of your click will be the center of the new ROI.  
+
+    **b.**  We recommend **all annotations be made using 20x magnification**.
+
+    **c.**  If you are repositioning an ROI, all added annotation data will be reset.  
+
+    **d.**  **Once an ROI has been saved, it cannot be deleted.** If you don’t like it, create another.  
+
+5. Select **10 ROIs** per WSI. Any tissue in the WSI is eligible for annotation. However, we aim to create a diverse set of ROIs which contains both anomalies, such as pitfalls and artifacts, as well as high-value sTILs densities. Therefore: **target diverse morphology and sTILs density** (especially high sTILs density) while distributing ROIs across entire tissue. Each ROI can satisfy multiple targets. Not all targets can be satisfied in each WSI. The numbers to select mentioned below are guides. 
+
+In each WSI:  
+
+**a.**  Select 3 ROIs inside tumor with stroma    
+            
+&emsp;(1 ROI should be at least 25% void of tissue)    
+
+**b.**  Select 2 ROIs at invasive margin if discernable with stroma   
+
+&emsp;(not sure this is possible with biopsies, 1 ROI should be at least 25% void of tissue)   
+
+**c.**  Select 2 ROIs inside tumor or at margin **without stroma**
+
+&emsp;(not sure there are many or any of these)    
+
+**d.**  Select 2 ROIs where there is no proximal tumor   
+
+&emsp;(normal tissue: outside 500 μm tumor margin)
+
+**e.**  Select 2 ROIs for each for the 16 pitfalls listed. The pitfalls were identified during sessions to understand pathologist variability and improve pathologist training and instructions for the assessment of sTILs [(Garcia2022_Cancers_v14p2467)](https://doi.org/10.3390/cancers14102467). The pitfalls are discussed and exemplified in the [CME course](../training-2023/cmeCourse.md), the test with feedback, and the [reference document](../training-2023/feedbackRefDoc.md). 
+
+6. Provide Annotations on selected ROIs.  HTT sTILs Study Annotations collected:   
+
+	**a.**  ROI Type (Evaluable versus Not Evaluable)
+
+    **b.**  % Tumor-Associated Stroma
+	    
+    &emsp;- **Only for “Evaluable” ROIs.** Input the percent (%) as an integer using either the slide bar or by clicking the % value to the right of the slide bar and typing the value. 
+	
+    **c.**  sTILs Density 
+
+    &emsp;- Only for “Evaluable” ROIs. Input the percent (%) as an integer using either the slide bar or by clicking the % value to the right of the slide bar and typing the value. 
+	
+    **d.**  Tissue Type 
+	
+    &emsp;- If the ROI Type is “Evaluable”, select either “Tumor with Stroma” or “Invasive Margin”.  
+
+	&emsp;- If the ROI Type is “Not Evaluable for sTILs”, select either “Inside tumor/ margin with low/ no stroma” or “No Proximal Tumor (within 500 μm)”.  
+	
+    **e.**  Pitfalls
+	
+    &emsp;- Click the corresponding checkbox of any pitfalls present in the ROI. 
+	
+    **f.**  Additional Comments
+	
+    &emsp;- Any additional comments about the selected ROI and image can be added in this free-text box.
+	
+7. Click “Save & Next” to save the ROI and corresponding annotation. You can then create a new ROI on the WSI, or exit the image using the “Quit” button. 
+
+
+**Note:** To help resolve issues, please grab the url of the page that shows a problem. That will help us to find it quickly and investigate.
 
 ## Pitfalls
 
@@ -37,3 +87,14 @@ title: Process Guide- caMicroscope ROI Selection
 | small/pyknotic nuclei	| over-staining |  
 | perinuclear clearing | under-staining | 
 
+
+## CaMicroscope Icons
+
+![caMicroscope Icons](./pdfs-images/camic-processGuide/camic-roiSelection-icons.jpg)
+
+Icon functionality listed in order of left to right:  
+    &emsp; **1.** Home: Return to list of assigned WSIs and ROIs (Collection List).     
+    &emsp; **2.** ROI Location: Return to the center of the active ROI. If there is not an active ROI, the browser will alert you with banner message.     
+    &emsp; **3.** TIL Sample: View the TILs cheat sheet.      
+    &emsp; **4.** ROI Selection Protocol: View the selection protocol if you need a refresher on anything in this document.          
+    
