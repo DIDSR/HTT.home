@@ -65,6 +65,9 @@ subtitle: Platform and Annotation task
     ![caMicroscope Feedback Task](/pdfs-images/camic-processGuide/camic-feedbackTask.jpg)
 
 
+**Note:** To help resolve issues, please grab the url of the page that shows a problem. That will help us to find it quickly and investigate.  
+
+
 ## Overview of caMicroscope Icons
 
 ![caMicroscope Icons](/pdfs-images/camic-processGuide/camic-icons.jpg)
