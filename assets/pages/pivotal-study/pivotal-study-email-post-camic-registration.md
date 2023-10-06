@@ -9,13 +9,13 @@ Greetings! Thank you for creating an account on the version of caMicroscope that
 
 If you’re interested in learning more about the HTT study, here you can find an overview of the project: [What is HTT](../whatIsHTT.md).  
 
-Refer back to this downloadable process guide for creating an account and using CaMicroscope, our interactive training and data collection platform: [HERE](../process-guides/pdfs-images/caMicro-ProcessGuide.pdf)
+Refer back to this downloadable process guide for creating an account and using CaMicroscope, our interactive training and data collection platform: [caMicrosope Process Guide](../process-guides/pdfs-images/caMicro-ProcessGuide.pdf)
 
 Below is an overview of the requirements to participate in the study:  
 
 1.	**Required:** Complete a continuing medical education (CME) course on the stromal tumor-infiltrating lymphocyte (sTILs) assessment (3.00 CME credits).  
 
-    **a.**	Directions to access information for the CME course and interactive training: [HERE](../training-2023.md)   
+    **a.**	Directions to access information for the CME course and interactive training: [Training Materials](../training-2023.md)   
 
     **b.**	*Please email your CME completion certificate to us*, and we will enable the interactive training modules: items 3 and 4 below.  
 

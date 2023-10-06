@@ -10,7 +10,7 @@ Below is an overview of the requirements to participate in the study:
 
 1.	**Required:** Complete a continuing medical education (CME) course on the stromal tumor-infiltrating lymphocyte (sTILs) assessment (3.00 CME credits).  
 
-    **a.**	Directions to access information for the CME course and interactive training: [HERE](../training-2023.md)   
+    **a.**	Directions to access information for the CME course and interactive training: [Training Materials](../training-2023.md)   
     
     **b.**	*Please email your CME completion certificate to us*, and we will enable the interactive training modules: items 3 and 4 below.  
 
