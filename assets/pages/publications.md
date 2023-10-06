@@ -5,6 +5,9 @@ title: HTT Publications
 
 ## Selected Works
 
+**Manuscript describing our MDDT process:**
+ [S. Hart et al., “Initial interactions with the FDA on developing a validation dataset as a medical device development tool,” J Pathol, p. path.6208, Oct. 2023](https://doi.org/10.1002/path.6208)
+
 **Video presentation giving an overview of the project:**
  [Developing a dataset to validate computational models that analyze digital pathology images to assess TILs in breast cancer on Vimeo](https://vimeo.com/767440412)
 
