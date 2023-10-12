@@ -6,7 +6,7 @@ subtitle: Platform and Annotation task
 
 ## Create your caMicroscope Account
 
-1. In order to participate in Interactive sTILs Training, the HTT project studies, or ROI Selection on caMicroscope, you will first need to sign up for an account. To go [https://wolf.cci.emory.edu/camic/htt/](https://wolf.cci.emory.edu/camic/htt/) and click "Sign Up". 
+1. In order to participate in Interactive sTILs Training, the HTT project studies, or ROI Selection on caMicroscope, you will first need to sign up for an account. Go to [https://wolf.cci.emory.edu/camic/htt/](https://wolf.cci.emory.edu/camic/htt/) and click "Sign Up". 
 
     ![caMicroscope Login Page](./pdfs-images/camic-processGuide/camic-logIn.jpg)
 
@@ -14,7 +14,7 @@ subtitle: Platform and Annotation task
 
     ![caMicroscope Consent Form](/pdfs-images/camic-processGuide/camic-consentForm.jpg)
 
-3. Please complete the Basic Information, Professional, and Certifications forms as appropriate for you. Once the required sections are filled, you can click “Next” and/or “Submit” to move onto the next screen. Screen shots provided below.  
+3. Please complete the Basic Information, Professional, and Certifications information as appropriate for you. Once the required sections are filled, you can click “Next” and/or “Submit” to move onto the next screen. Screen shots provided below.  
 
     &emsp; **a.** After entering all the information and hitting submit, the screen may remain unchanged, but the request is being processed. If you click the submit button a second time, you will get an error message because the account is already made.  
 
@@ -24,15 +24,15 @@ subtitle: Platform and Annotation task
 
     ![caMicroscope Registration3](/pdfs-images/camic-processGuide/camic-reg3.jpg)
 
-4. Within a few minutes, an email will be sent to the address you registered with (Subject: “caMicroscope : Welcome” from rbirmin@emory.edu). Please make sure to click the “Reset your password” link to be directed to a page to create a password for your account. The link will expire in one hour. In this case visit the login page and click “Forgot Password” in the top-right corner and another email with a link to reset your password will be sent.
+4. Within a few minutes, an email will be sent to the email address you registered with (Subject: “caMicroscope : Welcome” from rbirmin@emory.edu). Please make sure to click the “Reset your password” link to be directed to a page to create a password for your account. The link will expire in one hour. If the link has expired, visit the login page and click “Forgot Password” in the top-right corner; another email with a link to reset your password will be sent.
 
     ![caMicroscope Password Set](/pdfs-images/camic-processGuide/camic-password.jpg)
 
 5. Once a password is created, you can return to [https://wolf.cci.emory.edu/camic/htt/](https://wolf.cci.emory.edu/camic/htt/) and log in with your credentials. Your username is your email address.  
-    &emsp; **a.** The platform starts empty. HTT project management needs to assign you collections.  
-    &emsp; **b.** Response time to your registration, should be less than two days.  
-    &emsp; **c.** Please allow five business days for your registration to be processed by the HTT project management and for you to be sent further instructions.  
-    &emsp; **d.** If you haven’t been contacted after five days, please contact the [project organizers.](../team.md)  
+    &emsp; **a.** The platform starts empty. HTT project organizers need to assign you collections.  
+    &emsp; **b.** Response time to your registration should be less than two days but may take longer. Please be patient.
+    &emsp; **c.** If you haven’t been contacted after five days, please contact the [project organizers.](../team.md) and explain.  
+    &emsp; **d.** Once your registration is processed by the HTT project organizers, you will sent further instructions.  
 
 
 ## How to Access HTT Interactive Training and Pivotal Studies
@@ -41,7 +41,7 @@ subtitle: Platform and Annotation task
 
     ![caMicroscope Landing Page](/pdfs-images/camic-processGuide/camic-landingPage.jpg)
 
-2. Click **“Pick & Annotate”** under the **“ROI Annotations –Participants”** module to find the interactive training and pivotal study collections.
+2. Click the **“COLLECTIONS”** button to find all collections, including the interactive training and pivotal study collections.
 
     ![caMicroscope Module](/pdfs-images/camic-processGuide/camic-annotateMod.jpg)
 
@@ -49,7 +49,7 @@ subtitle: Platform and Annotation task
 
     ![caMicroscope Collection](/pdfs-images/camic-processGuide/camic-collection.jpg)
 
-4. Once in the collection, click “Open” to begin the sTILs evaluation on the ROIs within a slide. The number of ROIs on a slide may vary and your “ROIs” column will update as you complete the task.
+4. Once in the collection, click **“Annotate”** to open an image and begin the sTILs evaluation on the ROIs within. The number of ROIs on a slide may vary and your “ROIs” column will update as you complete the task.
 
     ![caMicroscope Collection List](/pdfs-images/camic-processGuide/camic-collectionList.jpg)
 
@@ -65,32 +65,34 @@ subtitle: Platform and Annotation task
     ![caMicroscope Feedback Task](/pdfs-images/camic-processGuide/camic-feedbackTask.jpg)
 
 
+**Note:** To help resolve issues, please grab the url of the page that shows a problem. That will help us to find it quickly and investigate.  
+
+
 ## Overview of caMicroscope Icons
 
 ![caMicroscope Icons](/pdfs-images/camic-processGuide/camic-icons.jpg)
 
 Icon functionality listed in order of left to right:  
-    &emsp; **1.** Return to list of assigned WSIs and ROIs (Collection List)  
-    &emsp; **2.** Open the measurement ruler  
-    &emsp; **3.** Return to the center of the ROI  
-    &emsp; **4.** View the TILs cheat sheet  
-    &emsp; **5.** Download the WSI (if permitted)  
-    &emsp; **6.** View slides of a tutorial presentation on the sTILs assessment   
+    &emsp; **1.** Return to list of assigned images and ROIs (Collection List)  
+    &emsp; **2.** Return to the center of the ROI  
+    &emsp; **3.** View the [sTILs calibration reference guide](../training-2023/images/salgado2014-fig4.jpg)  
+    &emsp; **4.** View slides of a tutorial presentation on the sTILs assessment from the International Working Group for TIL in breast cancer (2014, adapted 2020)   
 
 
 ## Summary of the Five Steps of the sTILs Assessment
 
 Below are screen shots from the training video that was part of the FDA CME course, “Assessment of Stromal Tumor-Infiltrating Lymphocytes.”
-• You can watch the [full video on YouTube](https://www.youtube.com/watch?v=aPa-pXIBBlU)
+
+* You can watch the [full video on YouTube](https://www.youtube.com/watch?v=aPa-pXIBBlU)
 
 ![](/pdfs-images/camic-processGuide/iiobwg-topBanner.jpg)
 
 1. Define the areas for TILs evaluation  
-    **a.** Only TILs within the borders of invasive tumors are evaluated  
+    **a.** Only TILs within 1 mm of the borders of invasive tumors are evaluated  
 
     ![](/pdfs-images/camic-processGuide/iiobwg-1a.jpg)  
 
-    **b.** The invasive edge is included in the evaluation, but not reported separately  
+    **b.** The invasive edge plus 0.5 mm is included in the evaluation, but not reported separately  
 
     ![](/pdfs-images/camic-processGuide/iiobwg-1b.jpg)  
 
