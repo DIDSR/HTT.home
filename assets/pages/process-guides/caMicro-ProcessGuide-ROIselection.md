@@ -3,9 +3,9 @@ layout: page
 title: Process Guide- caMicroscope ROI Selection
 ---
 
-## Goal of the task
+## Goal of ROI selection
 
-The overarching goal of this process is to create a first pass assessment of an image to identify and annotate 10 ROIs for multiple future pathologists to evaluate.  The first-pass ROIs and annotations of each image are summarized and used to prioritize images for the pivotal study. We prioritize images with the least common demographic and pathologic metadata.  More information on the batch selection method is available by request. 
+The overarching goal of ROI selection is to create a first pass assessment of an image to identify and annotate 10 ROIs for multiple future pathologists to evaluate.  The first-pass ROIs and annotations of each image are summarized and used to prioritize images for the pivotal study. We prioritize images with the least common demographic and pathologic metadata.  More information on the batch selection method is available by request. 
 
 
 ## Selection Task
