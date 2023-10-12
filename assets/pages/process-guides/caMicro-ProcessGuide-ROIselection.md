@@ -3,12 +3,14 @@ layout: page
 title: Process Guide- caMicroscope ROI Selection
 ---
 
-## Goal of the task
-The overarching goal of this process is to create first pass of identifying and annotating ROIs for future many readers to evaluate.  The 10 “best” ROIs of each WSI are summarized per WSI, and used to select which WSIs are assigned to batches for pivotal study annotation. This selection process follows a hierarchical score-sort approach which prioritizes the least common demographic and pathologic features of each WSI (and its ROIs) though scoring those features higher.  More information on the batch selection method is available by request or in (Garcia_2023_JPI_metadata). 
+## Goal of ROI selection
+
+The overarching goal of ROI selection is to perform a first pass assessment of an image to identify and annotate 10 ROIs for multiple future pathologists to evaluate.  The first-pass ROIs and annotations of each image are summarized and used to prioritize images for the pivotal study. We prioritize images with the least common demographic and pathologic metadata.  More information on the batch selection method is available by request. 
 
 
 ## Selection Task
-1. From the Collection List, select an (orange) collection module labeled “ROI Selection”.  
+
+1. From the Collection List, select an ROI selection collection by clicking on the blue button labeled “ROI Selection”.  
 
 2. Once in the collection, **click “Select ROIs” to begin selecting ROIs for sTILs evaluation.** The number of ROIs already existing on a slide may vary and your “ROIs” column will update as you complete the task. If you want to review the ROIs already selected for an image, click “Review”.  
 
@@ -19,7 +21,7 @@ The overarching goal of this process is to create first pass of identifying and 
 
     **b.**  We recommend **all annotations be made using 20x magnification**.
 
-    **c.**  If you are repositioning an ROI, all added annotation data will be reset.  
+    **c.**  If you don't like the location of the ROI, double-click to reset the position. Annotation data will be reset.  
 
     **d.**  **Once an ROI has been saved, it cannot be deleted.** If you don’t like it, create another.  
 

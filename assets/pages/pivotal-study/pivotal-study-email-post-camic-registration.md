@@ -9,7 +9,7 @@ Greetings! Thank you for creating an account on the version of caMicroscope that
 
 If you’re interested in learning more about the HTT study, here you can find an overview of the project: [What is HTT](../whatIsHTT.md).  
 
-Refer back to this downloadable process guide for creating an account and using CaMicroscope, our interactive training and data collection platform: [caMicrosope Process Guide](../process-guides/pdfs-images/caMicro-ProcessGuide.pdf)
+Refer back to this downloadable process guide for creating an account and using CaMicroscope, our interactive training and data collection platform: [caMicrosope Process Guide](../process-guides/caMicro-ProcessGuide)
 
 Below is an overview of the requirements to participate in the study:  
 
