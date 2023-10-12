@@ -37,7 +37,7 @@ In order to participate in the HTT Pivotal Study, participants must pass the **P
 
 * Please allow 2-5 days. You will be contacted by the email used to create the account with instructions.
 
-* [Process Guide](pdfs/caMicro-ProcessGuide-20230821.pdf)
+* [Process Guide](../process-guides/caMicro-ProcessGuide)
 
 * [Process Guide: 3-minute video](https://vimeo.com/843982034)
 
