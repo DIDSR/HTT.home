@@ -21,7 +21,7 @@ The overarching goal of ROI selection is to perform a first pass assessment of a
 
     **b.**  We recommend **all annotations be made using 20x magnification**.
 
-    **c.**  If you don't like the location the ROI, double-click to reset the position. Annotation data will be reset.  
+    **c.**  If you don't like the location of the ROI, double-click to reset the position. Annotation data will be reset.  
 
     **d.**  **Once an ROI has been saved, it cannot be deleted.** If you don’t like it, create another.  
 

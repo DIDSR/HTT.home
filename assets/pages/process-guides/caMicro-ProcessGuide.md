@@ -29,7 +29,7 @@ subtitle: Platform and Annotation task
     ![caMicroscope Password Set](/pdfs-images/camic-processGuide/camic-password.jpg)
 
 5. Once a password is created, you can return to [https://wolf.cci.emory.edu/camic/htt/](https://wolf.cci.emory.edu/camic/htt/) and log in with your credentials. Your username is your email address.  
-    &emsp; **a.** The platform starts empty. HTT project organizers needs to assign you collections.  
+    &emsp; **a.** The platform starts empty. HTT project organizers need to assign you collections.  
     &emsp; **b.** Response time to your registration should be less than two days but may take longer. Please be patient.
     &emsp; **c.** If you haven’t been contacted after five days, please contact the [project organizers.](../team.md) and explain.  
     &emsp; **d.** Once your registration is processed by the HTT project organizers, you will sent further instructions.  
@@ -49,7 +49,7 @@ subtitle: Platform and Annotation task
 
     ![caMicroscope Collection](/pdfs-images/camic-processGuide/camic-collection.jpg)
 
-4. Once in the collection, click **“Annotate”** to open a slide and begin the sTILs evaluation on the ROIs within. The number of ROIs on a slide may vary and your “ROIs” column will update as you complete the task.
+4. Once in the collection, click **“Annotate”** to open an image and begin the sTILs evaluation on the ROIs within. The number of ROIs on a slide may vary and your “ROIs” column will update as you complete the task.
 
     ![caMicroscope Collection List](/pdfs-images/camic-processGuide/camic-collectionList.jpg)
 
@@ -73,12 +73,10 @@ subtitle: Platform and Annotation task
 ![caMicroscope Icons](/pdfs-images/camic-processGuide/camic-icons.jpg)
 
 Icon functionality listed in order of left to right:  
-    &emsp; **1.** Return to list of assigned WSIs and ROIs (Collection List)  
-    &emsp; **2.** Open the measurement ruler  
-    &emsp; **3.** Return to the center of the ROI  
-    &emsp; **4.** View the [sTILs calibration reference guide](../training-2023/images/salgado2014-fig4.jpg)  
-    &emsp; **5.** Download the WSI (if permitted)  
-    &emsp; **6.** View slides of a tutorial presentation on the sTILs assessment   
+    &emsp; **1.** Return to list of assigned images and ROIs (Collection List)  
+    &emsp; **2.** Return to the center of the ROI  
+    &emsp; **3.** View the [sTILs calibration reference guide](../training-2023/images/salgado2014-fig4.jpg)  
+    &emsp; **4.** View slides of a tutorial presentation on the sTILs assessment from the International Working Group for TIL in breast cancer (2014, adapted 2020)   
 
 
 ## Summary of the Five Steps of the sTILs Assessment
