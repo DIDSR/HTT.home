@@ -59,9 +59,9 @@ Physicians
  
 ## Additional Information 
 
-* [Salgado et al. (2015)](https://doi.org/10.1093/annonc/mdu450) created a visual reference sheet to help users calibrate their sTILs assessments:  
+* [Salgado et al. (2015)](https://doi.org/10.1093/annonc/mdu450) created a visual reference guide to help users calibrate their sTILs assessments:  
 
-* ![sTILs cheatsheet](./images/salgado2014-fig4.jpg)
+* ![sTILs calibration reference guide](./images/salgado2014-fig4.jpg)
 
 * [sTILs reference document for the interactive Feedback test. ](./feedbackRefDoc.md)
 

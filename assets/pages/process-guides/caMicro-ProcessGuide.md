@@ -73,7 +73,7 @@ Icon functionality listed in order of left to right:
     &emsp; **1.** Return to list of assigned WSIs and ROIs (Collection List)  
     &emsp; **2.** Open the measurement ruler  
     &emsp; **3.** Return to the center of the ROI  
-    &emsp; **4.** View the TILs cheat sheet  
+    &emsp; **4.** View the [sTILs calibration reference guide](../training-2023/images/salgado2014-fig4.jpg)  
     &emsp; **5.** Download the WSI (if permitted)  
     &emsp; **6.** View slides of a tutorial presentation on the sTILs assessment   
 
