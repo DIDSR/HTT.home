@@ -45,7 +45,7 @@ subtitle: Platform and Annotation task
 
     ![caMicroscope Module](/pdfs-images/camic-processGuide/camic-annotateMod.jpg)
 
-3. Click the “ROIs Evaluation” to select the collection you would like to complete (example below: “Feedback Test 1”).
+3. Click the “ROIs Evaluation” to select the collection you would like to complete (example below: “HTT-pivotal-batch001” and “Feedback Test 1”).
 
     ![caMicroscope Collection](/pdfs-images/camic-processGuide/camic-collection.jpg)
 
