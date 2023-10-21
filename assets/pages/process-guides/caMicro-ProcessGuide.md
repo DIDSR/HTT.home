@@ -4,6 +4,8 @@ title: Process Guide- caMicroscope
 subtitle: Platform and Annotation task
 ---
 
+Here is a pdf version of [this process guide](./pdfs-images/caMicro-ProcessGuide.pdf)
+
 ## Create your caMicroscope Account
 
 1. In order to participate in Interactive sTILs Training, the HTT project studies, or ROI Selection on caMicroscope, you will first need to sign up for an account. Go to [https://wolf.cci.emory.edu/camic/htt/](https://wolf.cci.emory.edu/camic/htt/) and click "Sign Up". 
