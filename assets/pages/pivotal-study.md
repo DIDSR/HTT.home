@@ -19,7 +19,13 @@ There are two types of training required to participate in the HTT pivotal study
 
 Once the training requirements are satisfied, participants will be assigned pivotal study collections (30-60 min per collection) according to their interest and availability. We value your time. You can get help, ask questions, or provide feedback by [emailing project organizers](/team.md). Please be patient with us responding.
 
+### More Information about the Project
 
+- You can refer to this [process guide](./process-guides/caMicro-ProcessGuide.md) or [3-minute video](https://vimeo.com/843982034) to learn about the annotation process. 
+
+- Be sure to read the [informed consent document](./pivotal-study/pdfs-images/HTT_IRBinformedConsent.pdf).  Although signatures are not required due to the study's minimal risk IRB exemption status, it is still an important document outlining your participation.  
+
+- For more information about the project, please refer to our wiki pages [What is HTT?](./whatIsHTT.md) and [Publications](./publications.md).
 
 ## Recruiting materials
 
