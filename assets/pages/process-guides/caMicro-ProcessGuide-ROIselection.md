@@ -27,25 +27,27 @@ The overarching goal of ROI selection is to perform a first pass assessment of a
 
 5. Select **10 ROIs** per WSI. Any tissue in the WSI is eligible for annotation. However, we aim to create a diverse set of ROIs which contains both anomalies, such as pitfalls and artifacts, as well as high-value sTILs densities. Therefore: **target diverse morphology and sTILs density** (especially high sTILs density) while distributing ROIs across entire tissue. Each ROI can satisfy multiple targets. Not all targets can be satisfied in each WSI. The numbers to select mentioned below are guides. 
 
-In each WSI:  
+    In each WSI:  
 
-**a.**  Select 3 ROIs inside tumor with stroma    
+    **a.**  Select 3 ROIs inside tumor with stroma    
             
-&emsp;(1 ROI should be at least 25% void of tissue)    
+    &emsp;(1 ROI should be at least 25% void of tissue)    
 
-**b.**  Select 2 ROIs at invasive margin if discernable with stroma   
+    **b.**  Select 2 ROIs at invasive margin if discernable with stroma   
 
-&emsp;(not sure this is possible with biopsies, 1 ROI should be at least 25% void of tissue)   
+    &emsp;(not sure this is possible with biopsies, 1 ROI should be at least 25% void of tissue)   
 
-**c.**  Select 2 ROIs inside tumor or at margin **without stroma**
+    **c.**  Select 2 ROIs inside tumor or at margin **without stroma**
 
-&emsp;(not sure there are many or any of these)    
+    &emsp;(not sure there are many or any of these)    
 
-**d.**  Select 2 ROIs where there is no proximal tumor   
+    **d.**  Select 2 ROIs where there is no proximal tumor   
 
-&emsp;(normal tissue: outside 500 μm tumor margin)
+    &emsp;(normal tissue: outside 500 μm tumor margin)
 
-**e.**  Select 2 ROIs for each for the 16 pitfalls listed. The pitfalls were identified during sessions to understand pathologist variability and improve pathologist training and instructions for the assessment of sTILs [(Garcia2022_Cancers_v14p2467)](https://doi.org/10.3390/cancers14102467). The pitfalls are discussed and exemplified in the [CME course](../training-2023/cmeCourse.md), the test with feedback, and the [reference document](../training-2023/feedbackRefDoc.md). 
+    **e.**  Select 2 ROIs for each for the 16 pitfalls listed. The pitfalls were identified during sessions to understand pathologist variability and improve pathologist training and instructions for the assessment of sTILs [(Garcia2022_Cancers_v14p2467)](https://doi.org/10.3390/cancers14102467). The pitfalls are discussed and exemplified in the [CME course](../training-2023/cmeCourse.md), the test with feedback, and the [reference document](../training-2023/feedbackRefDoc.md). 
+
+
 
 6. Provide Annotations on selected ROIs.  HTT sTILs Study Annotations collected:   
 
@@ -79,6 +81,8 @@ In each WSI:
 **Note:** To help resolve issues, please grab the url of the page that shows a problem. That will help us to find it quickly and investigate.
 
 ## Pitfalls
+
+Part 3 of the [CME course slides](../training-2023/pdfs/cmeCourseSlides-combined-final-20230217.pdf) offers visual examples of each type of pitfall you might find.
 
 | benign glandular elements	| cross-sectionally cut fibroblasts | 
 | adipocytes | low grade and/or degenerate ischemic tumor cells | 
