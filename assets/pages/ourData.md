@@ -101,4 +101,3 @@ We used a hierarchical score-sort method to prioritize cases with less common da
 
 ![Case Prioritization Table](./pivotal-study/pdfs-images/casePrioritization-table.png)
 
-
