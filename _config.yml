@@ -294,6 +294,7 @@ exclude:
   - docs/
   - admin/
   - /assets/pages/process-guides/README.md
+  - /.bundle/config
 
 plugins:
   - jekyll-paginate
