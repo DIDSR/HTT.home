@@ -24,7 +24,7 @@ b.	`git config --global user.email [[userEmail]]`
 4.	Check git branches `git branch -r`
 5.	Specify default branch `git config --global init.defaultBranch [[branchName]]`
 6.	Check git config file `git config --list` 
-7.	To download repo changes use `git fetch origin` for all branches changes
+7.	To download repo changes use `git pull origin` for all branches changes
 8.	Then `git checkout` to merge the changes
 9.	If you want to download and merge in one: use `git pull --all`
 
@@ -66,7 +66,13 @@ b.	`git config --global user.email [[userEmail]]`
 3.	To push changes `git push origin [[branchname]]`  
 4.	To check connection `git fsck`  
 5.	To switch between branches `git switch [[branchname]]`  
-6.	To remove remote connection, `git remote rm [[branchname]]`  
+6.	To remove remote connection, `git remote rm [[branchname]]`
+7.	Add file to commit, `git add [file path]`
+8.	Check what commits are staged, `git status`
+9.	If you want to download and merge in one: use `git pull --all`
+10.	Make new branch, `git checkout -b [branchName]`
+11.	Make commit, `git commit -m "[message]"`
+12.	Connect newBranch to server, `git push origin -u [branchName]` (only need to do this with first commit of a new branch)
 
 
 ## Notes
