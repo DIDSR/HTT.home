@@ -9,7 +9,7 @@ caMicroscope Process Guide
 
 caMicrosope Process Guide ROI Selection
 - [Wiki Page](./process-guides/caMicro-ProcessGuide-ROIselection.md)
-- [PDF Document](./process-guides/pdfs-images/caMicro-ProcessGuide-ROIselection-20231012.pdf)
+- [PDF Document](./process-guides/pdfs-images/caMicro-ProcessGuide-ROIselection-20231207.pdf)
 
 HTT Project Recruiting Flyer
 - [Wiki Page](./process-guides/recruitReadersFlyer.md)
