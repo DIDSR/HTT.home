@@ -16,7 +16,7 @@ comments: true
     
     * 11 participants have completed the CME course
     
-    * 5/7 participants have passed the proficiency test thusfar
+    * 5/7 participants have passed the proficiency test thus far
     
     * 5 participants have completed annotations
     
