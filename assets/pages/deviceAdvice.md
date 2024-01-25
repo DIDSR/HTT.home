@@ -5,7 +5,7 @@ layout: page
 ---
 
 
-Here is a document of links pointing to FDA guidance documents and other forms of communication. It was compiled by googling CDRH regulatory buzz words. We hope this document is useful. Caveat to all: You won’t know what’s required for your submission until you ask, try, and succeed.
+Here is a document of links pointing to FDA guidance documents and other forms of communication. It was mostly compiled by googling CDRH regulatory buzz words. We hope this document is useful. Caveat to all: You won’t know what’s required for your submission until you ask.
 
 ## Pre-submission meeting
 
@@ -28,11 +28,12 @@ It’s never to early to start thinking about, researching, and crafting an IFU 
 
 *  [Webpage: Comprehensive Regulatory Assistance.](https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance)
 
+
 ## 510k program
 
 * [Guidance Document: The 510(k) Program: Evaluating Substantial Equivalence in Premarket Notifications 510(k). Guidance for Industry and Food and Drug Administration Staff.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/510k-program-evaluating-substantial-equivalence-premarket-notifications-510k)
 
-A Premarket Notification 510 is a submission made to FDA to demonstrate that the device to be marketed is safe and effective by proving substantial equivalence (SE) to a legally marketed device (predicate device).
+A Premarket Notification, also known as a 510(k), is a submission made to FDA to demonstrate that the device to be marketed is safe and effective by proving substantial equivalence (SE) to a legally marketed device (predicate device).
 
 ## de Novos
 
@@ -50,28 +51,23 @@ If you can’t find a de Novo or existing 510k that is a perfect predicate for y
 
 Pursuing a pre-market authorization **(PMA)** is a regulatory pathway for medical devices that have a higher risk profile than a 510(k). PMAs are not covered here.
 
-*  Google [“fda cdrh pma”.](https://www.google.com/search?ei=j3meXPLPB4i2ggeXyLmoBA&q=fda+cdrh+pma&oq=fda+cdrh+pma&gs_l=psy-ab.3..0i22i30.324912.329012..330133...0.0..0.82.699.12......0....1..gws-wiz.......0i71j0i67j0i131j0j0i10i67.sJO-LkkaM)
+*  [Premarket Approval (PMA)](https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-approval-pma)
 
 
 ## Mock Submission
 
 *  [Webpage: MDICx webinar that includes a presentation on mock submissions to FDA/CDRH.](https://mdic.org/event/computational-modeling-simulation/)
 
-*  [Slides: Mock Submissions to FDA/CDRH: History and Lessons Learned](https://mdic.org/wp-content/uploads/2014/05/CMS-Summit-Myers.pdf) by Kyle Myers, Director DIDSR/OSEL/CDRH/FDA. This presentation was made as the agency was working with MDIC to pursue a mock submission about, “Augmenting a Clinical Study with Virtual Patient Models.”
-
-    *  [Webpage: All the mock submission documents to and from the MDIC team and FDA.](https://webcache.googleusercontent.com/search?q=cache:C2Ru6HlIKEAJ:https://mdic.org/project/virtual-patient-vp-model/+&cd=7&hl=en&ct=clnk&gl=us&client=firefox-b-1-d)
+*  [Slides: Mock Submissions to FDA/CDRH: History and Lessons Learned](./process-guides/pdfs-images/20190412-HTTMockSubmissions.pdf) by Kyle Myers, Director DIDSR/OSEL/CDRH/FDA. This presentation was made as the agency was working with MDIC to pursue a mock submission about, “Augmenting a Clinical Study with Virtual Patient Models.”
 
     *  The mock submission was followed quickly by actual submissions.
 
-    *  [Slides, Mock Submissions updated.](./process-guides/pdfs-images/20190412-HTTMockSubmissions.pdf)
-
-    *  [Updated Virtual Patient Page at MDIC.](https://mdic.org/project/virtual-patient-vp-model/)
+    *  [Virtual Patient Page at MDIC.](https://mdic.org/project/virtual-patient-vp-model/)
 
 *  The virtual patients mock submission was preceded by [“Protein-Based Multiplex Assays: Mock Presubmissions to the US Food and Drug Administration”](https://academic.oup.com/clinchem/article/56/2/165/5622492?login=true) , Regnier et al.
 
     *  [Supplementary Materials.](https://academic.oup.com/clinchem/issue/56/2?login=true)
 
-*  Future Archive of mock submission content.
 
 ## Medical Device Development Tools (MDDT) program
 
