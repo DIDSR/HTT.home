@@ -5,12 +5,12 @@ layout: page
 ---
 
 
-Here is a document of links pointing to FDA guidance documents and other forms of communication. It was compiled by googling CDRH regulatory buzz words. We hope this document is useful. You might also refer to [Figure 2](https://www.jpathinformatics.org/viewimage.asp?img=JPatholInform_2020_11_1_22_291538_f1.jpg) of this paper: Marble et al. (2020). A regulatory science initiative …” J Pathol Info, 11(1), 22. [https://doi.org/10.4103/jpi.jpi_27_20](https://www.sciencedirect.com/science/article/pii/S2153353922002516?via%3Dihub)
+Here is a document of links pointing to FDA guidance documents and other forms of communication. It was mostly compiled by googling CDRH regulatory buzz words. We hope this document is useful. You might also refer to [Figure 2](https://www.jpathinformatics.org/viewimage.asp?img=JPatholInform_2020_11_1_22_291538_f1.jpg) of this paper: Marble et al. (2020). A regulatory science initiative …” J Pathol Info, 11(1), 22. [https://doi.org/10.4103/jpi.jpi_27_20](https://www.sciencedirect.com/science/article/pii/S2153353922002516?via%3Dihub)
 
 Caveat to all: You won’t know what’s required for your submission until you ask in a Q-sub.
 
 
-## Pre-submission meeting
+## Pre-submission (Q-sub) meeting
 
 In CDRH, the best advice is to know about pre-submission meetings.
 
@@ -35,15 +35,15 @@ It’s never to early to start thinking about, researching, and crafting an IFU 
 
 ## 510k program
 
-*  [Guidance Document: The 510(k) Program: Evaluating Substantial Equivalence in Premarket Notifications 510(k). Guidance for Industry and Food and Drug Administration Staff.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/510k-program-evaluating-substantial-equivalence-premarket-notifications-510k)
+*  [Guidance document: The 510(k) Program: Evaluating Substantial Equivalence in Premarket Notifications 510(k). Guidance for Industry and Food and Drug Administration Staff.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/510k-program-evaluating-substantial-equivalence-premarket-notifications-510k)
 
 *  [510(k) Premarket Notification Database.](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm)
 
 A Premarket Notification, also known as a 510(k), is a submission made to FDA to demonstrate that the device to be marketed is safe and effective by proving substantial equivalence (SE) to a legally marketed device (predicate device).
 
-*  [Guidance Document: Deciding When to Submit a 510(k) for a Change to an Existing Device.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/deciding-when-submit-510k-change-existing-device)
+*  [Guidance document: Deciding When to Submit a 510(k) for a Change to an Existing Device.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/deciding-when-submit-510k-change-existing-device)
 
-*  [Guidance Document: Deciding When to Submit a 510(k) for a Software Change to an Existing Device.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/deciding-when-submit-510k-software-change-existing-device)
+*  [Guidance document: Deciding When to Submit a 510(k) for a Software Change to an Existing Device.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/deciding-when-submit-510k-software-change-existing-device)
 
 
 ## de Novos
@@ -92,11 +92,11 @@ Pursuing a pre-market authorization **(PMA)** is a regulatory pathway for medica
 *  [Guidance Technical Performance Assessment of Quantitative Imaging in Device Premarket Submissions.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-performance-assessment-quantitative-imaging-radiological-device-premarket-submissions)
 
 
-## Adaptive Algorithms, continuous learning
+## Adaptive Algorithms, continuous learning, Predetermined Change Control Plan (PCCP)
 
 *  [Webpage: Artificial Intelligence and Machine Learning in Software as a Medical Device.](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device)
 
-*  [White paper, Proposed Regulatory Framework for Modifications to Artificial Intelligence/Machine Learning (AI/ML)-Based Software as a Medical Device (SAMD).](https://www.fda.gov/media/122535/download)
+*  [Guidance document: PCCP.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial)
 
 
 ## Digital Pathology
