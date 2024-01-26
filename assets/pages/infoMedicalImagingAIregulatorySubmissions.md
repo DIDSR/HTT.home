@@ -1,6 +1,6 @@
 ---
-title: "Device Advice"
-subtitle: "Quick Info About FDA submissions For Medical Imaging Algorithms"
+title: "Regulatory Submission Information"
+subtitle: "For Developers of Medical Imaging Algorithms"
 layout: page
 ---
 
@@ -84,12 +84,12 @@ Pursuing a pre-market authorization **(PMA)** is a regulatory pathway for medica
 
     *  [Webpage: Clinical = Reader Study = Human in the loop.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-performance-assessment-considerations-computer-assisted-detection-devices-applied-radiology)
 
-* [Guidance on Off-the-Shelf Software Use in Medical Devices.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/shelf-software-use-medical-devices)
+* [Guidance document: Off-the-Shelf Software Use in Medical Devices.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/shelf-software-use-medical-devices)
 
 
 ## Quantitative Imaging
 
-*  [Guidance Technical Performance Assessment of Quantitative Imaging in Device Premarket Submissions.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-performance-assessment-quantitative-imaging-radiological-device-premarket-submissions)
+*  [Guidance document: Technical Performance Assessment of Quantitative Imaging in Device Premarket Submissions.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-performance-assessment-quantitative-imaging-radiological-device-premarket-submissions)
 
 
 ## Adaptive Algorithms, continuous learning, Predetermined Change Control Plan (PCCP)
@@ -175,7 +175,7 @@ Pursuing a pre-market authorization **(PMA)** is a regulatory pathway for medica
 
     *  [Slides: Tutorial on Reader Study Designs and MRMC Analysis by Brandon Gallas](./process-guides/pdfs-images/deviceAdvice-pdfs/20220805-PIcc-MRMCstudyDesigns-Gallas.pdf) 
 
-    *  [Video MRMC tutorial](https://vimeo.com/751682643)
+    *  [Video: MRMC tutorial](https://vimeo.com/751682643)
 
 *  “ROC curves: Receiver Operating Characteristic Curves”
 
@@ -187,7 +187,7 @@ Pursuing a pre-market authorization **(PMA)** is a regulatory pathway for medica
 
     *  [Slides: ROC Curves Tutorial by Brandon Gallas](./process-guides/pdfs-images/deviceAdvice-pdfs/20220805-PIcc-ShortROCtutorial.pdf) 
 
-    *  [Video ROC tutorial](https://vimeo.com/751670299)
+    *  [Video: ROC tutorial](https://vimeo.com/751670299)
 
 *  “Regulatory Considerations and Assessment of AI/ML Devices”
 
