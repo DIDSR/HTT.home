@@ -86,6 +86,8 @@ Pursuing a pre-market authorization **(PMA)** is a regulatory pathway for medica
 
 * [Guidance document: Off-the-Shelf Software Use in Medical Devices.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/shelf-software-use-medical-devices)
 
+* [Machine Learning-enabled Medical Devices: Key Terms and Definitions](https://www.imdrf.org/documents/machine-learning-enabled-medical-devices-key-terms-and-definitions)
+
 
 ## Quantitative Imaging
 
