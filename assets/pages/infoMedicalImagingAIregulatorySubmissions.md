@@ -247,6 +247,8 @@ The FDA’s Medical Device Development Tools (MDDT) program is a way for the FDA
 
 *  [Link to Catalog.](https://www.fda.gov/medical-devices/science-and-research-medical-devices/catalog-regulatory-science-tools-help-assess-new-medical-devices)
 
+* [Webpage: FDA page, "iMRMC: Software to do Multi-reader Multi-case Statistical Analysis of Reader Studies"](https://www.fda.gov/medical-devices/science-and-research-medical-devices/imrmc-software-do-multi-reader-multi-case-statistical-analysis-reader-studies)
+
 
 ## Mock Submission
 
