@@ -2,7 +2,69 @@
 title: "Regulatory Submission Information"
 subtitle: "For Developers of Medical Imaging Algorithms"
 layout: page
+toc: true
 ---
+
+<div class="sidenav">
+    <h2><strong>Table of Contents</strong></h2>
+    <ul>
+        <li><a href="#pre-submission-q-sub-meeting">Pre-submission Q-sub Meeting</a></li>
+        <li><a href="#ifu-indications-for-use">Indications For Use</a></li>
+        <li><a href="#comprehensive-regulatory-assistance">Comprehensive Regulatory Assistance</a></li>
+        <li><a href="#510k-program">510k Program</a></li>
+        <li><a href="#de-novos">de Novos</a></li>
+        <li><a href="#pma">PMA</a></li>
+        <li><a href="#software-as-a-medical-device-samd">Software as a Medical Device</a></li>
+        <li><a href="#quantitative-imaging">Quantitative Imaging</a></li>
+        <li><a href="#adaptive-algorithms-continuous-learning-predetermined-change-control-plan-pccp">Adaptive Algorithms, Continuous Learning, PCCP</a></li>
+        <li><a href="#digital-pathology">Digital Pathology</a></li>
+        <li><a href="#cad-examples">CAD Examples</a></li>
+        <li><a href="#medical-device-development-tools-mddt-program">MDDT Program</a></li>
+        <li><a href="#catalog-of-regulatory-science-tools-to-help-access-new-medical-devices">RST Catalog</a></li>
+        <li><a href="#presentations-in-this-space">Presentations</a></li>
+        <li><a href="#mock-submission">Mock Submission</a></li>
+    </ul>
+</div>
+
+<!--   
+- [Pre-submission (Q-sub) meeting](#pre-submission-q-sub-meeting)
+- [IFU: Indications for Use](#ifu-indications-for-use)
+- [Comprehensive Regulatory Assistance](#comprehensive-regulatory-assistance)
+- [510k Program](#510k-program)
+- [de Novos](#de-novos)
+- [PMA](#pma)
+- [Software as a Medical Device (SaMD)](#software-as-a-medical-device-samd)
+- [Quantitative Imaging](#quantitative-imaging)
+- [Adaptive Algorithms, continuous learning, Predetermined Change Control Plan (PCCP)](#adaptive-algorithms-continuous-learning-predetermined-change-control-plan-pccp)
+- [Digital Pathology](#digital-pathology)
+- [CAD Examples](#cad-examples)
+- [Medical Device Development Tools (MDDT) program](#medical-device-development-tools-mddt-program)
+- [Catalog of Regulatory Science Tools to Help Access New Medical Devices](#catalog-of-regulatory-science-tools-to-help-access-new-medical-devices)
+- [Presentations in this Space](#presentations-in-this-space)
+- [Mock Submission](#mock-submission)
+
+<menu>
+        <h2><strong>Key Pages</strong></h2>
+        <ul>
+        <li><a href="#pre-submission-q-sub-meeting">Pre-submission (Q-sub) meeting</a></li>
+        <li><a href="#ifu-indications-for-use">IFU: Indications for Use</a></li>
+        <li><a href="#comprehensive-regulatory-assistance">Comprehensive Regulatory Assistance</a></li>
+        <li><a href="#510k-program">510k Program</a></li>
+        <li><a href="#de-novos">de Novos</a></li>
+        <li><a href="#pma">PMA</a></li>
+        <li><a href="#software-as-a-medical-device-samd">Software as a Medical Device (SaMD)</a></li>
+        <li><a href="#quantitative-imaging">Quantitative Imaging</a></li>
+        <li><a href="#adaptive-algorithms-continuous-learning-predetermined-change-control-plan-pccp">Adaptive Algorithms, continuous learning, Predetermined Change Control Plan (PCCP)</a></li>
+        <li><a href="#digital-pathology">Digital Pathology</a></li>
+        <li><a href="#cad-examples">CAD Examples</a></li>
+        <li><a href="#medical-device-development-tools-mddt-program">Medical Device Development Tools (MDDT) program</a></li>
+        <li><a href="#catalog-of-regulatory-science-tools-to-help-access-new-medical-devices">Catalog of Regulatory Science Tools to Help Access New Medical Devices</a></li>
+        <li><a href="#presentations-in-this-space">Presentations in this Space</a></li>
+        <li><a href="#mock-submission">Mock Submission</a></li>
+        </ul>
+    </menu> 
+    
+-->
 
 
 Here is a document of links pointing to FDA guidance documents and other forms of communication. It was mostly compiled by googling CDRH regulatory buzz words. We hope this document is useful. You might also refer to [Figure 2](https://www.jpathinformatics.org/viewimage.asp?img=JPatholInform_2020_11_1_22_291538_f1.jpg) of this paper: Marble et al. (2020). A regulatory science initiative …” J Pathol Info, 11(1), 22. [https://doi.org/10.4103/jpi.jpi_27_20](https://www.sciencedirect.com/science/article/pii/S2153353922002516?via%3Dihub)
@@ -10,6 +72,7 @@ Here is a document of links pointing to FDA guidance documents and other forms o
 Caveat to all: You won’t know what’s required for your submission until you ask in a Q-sub.
 
 
+---
 ## Pre-submission (Q-sub) meeting
 
 In CDRH, the best advice is to know about pre-submission meetings.
@@ -19,6 +82,7 @@ In CDRH, the best advice is to know about pre-submission meetings.
 *  [Guidance document: Requests for Feedback on Medical Device Submissions: The Pre-Submission Program and Meetings with Food and Drug Administration Staff.](https://www.fda.gov/media/114034/download)
 
 
+---
 ## IFU: Indications for Use
 
 Part of the definition of your medical device are the indications for use.
@@ -28,11 +92,13 @@ Part of the definition of your medical device are the indications for use.
 It’s never to early to start thinking about, researching, and crafting an IFU for your device.
 
 
+---
 ## Comprehensive Regulatory Assistance
 
 *  [Webpage: Comprehensive Regulatory Assistance.](https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance)
 
 
+---
 ## 510k program
 
 *  [Guidance document: The 510(k) Program: Evaluating Substantial Equivalence in Premarket Notifications 510(k). Guidance for Industry and Food and Drug Administration Staff.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/510k-program-evaluating-substantial-equivalence-premarket-notifications-510k)
@@ -46,6 +112,7 @@ A Premarket Notification, also known as a 510(k), is a submission made to FDA to
 *  [Guidance document: Deciding When to Submit a 510(k) for a Software Change to an Existing Device.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/deciding-when-submit-510k-software-change-existing-device)
 
 
+---
 ## de Novos
 
 *  Special controls accompany all de Novo classifications.
@@ -61,6 +128,7 @@ A Premarket Notification, also known as a 510(k), is a submission made to FDA to
 If you can’t find a de Novo or existing 510k that is a perfect predicate for your device type: Then find and learn about the closest one or two. It’s a way to start.
 
 
+---
 ## PMA
 
 Pursuing a pre-market authorization **(PMA)** is a regulatory pathway for medical devices that have a higher risk profile than a 510(k). PMAs are not covered here in depth.
@@ -68,6 +136,7 @@ Pursuing a pre-market authorization **(PMA)** is a regulatory pathway for medica
 *  [Premarket Approval (PMA)](https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-approval-pma)
 
 
+---
 ## Software as a Medical Device (SAMD)
 
 *  [Digital Health Center of Excellence.](https://www.fda.gov/medical-devices/digital-health-center-excellence)
@@ -89,11 +158,13 @@ Pursuing a pre-market authorization **(PMA)** is a regulatory pathway for medica
 * [Machine Learning-enabled Medical Devices: Key Terms and Definitions](https://www.imdrf.org/documents/machine-learning-enabled-medical-devices-key-terms-and-definitions)
 
 
+---
 ## Quantitative Imaging
 
 *  [Guidance document: Technical Performance Assessment of Quantitative Imaging in Device Premarket Submissions.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-performance-assessment-quantitative-imaging-radiological-device-premarket-submissions)
 
 
+---
 ## Adaptive Algorithms, continuous learning, Predetermined Change Control Plan (PCCP)
 
 *  [Webpage: Artificial Intelligence and Machine Learning in Software as a Medical Device.](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device)
@@ -101,6 +172,7 @@ Pursuing a pre-market authorization **(PMA)** is a regulatory pathway for medica
 *  [Guidance document: PCCP.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial)
 
 
+---
 ## Digital Pathology
 
 *  Device type: Whole Slide Imaging System
@@ -116,6 +188,7 @@ Pursuing a pre-market authorization **(PMA)** is a regulatory pathway for medica
     *  [Guidance for Industry and FDA Staff: Technical Performance Assessment of Digital Pathology Whole Slide Imaging Devices.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-performance-assessment-digital-pathology-whole-slide-imaging-devices)
 
 
+---
 ## CAD Examples
 
 *  Device type: Medical Image Analyzer (including breast cancer detection).
@@ -165,6 +238,23 @@ Pursuing a pre-market authorization **(PMA)** is a regulatory pathway for medica
     *  [Presentation and discussion about the Paige.AI decision summary convened by the Pathology Innovation Collaborative Community (June 2022).](https://pathologyinnovationcc.org/presentations/jun-2022-decision-summary)
 
 
+---
+## Medical Device Development Tools (MDDT) program
+
+The FDA’s Medical Device Development Tools (MDDT) program is a way for the FDA to qualify tools that medical device sponsors can use in the development and evaluation of medical devices. It is a way for the broader community (academia, health providers, and government scientists, not just industry) can impact the regulatory process.
+
+*  [Webpage: FDA page, “Medical Device Development Tools (MDDT)”.](https://www.fda.gov/medical-devices/medical-device-development-tools-mddt)
+
+
+---
+## Catalog of Regulatory Science Tools to Help Access New Medical Devices
+
+*  [Link to Catalog.](https://www.fda.gov/medical-devices/science-and-research-medical-devices/catalog-regulatory-science-tools-help-assess-new-medical-devices)
+
+* [Webpage: FDA page, "iMRMC: Software to do Multi-reader Multi-case Statistical Analysis of Reader Studies"](https://www.fda.gov/medical-devices/science-and-research-medical-devices/imrmc-software-do-multi-reader-multi-case-statistical-analysis-reader-studies)
+
+
+---
 ## Presentations in this Space
 
 *  “Tutorial on Reader Study Designs and MRMC Analysis”
@@ -236,20 +326,7 @@ Pursuing a pre-market authorization **(PMA)** is a regulatory pathway for medica
     *  [Slides: Digital Pathology Regulatory Considerations by Cheng Cui](./process-guides/pdfs-images/deviceAdvice-pdfs/PathologySummit2019_Pittsburgh_ChengCui_FDA.pdf)
 
 
-## Medical Device Development Tools (MDDT) program
-
-The FDA’s Medical Device Development Tools (MDDT) program is a way for the FDA to qualify tools that medical device sponsors can use in the development and evaluation of medical devices. It is a way for the broader community (academia, health providers, and government scientists, not just industry) can impact the regulatory process.
-
-*  [Webpage: FDA page, “Medical Device Development Tools (MDDT)”.](https://www.fda.gov/medical-devices/medical-device-development-tools-mddt)
-
-
-## Catalog of Regulatory Science Tools to Help Access New Medical Devices
-
-*  [Link to Catalog.](https://www.fda.gov/medical-devices/science-and-research-medical-devices/catalog-regulatory-science-tools-help-assess-new-medical-devices)
-
-* [Webpage: FDA page, "iMRMC: Software to do Multi-reader Multi-case Statistical Analysis of Reader Studies"](https://www.fda.gov/medical-devices/science-and-research-medical-devices/imrmc-software-do-multi-reader-multi-case-statistical-analysis-reader-studies)
-
-
+---
 ## Mock Submission
 
 *  [Webpage: MDICx webinar that includes **a presentation on mock submissions to FDA/CDRH.**](https://mdic.org/event/computational-modeling-simulation/)
