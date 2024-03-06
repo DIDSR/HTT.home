@@ -96,7 +96,7 @@ section::after {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: hwb(290 83% 5%); /* Black */
+  background-color: hwb(290 81% 9%); /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 40px;
 }
@@ -106,7 +106,7 @@ section::after {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #0a000a;
+  color: #000000;
   display: block;
 }
 
