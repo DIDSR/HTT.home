@@ -6,23 +6,23 @@ toc: true
 ---
 
 <div class="sidenav">
-    <h2><strong>Table of Contents</strong></h2>
-    <ul>
-        <li><a href="#pre-submission-q-sub-meeting">Pre-submission Q-sub Meeting</a></li>
-        <li><a href="#ifu-indications-for-use">Indications For Use</a></li>
-        <li><a href="#comprehensive-regulatory-assistance">Comprehensive Regulatory Assistance</a></li>
-        <li><a href="#510k-program">510k Program</a></li>
-        <li><a href="#de-novos">de Novos</a></li>
-        <li><a href="#pma">PMA</a></li>
-        <li><a href="#software-as-a-medical-device-samd">Software as a Medical Device</a></li>
-        <li><a href="#quantitative-imaging">Quantitative Imaging</a></li>
-        <li><a href="#adaptive-algorithms-continuous-learning-predetermined-change-control-plan-pccp">Adaptive Algorithms, Continuous Learning, PCCP</a></li>
-        <li><a href="#digital-pathology">Digital Pathology</a></li>
-        <li><a href="#cad-examples">CAD Examples</a></li>
-        <li><a href="#medical-device-development-tools-mddt-program">MDDT Program</a></li>
-        <li><a href="#catalog-of-regulatory-science-tools-to-help-access-new-medical-devices">RST Catalog</a></li>
-        <li><a href="#presentations-in-this-space">Presentations</a></li>
-        <li><a href="#mock-submission">Mock Submission</a></li>
+    <h2><strong>Page Contents</strong></h2>
+    <ul> 
+        <a href="#pre-submission-q-sub-meeting">Pre-submission Q-sub Meeting</a>
+        <a href="#ifu-indications-for-use">Indications For Use</a>
+        <a href="#comprehensive-regulatory-assistance">Comprehensive Regulatory Assistance</a>
+        <a href="#510k-program">510k Program</a>
+        <a href="#de-novos">de Novos</a>
+        <a href="#pma">PMA</a>
+        <a href="#software-as-a-medical-device-samd">Software as a Medical Device</a>
+        <a href="#quantitative-imaging">Quantitative Imaging</a>
+        <a href="#adaptive-algorithms-continuous-learning-predetermined-change-control-plan-pccp">Adaptive Algorithms, Continuous Learning, PCCP</a>
+        <a href="#digital-pathology">Digital Pathology</a>
+        <a href="#cad-examples">CAD Examples</a>
+        <a href="#medical-device-development-tools-mddt-program">MDDT Program</a>
+        <a href="#catalog-of-regulatory-science-tools-to-help-access-new-medical-devices">RST Catalog</a>
+        <a href="#presentations-in-this-space">Presentations</a>
+        <a href="#mock-submission">Mock Submission</a>
     </ul>
 </div>
 
