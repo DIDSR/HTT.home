@@ -3,6 +3,10 @@ layout: page
 title: HTT Publications
 ---
 
+## Full Library of Work from the HTT Team
+
+[HTT Zotero library](https://www.zotero.org/groups/4384613/eedap_studies_presentations_publications_and_studies/library)
+
 ## Selected Works
 
 **Manuscript detailing reporting framework for collecting annotations:**
@@ -29,6 +33,3 @@ title: HTT Publications
 **Manuscript describing the project:**
  [Dudgeon et al. (2020), "A Pathologist-Annotated Dataset for Validating Artificial Intelligence: A Project Description and Pilot Study," *Journal of Pathology Informatics*, Vol. 12, p. 45](https://www.doi.org/10.4103/jpi.jpi_83_20)
 
-
-## Full Library of Work from the HTT Team
-[HTT Zotero library](https://www.zotero.org/groups/4384613/eedap_studies_presentations_publications_and_studies/library)
