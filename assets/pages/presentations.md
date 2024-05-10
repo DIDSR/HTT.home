@@ -28,7 +28,7 @@ Brandon D. Gallas, “The Many Efforts to Create a Dataset to Validate AI/ML Mod
 
 <br/>
 
-Brandon D. Gallas, "Developing a dataset to validate computational models that analyze digital pathology images to assess TILs in breast cancer", 2022  
+Brandon D. Gallas, "Developing a dataset to validate computational models that analyze digital pathology images to assess TILs in breast cancer", presented to the FDA Oncology Center for Excellence, 2022.  
 [Watch the video here](https://vimeo.com/767440412)
 
 
