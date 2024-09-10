@@ -93,6 +93,9 @@ social-network-links:
 # --- General options --- #
 ###########################
 
+# Default port for local server
+port: 6201
+
 # Select which social network share links to show in posts
 share-links-active:
   twitter: false
