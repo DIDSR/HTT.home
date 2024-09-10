@@ -5,15 +5,23 @@ layout: page
 toc: true
 ---
 
+<!--
+The following code is manually created.
+The code creates a table of contents in the left-hand side bar, thanks to the first line <div class="sidenav">.
+The href needs to be the exact words of a section heading.
+We can point to another page in the href (don't include the .md or the .html)
+    * Example:  <a href="../documentation/5-0availableDatasets">5.0 Available MRMC Datasets</a>
+-->
 <div class="sidenav">
     <h2><strong>Page Contents</strong></h2>
     <ul> 
         <a href="#pre-submission-q-sub-meeting">Pre-submission Q-sub Meeting</a>
         <a href="#ifu-indications-for-use">Indications For Use</a>
         <a href="#comprehensive-regulatory-assistance">Comprehensive Regulatory Assistance</a>
-        <a href="#510k-program">510k Program</a>
-        <a href="#de-novos">de Novos</a>
-        <a href="#pma">PMA</a>
+        <a href="#product-codes">Product Codes</a>
+        <a href="#510k-pathway">510(k) Pathway</a>
+        <a href="#de-novo-pathway">de Novo Pathway</a>
+        <a href="#pma-pathway">PMA Pathway</a>
         <a href="#software-as-a-medical-device-samd">Software as a Medical Device</a>
         <a href="#quantitative-imaging">Quantitative Imaging</a>
         <a href="#adaptive-algorithms-continuous-learning-predetermined-change-control-plan-pccp">Adaptive Algorithms, Continuous Learning, PCCP</a>
@@ -26,13 +34,18 @@ toc: true
     </ul>
 </div>
 
-<!--   
+<!-- 
+
+These are alternative ways to put a manual table of contents in the left-side bar.
+They are not as flexible as the html code.
+
 - [Pre-submission (Q-sub) meeting](#pre-submission-q-sub-meeting)
 - [IFU: Indications for Use](#ifu-indications-for-use)
 - [Comprehensive Regulatory Assistance](#comprehensive-regulatory-assistance)
-- [510k Program](#510k-program)
-- [de Novos](#de-novos)
-- [PMA](#pma)
+- [Product Codes](#product-codes)
+- [510(k) Pathway](#510k-pathway)
+- [de Novo Pathway](#de-novo-pathway)
+- [PMA Pathway](#pma-pathway)
 - [Software as a Medical Device (SaMD)](#software-as-a-medical-device-samd)
 - [Quantitative Imaging](#quantitative-imaging)
 - [Adaptive Algorithms, continuous learning, Predetermined Change Control Plan (PCCP)](#adaptive-algorithms-continuous-learning-predetermined-change-control-plan-pccp)
@@ -49,9 +62,10 @@ toc: true
         <li><a href="#pre-submission-q-sub-meeting">Pre-submission (Q-sub) meeting</a></li>
         <li><a href="#ifu-indications-for-use">IFU: Indications for Use</a></li>
         <li><a href="#comprehensive-regulatory-assistance">Comprehensive Regulatory Assistance</a></li>
-        <li><a href="#510k-program">510k Program</a></li>
-        <li><a href="#de-novos">de Novos</a></li>
-        <li><a href="#pma">PMA</a></li>
+        <li><a href="#product-codes">Product Codes</a></li>
+        <li><a href="#510k-pathway">510(k) Pathway</a></li>
+        <li><a href="#de-novo-pathway">de Novo Pathway</a></li>
+        <li><a href="#pma-pathway">PMA Pathway</a></li>
         <li><a href="#software-as-a-medical-device-samd">Software as a Medical Device (SaMD)</a></li>
         <li><a href="#quantitative-imaging">Quantitative Imaging</a></li>
         <li><a href="#adaptive-algorithms-continuous-learning-predetermined-change-control-plan-pccp">Adaptive Algorithms, continuous learning, Predetermined Change Control Plan (PCCP)</a></li>
@@ -73,85 +87,103 @@ Caveat to all: You won’t know what’s required for your submission until you 
 
 
 ---
+
 ## Pre-submission (Q-sub) meeting
 
 In CDRH, the best advice is to know about pre-submission meetings.
 
-*  [Slides: Pre-Submissions and Meetings with FDA Staff.](https://www.fda.gov/media/93740/download)
+* [Slides: Pre-Submissions and Meetings with FDA Staff.](https://www.fda.gov/media/93740/download)
 
-*  [Guidance document: Requests for Feedback on Medical Device Submissions: The Pre-Submission Program and Meetings with Food and Drug Administration Staff.](https://www.fda.gov/media/114034/download)
+* [Guidance document: Requests for Feedback on Medical Device Submissions: The Pre-Submission Program and Meetings with Food and Drug Administration Staff.](https://www.fda.gov/media/114034/download)
 
 
 ---
+
 ## IFU: Indications for Use
 
 Part of the definition of your medical device are the indications for use.
 
-*  [Webpage: Indications For Use.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/device-labeling-guidance-g91-1-blue-book-memo)
+* [Webpage: Indications For Use.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/device-labeling-guidance-g91-1-blue-book-memo)
 
 It’s never to early to start thinking about, researching, and crafting an IFU for your device.
 
 
 ---
+
 ## Comprehensive Regulatory Assistance
 
-*  [Webpage: Comprehensive Regulatory Assistance.](https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance)
+* [Webpage: Comprehensive Regulatory Assistance.](https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance)
 
 
 ---
-## 510k program
 
-*  [Guidance document: The 510(k) Program: Evaluating Substantial Equivalence in Premarket Notifications 510(k). Guidance for Industry and Food and Drug Administration Staff.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/510k-program-evaluating-substantial-equivalence-premarket-notifications-510k)
+## Product Codes
 
-*  [510(k) Premarket Notification Database.](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm)
+* Every device is given a product code.
+
+* [Product Classification (product code) database](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm)
+
+## 510(k) Pathway
+
+* [Guidance document: The 510(k) Program: Evaluating Substantial Equivalence in Premarket Notifications 510(k). Guidance for Industry and Food and Drug Administration Staff.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/510k-program-evaluating-substantial-equivalence-premarket-notifications-510k)
+
+* [510(k) Premarket Notification Database.](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm)
+
+* 510(k) devices must comply with general and **special controls**. Special controls are generally defined in a product code's corresponding regulations or de Novo device record.
+
+* 510(k) devices are *"Cleared"*.
 
 A Premarket Notification, also known as a 510(k), is a submission made to FDA to demonstrate that the device to be marketed is safe and effective by proving substantial equivalence (SE) to a legally marketed device (predicate device).
 
-*  [Guidance document: Deciding When to Submit a 510(k) for a Change to an Existing Device.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/deciding-when-submit-510k-change-existing-device)
+* [Guidance document: Deciding When to Submit a 510(k) for a Change to an Existing Device.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/deciding-when-submit-510k-change-existing-device)
 
-*  [Guidance document: Deciding When to Submit a 510(k) for a Software Change to an Existing Device.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/deciding-when-submit-510k-software-change-existing-device)
+* [Guidance document: Deciding When to Submit a 510(k) for a Software Change to an Existing Device.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/deciding-when-submit-510k-software-change-existing-device)
 
 
 ---
-## de Novos
 
-*  Special controls accompany all de Novo classifications.
+## de Novo Pathway
 
-*  Special controls outline submission requirements for medical devices with similar IFU.
+* [Webpage: De Novo Classification Request](https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/de-novo-classification-request)
 
-*  Special controls are defined for a device type that can be broad or narrow.
+* [Webpage: Special Controls:](https://www.fda.gov/medical-devices/overview-device-regulation/regulatory-controls#special) Special controls accompany all de Novo classifications and outline device-specific submission requirements.
 
-*  [Webpage: Special Controls.](https://www.fda.gov/medical-devices/overview-device-regulation/regulatory-controls#special)
+* [De Novo Database.](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/denovo.cfm)
 
-*  [De Novo Database.](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/denovo.cfm)
+* de Novo devices are *"Granted"*.
 
 If you can’t find a de Novo or existing 510k that is a perfect predicate for your device type: Then find and learn about the closest one or two. It’s a way to start.
 
 
 ---
-## PMA
 
-Pursuing a pre-market authorization **(PMA)** is a regulatory pathway for medical devices that have a higher risk profile than a 510(k). PMAs are not covered here in depth.
+## PMA Pathway
 
-*  [Premarket Approval (PMA)](https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-approval-pma)
+The Premarket Approval **(PMA)** regulatory pathway is for medical devices that have a higher risk profile than a 510(k). PMAs are not covered here in depth.
 
+* [Webpage: PMA](https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-approval-pma)
+
+* [PMA database](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm)
+
+* PMA devices are *"Approved"*
 
 ---
+
 ## Software as a Medical Device (SAMD)
 
-*  [Digital Health Center of Excellence.](https://www.fda.gov/medical-devices/digital-health-center-excellence)
+* [Digital Health Center of Excellence.](https://www.fda.gov/medical-devices/digital-health-center-excellence)
 
-    *  [Software as a Medical Device.](https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd)
+  * [Software as a Medical Device.](https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd)
 
-    *  [AI/ML in SAMD.](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device)
+  * [AI/ML in SAMD.](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device)
 
-    *  [List of AI/ML Enabled Devices.](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices)
+  * [List of AI/ML Enabled Devices.](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-aiml-enabled-medical-devices)
 
-*  Computer aided detection (CADe) guidance - Radiology
+* Computer aided detection (CADe) guidance - Radiology
 
-    *  [Webpage: Non-clinical = Stand-alone = No human in the loop.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/computer-assisted-detection-devices-applied-radiology-images-and-radiology-device-data-premarket)
+  * [Webpage: Non-clinical = Stand-alone = No human in the loop.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/computer-assisted-detection-devices-applied-radiology-images-and-radiology-device-data-premarket)
 
-    *  [Webpage: Clinical = Reader Study = Human in the loop.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-performance-assessment-considerations-computer-assisted-detection-devices-applied-radiology)
+  * [Webpage: Clinical = Reader Study = Human in the loop.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-performance-assessment-considerations-computer-assisted-detection-devices-applied-radiology)
 
 * [Guidance document: Off-the-Shelf Software Use in Medical Devices.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/shelf-software-use-medical-devices)
 
@@ -159,186 +191,197 @@ Pursuing a pre-market authorization **(PMA)** is a regulatory pathway for medica
 
 
 ---
+
 ## Quantitative Imaging
 
-*  [Guidance document: Technical Performance Assessment of Quantitative Imaging in Device Premarket Submissions.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-performance-assessment-quantitative-imaging-radiological-device-premarket-submissions)
+* [Guidance document: Technical Performance Assessment of Quantitative Imaging in Device Premarket Submissions.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-performance-assessment-quantitative-imaging-radiological-device-premarket-submissions)
 
 
 ---
+
 ## Adaptive Algorithms, continuous learning, Predetermined Change Control Plan (PCCP)
 
-*  [Webpage: Artificial Intelligence and Machine Learning in Software as a Medical Device.](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device)
+* [Webpage: Artificial Intelligence and Machine Learning in Software as a Medical Device.](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device)
 
-*  [Guidance document: PCCP.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial)
+* [Guidance document: PCCP.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial)
 
 
 ---
+
 ## Digital Pathology
 
-*  Device type: Whole Slide Imaging System
+* Digital pathology product codes:
 
-    *  Phillips IntelliSite Pathology Solution [(DEN160056).](https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN160056.pdf)
+  * PSY: [whole slide imaging system](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm?id=5387)
 
-    *  Classification Product Code: PSY
+  * QKQ: [digital pathology image viewing and management software](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm?id=5391)
 
-    *  Record includes special controls.
+  * PZZ: [digital pathology display](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm?id=5389)
 
-*  Device type: Whole Slide Imaging System
+  * QPN: [software algorithm device to assist users in digital pathology](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm?id=5392)
 
-    *  [Guidance for Industry and FDA Staff: Technical Performance Assessment of Digital Pathology Whole Slide Imaging Devices.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-performance-assessment-digital-pathology-whole-slide-imaging-devices)
+  * QYV: [digital cervical cytology slide imaging system with artificial intelligence algorithm](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpcd/classification.cfm?id=5394)
+
+
+* [Guidance for Industry and FDA Staff: Technical Performance Assessment of Digital Pathology Whole Slide Imaging Devices.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-performance-assessment-digital-pathology-whole-slide-imaging-devices)
 
 
 ---
+
 ## CAD Examples
 
-*  Device type: Medical Image Analyzer (including breast cancer detection).
+* Device type: Medical Image Analyzer (including breast cancer detection).
 
-    *  Secondlook [(P010038).](http://www.accessdata.fda.gov/cdrh_docs/pdf/P010038B.pdf)
+  * Secondlook [(P010038).](http://www.accessdata.fda.gov/cdrh_docs/pdf/P010038B.pdf)
 
-    *  Originally a PMA. Downclassified to a 510k on 01/22/2020, [Federal Register Ruling.](https://www.federalregister.gov/documents/2020/01/22/2020-00494/radiology-devices-reclassification-of-medical-image-analyzers)
+  * Originally a PMA. Downclassified to a 510k on 01/22/2020, [Federal Register Ruling.](https://www.federalregister.gov/documents/2020/01/22/2020-00494/radiology-devices-reclassification-of-medical-image-analyzers)
 
-    *  Classification Product Code: MYN
+  * Classification Product Code: MYN
 
-*  Device type: Radiological computer-assisted diagnostic (CADx) software for lesions suspicious for cancer.
+* Device type: Radiological computer-assisted diagnostic (CADx) software for lesions suspicious for cancer.
 
-    *  QuantX [(DEN170022)](https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN170022.pdf).
+  * QuantX [(DEN170022)](https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN170022.pdf).
 
-    *  Classification Product Code: POK
+  * Classification Product Code: POK
 
-*  Device type: Radiological Computer Assisted Detection and Diagnosis Software” (CADe + CADx).
+* Device type: Radiological Computer Assisted Detection and Diagnosis Software” (CADe + CADx).
 
-    *  Imagen OsteoDetect [(DEN180005)](https://www.accessdata.fda.gov/cdrh_docs/pdf18/DEN180005.pdf).
+  * Imagen OsteoDetect [(DEN180005)](https://www.accessdata.fda.gov/cdrh_docs/pdf18/DEN180005.pdf).
 
-    *  Classification Product Code: QBS
+  * Classification Product Code: QBS
 
-*  Device type: Radiological computer aided triage and notification software.
+* Device type: Radiological computer aided triage and notification software.
 
-    *  Viz.AI ContaCT [(DEN170073)](https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN170073.pdf).
+  * Viz.AI ContaCT [(DEN170073)](https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN170073.pdf).
 
-    *  Classification Prodcut Code: QAS
-    
-*  Device type: Retinal diagnostic software device.
+  * Classification Prodcut Code: QAS
 
-    *  IDx IDx-DR [(DEN180001)](https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN180001.pdf).
+* Device type: Retinal diagnostic software device.
 
-    *  Classification Prodcut Code: PIB
+  * IDx IDx-DR [(DEN180001)](https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN180001.pdf).
 
-*  Device type: Image Acquisition and/or Optimization Guided by Artificial Intelligence.
+  * Classification Prodcut Code: PIB
 
-    *  Bay Labs Caption Guidance [(DEN190040).](http://www.accessdata.fda.gov/cdrh_docs/pdf19/DEN190040.pdf)
+* Device type: Image Acquisition and/or Optimization Guided by Artificial Intelligence.
 
-    *  Classification Product Code: QJU
+  * Bay Labs Caption Guidance [(DEN190040).](http://www.accessdata.fda.gov/cdrh_docs/pdf19/DEN190040.pdf)
 
-*  Device type: Software Algorithm Device to Assist Users in Digital Pathology
+  * Classification Product Code: QJU
 
-    *  Paige.AI Paige Prostate [(DEN200080).](https://www.accessdata.fda.gov/cdrh_docs/pdf20/DEN200080.pdf)
+* Device type: Software Algorithm Device to Assist Users in Digital Pathology
 
-    *  Classification Product Code: QPN
+  * Paige.AI Paige Prostate [(DEN200080).](https://www.accessdata.fda.gov/cdrh_docs/pdf20/DEN200080.pdf)
 
-    *  [Presentation and discussion about the Paige.AI decision summary convened by the Pathology Innovation Collaborative Community (June 2022).](https://pathologyinnovationcc.org/presentations/jun-2022-decision-summary)
+  * Classification Product Code: QPN
+
+    * [Presentation and discussion about the Paige.AI decision summary convened by the Pathology Innovation Collaborative Community (June 2022).](https://pathologyinnovationcc.org/presentations/jun-2022-decision-summary)
 
 
 ---
+
 ## Medical Device Development Tools (MDDT) program
 
 The FDA’s Medical Device Development Tools (MDDT) program is a way for the FDA to qualify tools that medical device sponsors can use in the development and evaluation of medical devices. It is a way for the broader community (academia, health providers, and government scientists, not just industry) can impact the regulatory process.
 
-*  [Webpage: FDA page, “Medical Device Development Tools (MDDT)”.](https://www.fda.gov/medical-devices/medical-device-development-tools-mddt)
+* [Webpage: FDA page, “Medical Device Development Tools (MDDT)”.](https://www.fda.gov/medical-devices/medical-device-development-tools-mddt)
 
 
 ---
+
 ## Catalog of Regulatory Science Tools to Help Access New Medical Devices
 
-*  [Link to Catalog.](https://www.fda.gov/medical-devices/science-and-research-medical-devices/catalog-regulatory-science-tools-help-assess-new-medical-devices)
+* [Link to Catalog.](https://www.fda.gov/medical-devices/science-and-research-medical-devices/catalog-regulatory-science-tools-help-assess-new-medical-devices)
 
 * [Webpage: FDA page, "iMRMC: Software to do Multi-reader Multi-case Statistical Analysis of Reader Studies"](https://www.fda.gov/medical-devices/science-and-research-medical-devices/imrmc-software-do-multi-reader-multi-case-statistical-analysis-reader-studies)
 
 
 ---
+
 ## Presentations in this Space
 
-*  “Tutorial on Reader Study Designs and MRMC Analysis”
+* “Tutorial on Reader Study Designs and MRMC Analysis”
 
-    *  FDA internal training, April 8, 2022
+  * FDA internal training, April 8, 2022
 
-    *  Pathology Innovation Collaborative Community Webinar, August 5, 2022
+  * Pathology Innovation Collaborative Community Webinar, August 5, 2022
 
-    *  Brandon Gallas, Research Mathematical Statistician, Division of Imaging, Diagnostics, and Software Reliability OSEL, CDRH, FDA
+  * Brandon Gallas, Research Mathematical Statistician, Division of Imaging, Diagnostics, and Software Reliability OSEL, CDRH, FDA
 
-    *  [Slides: Tutorial on Reader Study Designs and MRMC Analysis by Brandon Gallas](./process-guides/pdfs-images/deviceAdvice-pdfs/20220805-PIcc-MRMCstudyDesigns-Gallas.pdf) 
+  * [Slides: Tutorial on Reader Study Designs and MRMC Analysis by Brandon Gallas](./process-guides/pdfs-images/deviceAdvice-pdfs/20220805-PIcc-MRMCstudyDesigns-Gallas.pdf)
 
-    *  [Video: MRMC tutorial](https://vimeo.com/751682643)
+  * [Video: MRMC tutorial](https://vimeo.com/751682643)
 
-*  “ROC curves: Receiver Operating Characteristic Curves”
+* “ROC curves: Receiver Operating Characteristic Curves”
 
-    *  FDA internal training, April 8, 2022
+  * FDA internal training, April 8, 2022
+  
+  * Pathology Innovation Collaborative Community Webinar, August 5, 2022
 
-    *  Pathology Innovation Collaborative Community Webinar, August 5, 2022
+  * Brandon Gallas, Research Mathematical Statistician, Division of Imaging, Diagnostics, and Software Reliability OSEL, CDRH, FDA
 
-    *  Brandon Gallas, Research Mathematical Statistician, Division of Imaging, Diagnostics, and Software Reliability OSEL, CDRH, FDA
+  * [Slides: ROC Curves Tutorial by Brandon Gallas](./process-guides/pdfs-images/deviceAdvice-pdfs/20220805-PIcc-ShortROCtutorial.pdf)
 
-    *  [Slides: ROC Curves Tutorial by Brandon Gallas](./process-guides/pdfs-images/deviceAdvice-pdfs/20220805-PIcc-ShortROCtutorial.pdf) 
+  * [Video: ROC tutorial](https://vimeo.com/751670299)
 
-    *  [Video: ROC tutorial](https://vimeo.com/751670299)
+* “Regulatory Considerations and Assessment of AI/ML Devices”
 
-*  “Regulatory Considerations and Assessment of AI/ML Devices”
+  * Yale, January 29, 2020, New Haven, Connecticut
 
-    *  Yale, January 29, 2020, New Haven, Connecticut
+  * Nicholas Petrick, Deputy Division Director, Division of Imaging, Diagnostics, and Software Reliability OSEL, CDRH, FDA
 
-    *  Nicholas Petrick, Deputy Division Director, Division of Imaging, Diagnostics, and Software Reliability OSEL, CDRH, FDA
+  * [Slides: Regulatory Considerations and Assessment of AI by Nicholas Petrick](./process-guides/pdfs-images/deviceAdvice-pdfs/Petrick_RegulatoryConsiderationsAssessmentAI2020-01-29.pdf)
 
-    *  [Slides: Regulatory Considerations and Assessment of AI by Nicholas Petrick](./process-guides/pdfs-images/deviceAdvice-pdfs/Petrick_RegulatoryConsiderationsAssessmentAI2020-01-29.pdf) 
+* "AI and Digital Pathology: Regulatory Perspective”
 
-*  "AI and Digital Pathology: Regulatory Perspective”
+  * Pathology Visions, October 8, 2019, Orlando, FL.
 
-    *  Pathology Visions, October 8, 2019, Orlando, FL.
+  * Shyam Kalavar, Senior Scientific Reviewer, Division of Molecular Genetics and Pathology
 
-    *  Shyam Kalavar, Senior Scientific Reviewer, Division of Molecular Genetics and Pathology
-
-    *  [Slides: AI and Digital Pathology Regulatory Perspective by Shyam Kalavar](./process-guides/pdfs-images/deviceAdvice-pdfs/S.Kalavar.PathVision2019.pdf)
+  * [Slides: AI and Digital Pathology Regulatory Perspective by Shyam Kalavar](./process-guides/pdfs-images/deviceAdvice-pdfs/S.Kalavar.PathVision2019.pdf)
 
 * “Evaluating Artificial Intelligence Devices at the FDA and Related Collaborations and Initiatives”
 
-    *  ACR Informatics Summit, October 5-6, 2019, Washington, DC.
+  * ACR Informatics Summit, October 5-6, 2019, Washington, DC.
 
-    *  Brandon Gallas, PhD, Research Mathematical Statistician, Division of Imaging, Diagnostics, and Software Reliability OSEL, CDRH, FDA
+  * Brandon Gallas, PhD, Research Mathematical Statistician, Division of Imaging, Diagnostics, and Software Reliability OSEL, CDRH, FDA
 
-    *  [Slides: Evaluating Artifical Intelligence Devices at the FDA and Related Collaborations and Initiatives by Brandon Gallas](./process-guides/pdfs-images/deviceAdvice-pdfs/20191005ACRinformaticsSummit_BDG-6-FINAL.pdf)
+  * [Slides: Evaluating Artifical Intelligence Devices at the FDA and Related Collaborations and Initiatives by Brandon Gallas](./process-guides/pdfs-images/deviceAdvice-pdfs/20191005ACRinformaticsSummit_BDG-6-FINAL.pdf)
 
-    *  Jennifer Segui, Lead Medical Device Reviewer, Division of Radiological Health, FDA
-    
-    *  [Slides: Evaluating Artificial Intelligence Devices at the FDA and Related Collaborations and Initiatives by Brandon Gallas and Jennifer Segui](./process-guides/pdfs-images/deviceAdvice-pdfs/J.A.Segui.ACR.Informatics.2019.Slides.FINAL.pdf)
+  * Jennifer Segui, Lead Medical Device Reviewer, Division of Radiological Health, FDA
 
-*  “Evaluation and Regulatory Considerations for AI Methods in Medical Imaging”
+  * [Slides: Evaluating Artificial Intelligence Devices at the FDA and Related Collaborations and Initiatives by Brandon Gallas and Jennifer Segui](./process-guides/pdfs-images/deviceAdvice-pdfs/J.A.Segui.ACR.Informatics.2019.Slides.FINAL.pdf)
 
-    *  Society for Imaging Informatics in Medicine Annual Meeting, June 26, 2019, Aurora, Co
+* “Evaluation and Regulatory Considerations for AI Methods in Medical Imaging”
 
-    *  Berkman Sahiner, Senior Scientist, Division of Imaging, Diagnostics, and Software Reliability OSEL, CDRH, FDA
-    
-    *  [Slides: Evaluation and Regulatory Considerations for AI Methods in Medical Imaging by Berkman Sahiner](./process-guides/pdfs-images/deviceAdvice-pdfs/Sahiner_EvaluationRegulatoryConsiderationsAIinMedicalImaging20200626.pdf)
+  * Society for Imaging Informatics in Medicine Annual Meeting, June 26, 2019, Aurora, Co
 
-*  “Digital Pathology Regulatory Considerations”
+  * Berkman Sahiner, Senior Scientist, Division of Imaging, Diagnostics, and Software Reliability OSEL, CDRH, FDA
 
-    *  Pathology Informatics Summit 5/9/19
+    * [Slides: Evaluation and Regulatory Considerations for AI Methods in Medical Imaging by Berkman Sahiner](./process-guides/pdfs-images/deviceAdvice-pdfs/Sahiner_EvaluationRegulatoryConsiderationsAIinMedicalImaging20200626.pdf)
 
-    *  Cheng Cui, Senior Scientific Reviewer, Division of Molecular Genetics and Pathology,
+* “Digital Pathology Regulatory Considerations”
 
-    *  [Slides: Digital Pathology Regulatory Considerations by Cheng Cui](./process-guides/pdfs-images/deviceAdvice-pdfs/PathologySummit2019_Pittsburgh_ChengCui_FDA.pdf)
+  * Pathology Informatics Summit 5/9/19
+
+  * Cheng Cui, Senior Scientific Reviewer, Division of Molecular Genetics and Pathology,
+
+  * [Slides: Digital Pathology Regulatory Considerations by Cheng Cui](./process-guides/pdfs-images/deviceAdvice-pdfs/PathologySummit2019_Pittsburgh_ChengCui_FDA.pdf)
 
 
 ---
+
 ## Mock Submission
 
-*  [Webpage: MDICx webinar that includes **a presentation on mock submissions to FDA/CDRH.**](https://mdic.org/event/computational-modeling-simulation/)
+* [Webpage: MDICx webinar that includes **a presentation on mock submissions to FDA/CDRH.**](https://mdic.org/event/computational-modeling-simulation/)
 
-*  [Slides: Mock Submissions to FDA/CDRH: History and Lessons Learned](./process-guides/pdfs-images/deviceAdvice-pdfs/20190412-HTTMockSubmissions.pdf) by Kyle Myers, Director DIDSR/OSEL/CDRH/FDA. This presentation was made as the agency was working with MDIC to pursue a mock submission about, “Augmenting a Clinical Study with Virtual Patient Models.”
+* [Slides: Mock Submissions to FDA/CDRH: History and Lessons Learned](./process-guides/pdfs-images/deviceAdvice-pdfs/20190412-HTTMockSubmissions.pdf) by Kyle Myers, Director DIDSR/OSEL/CDRH/FDA. This presentation was made as the agency was working with MDIC to pursue a mock submission about, “Augmenting a Clinical Study with Virtual Patient Models.”
 
-    *  The mock submission was followed quickly by actual submissions.
+  * The mock submission was followed quickly by actual submissions.
 
-    *  [Virtual Patient Page at MDIC.](https://mdic.org/project/virtual-patient-vp-model/)
+  * [Virtual Patient Page at MDIC.](https://mdic.org/project/virtual-patient-vp-model/)
 
-*  The virtual patients mock submission was preceded by [“Protein-Based Multiplex Assays: Mock Presubmissions to the US Food and Drug Administration”](https://academic.oup.com/clinchem/article/56/2/165/5622492?login=true) , Regnier et al.
+* The virtual patients mock submission was preceded by [“Protein-Based Multiplex Assays: Mock Presubmissions to the US Food and Drug Administration”](https://academic.oup.com/clinchem/article/56/2/165/5622492?login=true) , Regnier et al.
 
-    *  [Supplementary Materials.](https://academic.oup.com/clinchem/issue/56/2?login=true)
+  * [Supplementary Materials.](https://academic.oup.com/clinchem/issue/56/2?login=true)
 
 

@@ -6,7 +6,7 @@ Live site: [https://didsr.github.io/HTT.home/](https://didsr.github.io/HTT.home/
 1.	Install ‘Remote – SSH’ extension in VSCode: vscode:extension/ms-vscode-remote.remote-ssh
 2.	Click the remote server button in the bottom left corner of VSCode (Icon looks like an unleveled > <) 
 3.	Choose “Connect to Host..”  
-4.	Enter SSH host: 172.31.151.221 (port 22)
+4.	Enter SSH host: openhpc.fda.gov (port 22)
 5.	Put in username and password of openHPC
 6.	If it worked, the bottom left corner banner will now show the Remote host icon and “SSH: 172.31.151.221”
 7.	Follow all steps prompted by VScode
