@@ -187,8 +187,9 @@ The Premarket Approval **(PMA)** regulatory pathway is for medical devices that 
 
 * [Guidance document: Off-the-Shelf Software Use in Medical Devices.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/shelf-software-use-medical-devices)
 
-* [Machine Learning-enabled Medical Devices: Key Terms and Definitions](https://www.imdrf.org/documents/machine-learning-enabled-medical-devices-key-terms-and-definitions)
+* [FDA Digital Health and Artificial Intelligence Glossary – Educational Resource](https://www.fda.gov/science-research/artificial-intelligence-and-medical-products/fda-digital-health-and-artificial-intelligence-glossary-educational-resource)
 
+* [Machine Learning-enabled Medical Devices: Key Terms and Definitions](https://www.imdrf.org/documents/machine-learning-enabled-medical-devices-key-terms-and-definitions)
 
 ---
 
@@ -203,7 +204,7 @@ The Premarket Approval **(PMA)** regulatory pathway is for medical devices that 
 
 * [Webpage: Artificial Intelligence and Machine Learning in Software as a Medical Device.](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device)
 
-* [Guidance document: PCCP.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial)
+* [DRAFT Guidance document: PCCP.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial)
 
 
 ---
