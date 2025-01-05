@@ -11,6 +11,11 @@ title: HTT Publications
 
 ## Selected Works
 
+**Manuscript detailing slide sourcing and case prioritization:**
+[V. Garcia et al. (2024), "Prioritizing cases from a multi-institutional cohort for a dataset of pathologist annotations," *Journal of Pathology Informatics*, Vol. 16, p. 100411](https://doi.org/10.1016/j.jpi.2024.100411)
+
+<br/>
+
 **Manuscript detailing reporting framework for collecting annotations:**
 [K. Elfer et al. (2024), "Reproducible Reporting of the Collection and Evaluation of Annotations for Artificial Intelligence Models," *Modern Pathology*, Vol. 37, Issue 4, p. 100439](https://doi.org/10.1016/j.modpat.2024.100439)
 
