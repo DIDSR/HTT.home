@@ -211,17 +211,17 @@ The Premarket Approval **(PMA)** regulatory pathway is for medical devices that 
 
 ## Digital Pathology
 
-* Digital pathology product codes:
+* Search the digital pathology product codes below in the [FDA Product Classification Database](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm). Then click on the Total Product Code Life Cycle (TPLC) Product Code Report to find cleared devices. Make sure to update the scope to "show TPLC since" **2016**, when the first scanner device was **granted** market authorization in DEN160056 to Philips Medical Systems.
 
-  * PSY: [whole slide imaging system](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm?id=5387)
+  * PSY: whole slide imaging system
 
-  * QKQ: [digital pathology image viewing and management software](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm?id=5391)
+  * QKQ: digital pathology image viewing and management software
 
-  * PZZ: [digital pathology display](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm?id=5389)
+  * PZZ: digital pathology display
 
-  * QPN: [software algorithm device to assist users in digital pathology](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPCD/classification.cfm?id=5392)
+  * QPN: software algorithm device to assist users in digital pathology
 
-  * QYV: [digital cervical cytology slide imaging system with artificial intelligence algorithm](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpcd/classification.cfm?id=5394)
+  * QYV: digital cervical cytology slide imaging system with artificial intelligence algorithm
 
 
 * [Guidance for Industry and FDA Staff: Technical Performance Assessment of Digital Pathology Whole Slide Imaging Devices.](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-performance-assessment-digital-pathology-whole-slide-imaging-devices)
